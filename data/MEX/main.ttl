@@ -14,6 +14,19 @@
                                    "Mexico Knowledge Graph"@es .
 
 #################################################################
+#    Classes
+#################################################################
+
+###  http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
+:ee401492_9c90_4700_96aa_21c48538b1e0 rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/> ;
+                                      rdfs:label "Cosa"@es ,
+                                                 "Thing"@en ;
+                                      rdfs:seeAlso :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a .
+
+
+#################################################################
 #    Individuals
 #################################################################
 
