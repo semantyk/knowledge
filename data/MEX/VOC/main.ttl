@@ -56,9 +56,22 @@ skos:ConceptScheme rdf:type owl:Class .
                                                skos:Concept ;
                                       skos:topConceptOf <http://datos.gob.mx/voc#> ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Cosa"@es ,
-                                                 "Thing"@en ;
-                                      rdfs:seeAlso :ee401492_9c90_4700_96aa_21c48538b1e0 .
+                                      rdfs:label "Cosa (Concepto)"@es ,
+                                                 "Thing (Concept)"@en ;
+                                      rdfs:seeAlso :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      skos:prefLabel "Cosa"@es ,
+                                                     "Thing"@en .
+
+
+###  http://datos.gob.mx/bf4e6b3a_c931_4464_b4a5_e278d8cee8a9
+:bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Gender (Concept)"@en ,
+                                                 "Género (Concepto)"@es ;
+                                      skos:prefLabel "Gender"@en ,
+                                                     "Género"@es .
 
 
 ###  http://datos.gob.mx/d3b514db_c9e0_40f1_b38c_92cdf0e1aa41
@@ -66,9 +79,53 @@ skos:ConceptScheme rdf:type owl:Class .
                                                skos:Concept ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Person"@en ,
-                                                 "Persona"@es ;
-                                      rdfs:seeAlso :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 .
+                                      rdfs:label "Person (Concept)"@en ,
+                                                 "Persona (Concepto)"@es ;
+                                      rdfs:seeAlso :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      skos:prefLabel "Person"@en ,
+                                                     "Persona"@es .
+
+
+###  http://datos.gob.mx/e06a1482_4394_423b_a2ba_a5f5942fb284
+:e06a1482_4394_423b_a2ba_a5f5942fb284 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Mujer (Concepto)"@es ,
+                                                 "Woman (Concept)"@en ;
+                                      skos:prefLabel "Mujer"@es ,
+                                                     "Woman"@en .
+
+
+###  http://datos.gob.mx/f7bf33a7_d6f0_4aed_b925_330dde702afb
+:f7bf33a7_d6f0_4aed_b925_330dde702afb rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Hombre (Concepto)"@es ,
+                                                 "Man (Concept)"@en ;
+                                      skos:prefLabel "Hombre"@es ,
+                                                     "Man"@en .
+
+
+###  http://datos.gob.mx/f7d86ba7_f612_4cef_916c_f6d80d230b64
+:f7d86ba7_f612_4cef_916c_f6d80d230b64 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Macho (Concepto)"@es ,
+                                                 "Male (Concept)"@en ;
+                                      skos:prefLabel "Macho"@es ,
+                                                     "Male"@en .
+
+
+###  http://datos.gob.mx/ff11d93b_5c11_45ac_8d7a_ce37714788be
+:ff11d93b_5c11_45ac_8d7a_ce37714788be rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Female (Concept)"@en ,
+                                                 "Hembra (Concepto)"@es ;
+                                      skos:prefLabel "Female"@en ,
+                                                     "Hembra"@es .
 
 
 ###  http://datos.gob.mx/voc#

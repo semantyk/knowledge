@@ -14,16 +14,99 @@
                                         "Mexico Knowledge Graph"@es .
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://datos.gob.mx/a278ea71_1682_4765_ad90_979b1c68ce58
+:a278ea71_1682_4765_ad90_979b1c68ce58 rdf:type owl:ObjectProperty ;
+                                      rdfs:label "has gender"@en ,
+                                                 "tiene género"@es .
+
+
+###  http://datos.gob.mx/ddf2406c_67d2_4619_8e7a_cc9bd5460f69
+:ddf2406c_67d2_4619_8e7a_cc9bd5460f69 rdf:type owl:ObjectProperty ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "has sex"@en ,
+                                                 "tiene sexo"@es .
+
+
+#################################################################
 #    Classes
 #################################################################
+
+###  http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
+:a418160a_c783_42e9_97d6_baffb88467a0 rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
+                                                            owl:hasValue :cae12296_c19d_4002_872f_4cce6818ad96
+                                                          ] ;
+                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Macho (Clase)"@es ,
+                                                 "Male (Class)"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Macho"@es ,
+                                                                                      "Male"@en .
+
 
 ###  http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
 :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type owl:Class ;
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      rdfs:label "Persona"@en ,
-                                                 "Persona"@es ;
-                                      rdfs:seeAlso :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 .
+                                      rdfs:label "Person (Class)"@en ,
+                                                 "Persona (Clase)"@es ;
+                                      rdfs:seeAlso :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Person"@en ,
+                                                                                      "Persona"@es .
+
+
+###  http://datos.gob.mx/c10984dc_f290_4880_a60b_d6f8b6b22105
+:c10984dc_f290_4880_a60b_d6f8b6b22105 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Sex (Class)"@en ,
+                                                 "Sexo (Clase)"@es ;
+                                      rdfs:seeAlso :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Sex"@en ,
+                                                                                      "Sexo"@es .
+
+
+###  http://datos.gob.mx/c2871766_bffb_4a9b_9a67_4a84f149c11c
+:c2871766_bffb_4a9b_9a67_4a84f149c11c rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Gender (Class)"@en ,
+                                                 "Género (Clase)"@es ;
+                                      rdfs:seeAlso :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Gender"@en ,
+                                                                                      "Género"@es .
+
+
+###  http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
+:d3c3da1e_369b_4103_b5bf_58daba879d87 rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 ;
+                                                            owl:hasValue :f7a4f75e_0eac_4c0e_bb39_24351ce93c51
+                                                          ] ;
+                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Mujer (Clase)"@es ,
+                                                 "Woman (Class)"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Mujer"@es ,
+                                                                                      "Woman"@en .
+
+
+###  http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
+:e1b671b2_280a_4841_a569_76eb85d9473f rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 ;
+                                                            owl:hasValue :a0947516_0388_4c3a_81a1_a3888c6d5e24
+                                                          ] ;
+                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Hombre (Clase)"@es ,
+                                                 "Man (Class)"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Hombre"@es ,
+                                                                                      "Man"@en .
 
 
 ###  http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
@@ -33,6 +116,56 @@
                                       rdfs:label "Cosa"@es ,
                                                  "Thing"@en ;
                                       rdfs:seeAlso :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a .
+
+
+###  http://datos.gob.mx/onto/a59b12bb_7630_4d82_95bb_34de9b8e922e
+:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
+                                                            owl:hasValue :e488f280_77a9_4eb8_b753_8e3cd0fbf34e
+                                                          ] ;
+                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Female (Class)"@en ,
+                                                 "Hembra (Clase)"@es ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Female"@en ,
+                                                                                      "Hembra"@es .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://datos.gob.mx/a0947516_0388_4c3a_81a1_a3888c6d5e24
+:a0947516_0388_4c3a_81a1_a3888c6d5e24 rdf:type owl:NamedIndividual ,
+                                               :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "hombre"@es ,
+                                                                                      "man"@en .
+
+
+###  http://datos.gob.mx/cae12296_c19d_4002_872f_4cce6818ad96
+:cae12296_c19d_4002_872f_4cce6818ad96 rdf:type owl:NamedIndividual ,
+                                               :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "macho"@es ,
+                                                                                      "male"@en .
+
+
+###  http://datos.gob.mx/e488f280_77a9_4eb8_b753_8e3cd0fbf34e
+:e488f280_77a9_4eb8_b753_8e3cd0fbf34e rdf:type owl:NamedIndividual ,
+                                               :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "female"@en ,
+                                                                                      "hembra"@es .
+
+
+###  http://datos.gob.mx/f7a4f75e_0eac_4c0e_bb39_24351ce93c51
+:f7a4f75e_0eac_4c0e_bb39_24351ce93c51 rdf:type owl:NamedIndividual ,
+                                               :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "mujer"@es ,
+                                                                                      "woman"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
