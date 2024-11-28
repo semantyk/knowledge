@@ -5,15 +5,14 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix mex_voc: <http://datos.gob.mx/voc/> .
 @base <http://datos.gob.mx/> .
 
 <http://datos.gob.mx/voc/> rdf:type owl:Ontology ;
                             owl:versionIRI <http://datos.gob.mx/voc/0.0.0> ;
                             owl:imports <http://datos.gob.mx/0.0.0> ;
                             rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                            rdfs:label "Mexico Controlled Vocabulary Ontology"@es ,
-                                       "Ontología del Vocabulario Controlado de México"@es .
+                            rdfs:label "El Vocabulario Controlado de México"@es ,
+                                       "The Mexico Controlled Vocabulary"@es .
 
 #################################################################
 #    Annotation properties
@@ -51,89 +50,418 @@ skos:ConceptScheme rdf:type owl:Class .
 #    Individuals
 #################################################################
 
+###  http://datos.gob.mx/a24c56f1_8e46_40d6_8008_92c6c7fc1d00
+:a24c56f1_8e46_40d6_8008_92c6c7fc1d00 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"El Territorio Mexicano\""@es ,
+                                                   "The concept of \"The Mexican Territory\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "El Territorio Mexicano (Concepto)"@es ,
+                                                 "The Mexican Territory (Concept)"@en ;
+                                      rdfs:seeAlso :e0e72c41_9fd7_4087_b78e_b401a3192873 ;
+                                      skos:prefLabel "El Territorio Mexicano"@es ,
+                                                     "The Mexican Territory"@en .
+
+
+###  http://datos.gob.mx/a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0
+:a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Cualidad\""@es ,
+                                                   "The concept of a \"Quality\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Quality (Concept)"@en ,
+                                                 "Una Cualidad (Concepto)"@es ;
+                                      rdfs:seeAlso :dda89cac_96bb_4347_a189_796811cc542a ;
+                                      skos:prefLabel "Cualidad"@es ,
+                                                     "Quality"@en .
+
+
+###  http://datos.gob.mx/a54afb44_8ce8_446b_bde2_339f7f01bcc8
+:a54afb44_8ce8_446b_bde2_339f7f01bcc8 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"Lo Mexicano\""@es ,
+                                                   "The concept of \"The Mexican\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Lo Mexicano (Concepto)"@es ,
+                                                 "The Mexican (Concept)"@en ;
+                                      rdfs:seeAlso :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      skos:prefLabel "Lo Mexicano"@es ,
+                                                     "The Mexican"@en .
+
+
+###  http://datos.gob.mx/a8fe9c49_4473_448c_b666_c6f99c609cdd
+:a8fe9c49_4473_448c_b666_c6f99c609cdd rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Estado-Nación\""@es ,
+                                                   "The concept of a \"Nation-State\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Nation-State (Concept)"@en ,
+                                                 "Un Estado-Nación (Concepto)"@es ;
+                                      rdfs:seeAlso :c064c390_4edb_4f89_a671_301fb774f9ef ;
+                                      skos:prefLabel "A Nation-State"@en ,
+                                                     "Un Estado-Nación"@es .
+
+
+###  http://datos.gob.mx/a9b56b3f_fe56_45d2_922c_c21c6e9c276d
+:a9b56b3f_fe56_45d2_922c_c21c6e9c276d rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Pueblo\""@es ,
+                                                   "The concept of a \"People\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A People (Concept)"@en ,
+                                                 "Un Pueblo (Concepto)"@es ;
+                                      rdfs:seeAlso :c6032a59_87b0_4b19_b2b2_d881814e1de4 ;
+                                      skos:prefLabel "A People"@en ,
+                                                     "Un Pueblo"@es .
+
+
 ###  http://datos.gob.mx/aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a
 :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
                                       skos:topConceptOf <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Cosa\""@es ,
+                                                   "The concept of a \"Thing\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Cosa (Concepto)"@es ,
-                                                 "Thing (Concept)"@en ;
+                                      rdfs:label "Thing (Concept)"@en ,
+                                                 "Una Cosa (Concepto)"@es ;
                                       rdfs:seeAlso :ee401492_9c90_4700_96aa_21c48538b1e0 ;
                                       skos:prefLabel "Cosa"@es ,
                                                      "Thing"@en .
+
+
+###  http://datos.gob.mx/ae14f4cb_c38b_43bb_a8d8_05045b81639a
+:ae14f4cb_c38b_43bb_a8d8_05045b81639a rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Clase\""@es ,
+                                                   "The concept of a \"Class\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Class (Concept)"@en ,
+                                                 "Una Clase (Concepto)"@es ;
+                                      rdfs:seeAlso :f89f8450_45f5_4bdc_ba8b_e75f3937bda3 ;
+                                      skos:prefLabel "A Class"@en ,
+                                                     "Una Clase"@es .
+
+
+###  http://datos.gob.mx/b141f627_98cd_40ba_9354_cd34711b1540
+:b141f627_98cd_40ba_9354_cd34711b1540 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"La Federación Mexicana\""@es ,
+                                                   "The concept of \"The Mexican Federation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "La Federación Mexicana (Concepto)"@es ,
+                                                 "The Mexican Federation (Concept)"@en ;
+                                      rdfs:seeAlso :a96355d4_e44d_4abf_b730_e2d69a342a12 ;
+                                      skos:prefLabel "La Federación Mexicana"@es ,
+                                                     "The Mexican Federation"@en .
+
+
+###  http://datos.gob.mx/b46e3fe1_96d1_41f6_957f_f7823d50a8c0
+:b46e3fe1_96d1_41f6_957f_f7823d50a8c0 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"República\""@es ,
+                                                   "The concept of a \"Republic\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Republic (Concept)"@en ,
+                                                 "Una República (Concepto)"@es ;
+                                      rdfs:seeAlso :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 ;
+                                      skos:prefLabel "A Republic"@en ,
+                                                     "Una República"@es .
+
+
+###  http://datos.gob.mx/b7c0ca8d_4519_43bc_82c0_5a331cb799e5
+:b7c0ca8d_4519_43bc_82c0_5a331cb799e5 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Federación\""@es ,
+                                                   "The concept of a \"Federation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Federation (Concept)"@en ,
+                                                 "Una Federación (Concepto)"@es ;
+                                      rdfs:seeAlso :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ;
+                                      skos:prefLabel "A Federation"@en ,
+                                                     "Una Federación"@es .
+
+
+###  http://datos.gob.mx/b9e92c2a_6e79_4015_9256_e33deaeec8ad
+:b9e92c2a_6e79_4015_9256_e33deaeec8ad rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Cultura\""@es ,
+                                                   "The concept of a \"Culture\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Culture (Concept)"@en ,
+                                                 "Una Cultura (Concepto)"@es ;
+                                      rdfs:seeAlso :ba571c3e_119f_4148_a4fc_c5ad83359590 ;
+                                      skos:prefLabel "A Culture"@en ,
+                                                     "Una Cultura"@es .
+
+
+###  http://datos.gob.mx/ba881fe7_6251_44c1_af4f_aa4d9826e864
+:ba881fe7_6251_44c1_af4f_aa4d9826e864 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Persona Mexicana\""@es ,
+                                                   "The concept of a \"Mexican Person\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Mexican Person (Concept)"@en ,
+                                                 "Una Persona Mexicana (Concepto)"@es ;
+                                      rdfs:seeAlso :fc851746_03d3_4420_8d59_f9f7d6e325e4 ;
+                                      skos:prefLabel "A Mexican Person"@en ,
+                                                     "Una Persona Mexicana"@es .
 
 
 ###  http://datos.gob.mx/bf4e6b3a_c931_4464_b4a5_e278d8cee8a9
 :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Género\""@es ,
+                                                   "The concept of a \"Gender\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Gender (Concept)"@en ,
-                                                 "Género (Concepto)"@es ;
-                                      skos:prefLabel "Gender"@en ,
-                                                     "Género"@es .
+                                      rdfs:label "A Gender (Concept)"@en ,
+                                                 "Un Género (Concepto)"@es ;
+                                      rdfs:seeAlso :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
+                                      skos:prefLabel "A Gender"@en ,
+                                                     "Un Género"@es .
+
+
+###  http://datos.gob.mx/c4945d83_7935_4f0f_aac3_76310064f96e
+:c4945d83_7935_4f0f_aac3_76310064f96e rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"La Nación Mexicana\""@es ,
+                                                   "The concept of \"The Mexican Nation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "La Nación Mexicana (Concepto)"@es ,
+                                                 "The Mexican Nation (Concept)"@en ;
+                                      rdfs:seeAlso :a736e2f7_f85f_4b8f_adbf_d8b273333b76 ;
+                                      skos:prefLabel "La Nación Mexicana"@es ,
+                                                     "The Mexican Nation"@en .
+
+
+###  http://datos.gob.mx/c5574968_dcd6_4ed7_a404_abfb378c7ab3
+:c5574968_dcd6_4ed7_a404_abfb378c7ab3 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"El Estado Mexicano\""@es ,
+                                                   "The concept of \"The Mexican State\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "El Estado Mexicano (Concepto)"@es ,
+                                                 "The Mexican State (Concept)"@en ;
+                                      rdfs:seeAlso :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+                                      skos:prefLabel "El Estado Mexicano"@es ,
+                                                     "The Mexican State"@en .
+
+
+###  http://datos.gob.mx/cba263e2_24ca_4849_ac58_6ac534083033
+:cba263e2_24ca_4849_ac58_6ac534083033 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Sexo\""@es ,
+                                                   "The concept of a \"Sex\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Sex (Concept)"@en ,
+                                                 "Un Sexo (Concepto)"@es ;
+                                      rdfs:seeAlso :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
+                                      skos:prefLabel "A Sex"@en ,
+                                                     "Un Sexo"@es .
 
 
 ###  http://datos.gob.mx/d3b514db_c9e0_40f1_b38c_92cdf0e1aa41
 :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Persona\""@es ,
+                                                   "The concept of a \"Person\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Person (Concept)"@en ,
-                                                 "Persona (Concepto)"@es ;
+                                      rdfs:label "A Person (Concept)"@en ,
+                                                 "Una Persona (Concepto)"@es ;
                                       rdfs:seeAlso :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
-                                      skos:prefLabel "Person"@en ,
-                                                     "Persona"@es .
+                                      skos:prefLabel "A Person"@en ,
+                                                     "Una Persona"@es .
+
+
+###  http://datos.gob.mx/d4090495_7f84_422e_ac20_305b0d94a91a
+:d4090495_7f84_422e_ac20_305b0d94a91a rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Cosa Mexicana\""@es ,
+                                                   "The concept of a \"Mexican Thing\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Mexican Thing (Concept)"@en ,
+                                                 "Una Cosa Mexicana (Concepto)"@es ;
+                                      rdfs:seeAlso :f279e690_fe1f_45c8_8201_fc46f32114e1 ;
+                                      skos:prefLabel "A Mexican Thing"@en ,
+                                                     "Una Cosa Mexicana"@es .
+
+
+###  http://datos.gob.mx/d567ba41_6051_4f26_8d4d_2d8a68068531
+:d567ba41_6051_4f26_8d4d_2d8a68068531 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Nación\""@es ,
+                                                   "The concept of a \"Nation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Nation (Concept)"@en ,
+                                                 "Una Nación (Concepto)"@es ;
+                                      rdfs:seeAlso :aa1d7bc1_be09_4540_87b9_cf680ecb2158 ;
+                                      skos:prefLabel "A Nation"@en ,
+                                                     "Una Nación"@es .
 
 
 ###  http://datos.gob.mx/e06a1482_4394_423b_a2ba_a5f5942fb284
 :e06a1482_4394_423b_a2ba_a5f5942fb284 rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Mujer\""@es ,
+                                                   "The concept of a \"Woman\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Mujer (Concepto)"@es ,
-                                                 "Woman (Concept)"@en ;
-                                      skos:prefLabel "Mujer"@es ,
-                                                     "Woman"@en .
+                                      rdfs:label "A Woman (Concept)"@en ,
+                                                 "Una Mujer (Concepto)"@es ;
+                                      rdfs:seeAlso :d3c3da1e_369b_4103_b5bf_58daba879d87 ;
+                                      skos:prefLabel "A Woman"@en ,
+                                                     "Una Mujer"@es .
+
+
+###  http://datos.gob.mx/e46eeee1_4f8c_44ec_98a4_8eb491eec2ba
+:e46eeee1_4f8c_44ec_98a4_8eb491eec2ba rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"Los Estados Unidos Mexicanos\""@es ,
+                                                   "The concept of \"The Mexican United States\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Los Estados Unidos Mexicanos (Concepto)"@es ,
+                                                 "The United Mexican States (Concept)"@en ;
+                                      rdfs:seeAlso :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
+                                      skos:prefLabel "Los Estados Unidos Mexicanos"@es ,
+                                                     "The United Mexican States"@en .
+
+
+###  http://datos.gob.mx/e62a535e_a6af_471c_9ef6_55d716ebd4fb
+:e62a535e_a6af_471c_9ef6_55d716ebd4fb rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"El Pueblo Mexicano\""@es ,
+                                                   "The concept of \"The Mexican People\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "El Pueblo Mexicano (Concepto)"@es ,
+                                                 "The Mexican People (Concept)"@en ;
+                                      rdfs:seeAlso :b5948746_9a94_4f3d_a8bc_ef9a0463a20e ;
+                                      skos:prefLabel "El Pueblo Mexicano"@es ,
+                                                     "The Mexican People"@en .
+
+
+###  http://datos.gob.mx/e9849ae8_891a_4131_9ccb_31a6991c1e4c
+:e9849ae8_891a_4131_9ccb_31a6991c1e4c rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Territorio\""@es ,
+                                                   "The concept of a \"Territory\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A Territory (Concept)"@en ,
+                                                 "Un Territorio (Concepto)"@es ;
+                                      rdfs:seeAlso :fef4ab2d_1443_41ea_8c88_bc4d870e0caa ;
+                                      skos:prefLabel "A Territory"@en ,
+                                                     "Un Territorio"@es .
+
+
+###  http://datos.gob.mx/e98eaf63_8f23_4454_99f5_6b71f2acde01
+:e98eaf63_8f23_4454_99f5_6b71f2acde01 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"La República Mexicana\""@es ,
+                                                   "The concept of \"The Mexican Republic\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "La República Mexicana (Concepto)"@es ,
+                                                 "The Mexican Republic (Concept)"@en ;
+                                      rdfs:seeAlso :d791553e_fc86_4b25_bead_a4dd5982de4f ;
+                                      skos:prefLabel "La República Mexicana"@es ,
+                                                     "The Mexican Republic"@en .
+
+
+###  http://datos.gob.mx/ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0
+:ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Estado\""@es ,
+                                                   "The concept of a \"State\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "A State (Concept)"@en ,
+                                                 "Un Estado (Concepto)"@es ;
+                                      rdfs:seeAlso :dbe933ba_935f_4e29_81da_216dd71590ba ;
+                                      skos:prefLabel "A State"@en ,
+                                                     "Un Estado"@es .
+
+
+###  http://datos.gob.mx/f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9
+:f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de \"La Cultura Mexicana\""@es ,
+                                                   "The concept of \"The Mexican Culture\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "La Cultura Mexicana (Concepto)"@es ,
+                                                 "The Mexican Culture (Concept)"@en ;
+                                      rdfs:seeAlso :c9734edd_846f_44e1_9e03_cb90f17e852d ;
+                                      skos:prefLabel "La Cultura Mexicana"@es ,
+                                                     "The Mexican Culture"@en .
 
 
 ###  http://datos.gob.mx/f7bf33a7_d6f0_4aed_b925_330dde702afb
 :f7bf33a7_d6f0_4aed_b925_330dde702afb rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Hombre\""@es ,
+                                                   "The concept of a \"Man\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Hombre (Concepto)"@es ,
-                                                 "Man (Concept)"@en ;
-                                      skos:prefLabel "Hombre"@es ,
-                                                     "Man"@en .
+                                      rdfs:label "A Man (Concept)"@en ,
+                                                 "Un Hombre (Concepto)"@es ;
+                                      rdfs:seeAlso :e1b671b2_280a_4841_a569_76eb85d9473f ;
+                                      skos:prefLabel "A Man"@en ,
+                                                     "Un Hombre"@es .
 
 
 ###  http://datos.gob.mx/f7d86ba7_f612_4cef_916c_f6d80d230b64
 :f7d86ba7_f612_4cef_916c_f6d80d230b64 rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de un \"Macho\""@es ,
+                                                   "The concept of a \"Male\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Macho (Concepto)"@es ,
-                                                 "Male (Concept)"@en ;
-                                      skos:prefLabel "Macho"@es ,
-                                                     "Male"@en .
+                                      rdfs:label "A Male (Concept)"@en ,
+                                                 "Un Macho (Concepto)"@es ;
+                                      rdfs:seeAlso :a418160a_c783_42e9_97d6_baffb88467a0 ;
+                                      skos:prefLabel "A Male"@en ,
+                                                     "Un Macho"@es .
 
 
 ###  http://datos.gob.mx/ff11d93b_5c11_45ac_8d7a_ce37714788be
 :ff11d93b_5c11_45ac_8d7a_ce37714788be rdf:type owl:NamedIndividual ,
                                                skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "El concepto de una \"Hembra\""@es ,
+                                                   "The concept of a \"Female\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                                      rdfs:label "Female (Concept)"@en ,
-                                                 "Hembra (Concepto)"@es ;
-                                      skos:prefLabel "Female"@en ,
-                                                     "Hembra"@es .
+                                      rdfs:label "A Female (Concept)"@en ,
+                                                 "Una Hembra (Concepto)"@es ;
+                                      rdfs:seeAlso :a59b12bb_7630_4d82_95bb_34de9b8e922e ;
+                                      skos:prefLabel "A Female"@en ,
+                                                     "Una Hembra"@es .
 
 
 ###  http://datos.gob.mx/voc#
 <http://datos.gob.mx/voc#> rdf:type owl:NamedIndividual ,
                                     skos:ConceptScheme ;
                            rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
-                           skos:prefLabel "Mexico Controlled Vocabulary"@en ,
-                                          "Vocabulario Controlado de México"@es .
+                           skos:prefLabel "El Vocabulario Controlado de México"@es ,
+                                          "The Mexico Controlled Vocabulary"@en .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

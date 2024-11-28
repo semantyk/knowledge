@@ -4,14 +4,23 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://datos.gob.mx/> .
 
 <http://datos.gob.mx/onto/> rdf:type owl:Ontology ;
                              owl:versionIRI <http://datos.gob.mx/onto/0.0.0> ;
                              owl:imports <http://datos.gob.mx/0.0.0> ;
                              rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                             rdfs:label "Grafo de Conocimiento de México"@es ,
-                                        "Mexico Knowledge Graph"@es .
+                             rdfs:label "El Grafo de Conocimiento de México"@es ,
+                                        "The Mexico Knowledge Graph"@es .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -19,8 +28,41 @@
 
 ###  http://datos.gob.mx/a278ea71_1682_4765_ad90_979b1c68ce58
 :a278ea71_1682_4765_ad90_979b1c68ce58 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :e6c26c87_1587_4af0_a72a_bcbb8b90973c ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "has gender"@en ,
                                                  "tiene género"@es .
+
+
+###  http://datos.gob.mx/a3497142_8f28_4f79_8c43_bc0cb4fcbc17
+:a3497142_8f28_4f79_8c43_bc0cb4fcbc17 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :bb5ce225_5e0d_4bea_bd71_68b2dfb9969f ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "has part"@en ,
+                                                 "tiene parte"@es .
+
+
+###  http://datos.gob.mx/a4194abe_6ce5_46bd_b32e_1a9b6f3543a4
+:a4194abe_6ce5_46bd_b32e_1a9b6f3543a4 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "es sexo de"@es ,
+                                                 "is sex of"@en .
+
+
+###  http://datos.gob.mx/b64ea212_cb7d_473d_9f38_5d1a8911b8ca
+:b64ea212_cb7d_473d_9f38_5d1a8911b8ca rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf :ec815c33_1ca3_4421_b71b_091a628b8b63 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "has quality"@en ,
+                                                 "tiene cualidad"@es .
+
+
+###  http://datos.gob.mx/bb5ce225_5e0d_4bea_bd71_68b2dfb9969f
+:bb5ce225_5e0d_4bea_bd71_68b2dfb9969f rdf:type owl:ObjectProperty ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "es parte de"@es ,
+                                                 "is part of"@en .
 
 
 ###  http://datos.gob.mx/ddf2406c_67d2_4619_8e7a_cc9bd5460f69
@@ -28,6 +70,36 @@
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "has sex"@en ,
                                                  "tiene sexo"@es .
+
+
+###  http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
+:e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 rdf:type owl:ObjectProperty ,
+                                               owl:SymmetricProperty ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "has relation to"@en ,
+                                                 "tiene relación con"@es .
+
+
+###  http://datos.gob.mx/e6c26c87_1587_4af0_a72a_bcbb8b90973c
+:e6c26c87_1587_4af0_a72a_bcbb8b90973c rdf:type owl:ObjectProperty ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "es género de"@es ,
+                                                 "is gender of"@en .
+
+
+###  http://datos.gob.mx/ec815c33_1ca3_4421_b71b_091a628b8b63
+:ec815c33_1ca3_4421_b71b_091a628b8b63 rdf:type owl:ObjectProperty ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "es cualidad de"@es ,
+                                                 "is quality of"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+rdf:value rdf:type owl:DatatypeProperty .
 
 
 #################################################################
@@ -40,45 +112,123 @@
                                                             owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
                                                             owl:hasValue :cae12296_c19d_4002_872f_4cce6818ad96
                                                           ] ;
-                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Macho\""@es ,
+                                                   "The class of any \"Male\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Macho (Clase)"@es ,
                                                  "Male (Class)"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Macho"@es ,
-                                                                                      "Male"@en .
+                                      rdfs:seeAlso :f7d86ba7_f612_4cef_916c_f6d80d230b64 ;
+                                      skos:prefLabel "Macho"@es ,
+                                                     "Male"@en .
+
+
+###  http://datos.gob.mx/a59b12bb_7630_4d82_95bb_34de9b8e922e
+:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
+                                                            owl:hasValue :e488f280_77a9_4eb8_b753_8e3cd0fbf34e
+                                                          ] ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Hembra\""@es ,
+                                                   "The class of any \"Female\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Female (Class)"@en ,
+                                                 "Hembra (Clase)"@es ;
+                                      rdfs:seeAlso :ff11d93b_5c11_45ac_8d7a_ce37714788be ;
+                                      skos:prefLabel "Female"@en ,
+                                                     "Hembra"@es .
+
+
+###  http://datos.gob.mx/aa1d7bc1_be09_4540_87b9_cf680ecb2158
+:aa1d7bc1_be09_4540_87b9_cf680ecb2158 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Nación\""@es ,
+                                                   "The class of any \"Nation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Nación (Clase)"@es ,
+                                                 "Nation (Class)"@en ;
+                                      rdfs:seeAlso :d567ba41_6051_4f26_8d4d_2d8a68068531 ;
+                                      skos:prefLabel "Nación"@es ,
+                                                     "Nation"@en .
 
 
 ###  http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
 :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type owl:Class ;
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Persona\""@es ,
+                                                   "The class of any \"Person\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Person (Class)"@en ,
                                                  "Persona (Clase)"@es ;
                                       rdfs:seeAlso :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Person"@en ,
-                                                                                      "Persona"@es .
+                                      skos:prefLabel "Person"@en ,
+                                                     "Persona"@es .
+
+
+###  http://datos.gob.mx/ba571c3e_119f_4148_a4fc_c5ad83359590
+:ba571c3e_119f_4148_a4fc_c5ad83359590 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Cultura\""@es ,
+                                                   "The class of any \"Culture\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Cultura (Clase)"@es ,
+                                                 "Culture (Class)"@en ;
+                                      rdfs:seeAlso :b9e92c2a_6e79_4015_9256_e33deaeec8ad ;
+                                      skos:prefLabel "Cultura"@es ,
+                                                     "Culture"@en .
+
+
+###  http://datos.gob.mx/c064c390_4edb_4f89_a671_301fb774f9ef
+:c064c390_4edb_4f89_a671_301fb774f9ef rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Estado-Nación\""@es ,
+                                                   "The class of any \"Nation-State\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Estado-Nación (Clase)"@es ,
+                                                 "Nation-State (Class)"@en ;
+                                      rdfs:seeAlso :a8fe9c49_4473_448c_b666_c6f99c609cdd ;
+                                      skos:prefLabel "Estado-Nación"@es ,
+                                                     "Nation-State"@en .
 
 
 ###  http://datos.gob.mx/c10984dc_f290_4880_a60b_d6f8b6b22105
 :c10984dc_f290_4880_a60b_d6f8b6b22105 rdf:type owl:Class ;
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Sexo\""@es ,
+                                                   "The class of any \"Sex\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Sex (Class)"@en ,
                                                  "Sexo (Clase)"@es ;
-                                      rdfs:seeAlso :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Sex"@en ,
-                                                                                      "Sexo"@es .
+                                      rdfs:seeAlso :cba263e2_24ca_4849_ac58_6ac534083033 ;
+                                      skos:prefLabel "Sex"@en ,
+                                                     "Sexo"@es .
 
 
 ###  http://datos.gob.mx/c2871766_bffb_4a9b_9a67_4a84f149c11c
 :c2871766_bffb_4a9b_9a67_4a84f149c11c rdf:type owl:Class ;
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Género\""@es ,
+                                                   "The class of any \"Gender\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Gender (Class)"@en ,
                                                  "Género (Clase)"@es ;
                                       rdfs:seeAlso :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Gender"@en ,
-                                                                                      "Género"@es .
+                                      skos:prefLabel "Gender"@en ,
+                                                     "Género"@es .
+
+
+###  http://datos.gob.mx/c6032a59_87b0_4b19_b2b2_d881814e1de4
+:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Pueblo\""@es ,
+                                                   "The class of any \"People\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "People (Class)"@en ,
+                                                 "Pueblo (Clase)"@es ;
+                                      rdfs:seeAlso :a9b56b3f_fe56_45d2_922c_c21c6e9c276d ;
+                                      skos:prefLabel "People"@en ,
+                                                     "Pueblo"@es .
 
 
 ###  http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
@@ -87,12 +237,54 @@
                                                             owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 ;
                                                             owl:hasValue :f7a4f75e_0eac_4c0e_bb39_24351ce93c51
                                                           ] ;
-                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Mujer\""@es ,
+                                                   "The class of any \"Woman\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Mujer (Clase)"@es ,
                                                  "Woman (Class)"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Mujer"@es ,
-                                                                                      "Woman"@en .
+                                      rdfs:seeAlso :e06a1482_4394_423b_a2ba_a5f5942fb284 ;
+                                      skos:prefLabel "Mujer"@es ,
+                                                     "Woman"@en .
+
+
+###  http://datos.gob.mx/d52561c8_00a1_4af3_9d98_71b6e9e191a3
+:d52561c8_00a1_4af3_9d98_71b6e9e191a3 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Federación\""@es ,
+                                                   "The class of any \"Federation\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Federación (Clase)"@es ,
+                                                 "Federation (Class)"@en ;
+                                      rdfs:seeAlso :b7c0ca8d_4519_43bc_82c0_5a331cb799e5 ;
+                                      skos:prefLabel "Federación"@es ,
+                                                     "Federation"@en .
+
+
+###  http://datos.gob.mx/dbe933ba_935f_4e29_81da_216dd71590ba
+:dbe933ba_935f_4e29_81da_216dd71590ba rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Estado\""@es ,
+                                                   "The class of any \"State\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Estado (Clase)"@es ,
+                                                 "State (Class)"@en ;
+                                      rdfs:seeAlso :ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0 ;
+                                      skos:prefLabel "Estado"@es ,
+                                                     "State"@en .
+
+
+###  http://datos.gob.mx/dda89cac_96bb_4347_a189_796811cc542a
+:dda89cac_96bb_4347_a189_796811cc542a rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Cualidad\""@es ,
+                                                   "The class of any \"Quality\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Cualidad (Clase)"@es ,
+                                                 "Quality (Class)"@en ;
+                                      rdfs:seeAlso :a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 ;
+                                      skos:prefLabel "Cualidad"@es ,
+                                                     "Quality"@en .
 
 
 ###  http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
@@ -101,35 +293,100 @@
                                                             owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 ;
                                                             owl:hasValue :a0947516_0388_4c3a_81a1_a3888c6d5e24
                                                           ] ;
-                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Hombre\""@es ,
+                                                   "The class of any \"Man\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Hombre (Clase)"@es ,
                                                  "Man (Class)"@en ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Hombre"@es ,
-                                                                                      "Man"@en .
+                                      rdfs:seeAlso :f7bf33a7_d6f0_4aed_b925_330dde702afb ;
+                                      skos:prefLabel "Hombre"@es ,
+                                                     "Man"@en .
 
 
 ###  http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
 :ee401492_9c90_4700_96aa_21c48538b1e0 rdf:type owl:Class ;
                                       rdfs:subClassOf owl:Thing ;
+                                      rdfs:comment "La clase de cualquier \"Cosa\""@es ,
+                                                   "The class of any \"Thing\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      rdfs:label "Cosa"@es ,
-                                                 "Thing"@en ;
-                                      rdfs:seeAlso :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a .
+                                      rdfs:label "Cosa (Clase)"@es ,
+                                                 "Thing (Class)"@en ;
+                                      rdfs:seeAlso :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a ;
+                                      skos:prefLabel "Cosa"@es ,
+                                                     "Thing"@en .
 
 
-###  http://datos.gob.mx/onto/a59b12bb_7630_4d82_95bb_34de9b8e922e
-:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type owl:Class ;
+###  http://datos.gob.mx/f279e690_fe1f_45c8_8201_fc46f32114e1
+:f279e690_fe1f_45c8_8201_fc46f32114e1 rdf:type owl:Class ;
                                       owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                            owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 ;
-                                                            owl:hasValue :e488f280_77a9_4eb8_b753_8e3cd0fbf34e
+                                                            owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca ;
+                                                            owl:hasValue :ff47663c_36a2_4d26_9948_c47e6f473f8b
                                                           ] ;
-                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Cosa Mexicana\""@es ,
+                                                   "The class of any \"Mexican Thing\""@en ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      rdfs:label "Female (Class)"@en ,
-                                                 "Hembra (Clase)"@es ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Female"@en ,
-                                                                                      "Hembra"@es .
+                                      rdfs:label "Cosa Mexicana (Clase)"@es ,
+                                                 "Mexican Thing (Class)"@en ;
+                                      rdfs:seeAlso :d4090495_7f84_422e_ac20_305b0d94a91a ;
+                                      skos:prefLabel "Cosa Mexicana"@es ,
+                                                     "Mexican Thing"@en .
+
+
+###  http://datos.gob.mx/f89f8450_45f5_4bdc_ba8b_e75f3937bda3
+:f89f8450_45f5_4bdc_ba8b_e75f3937bda3 rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Class ;
+                                      rdfs:comment "La clase de cualquier \"Clase\""@es ,
+                                                   "The class of any \"Class\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Clase (Clase)"@es ,
+                                                 "Class (Class)"@en ;
+                                      skos:prefLabel "Clase"@es ,
+                                                     "Class"@en .
+
+
+###  http://datos.gob.mx/f8c7746c_a1cb_4f99_a8af_0c8a338e0230
+:f8c7746c_a1cb_4f99_a8af_0c8a338e0230 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"República\""@es ,
+                                                   "The class of any \"Republic\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Republic (Class)"@en ,
+                                                 "República (Clase)"@es ;
+                                      rdfs:seeAlso :b46e3fe1_96d1_41f6_957f_f7823d50a8c0 ;
+                                      skos:prefLabel "Republic"@en ,
+                                                     "República"@es .
+
+
+###  http://datos.gob.mx/fc851746_03d3_4420_8d59_f9f7d6e325e4
+:fc851746_03d3_4420_8d59_f9f7d6e325e4 rdf:type owl:Class ;
+                                      rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 ,
+                                                      :f279e690_fe1f_45c8_8201_fc46f32114e1 ;
+                                      rdfs:comment "La clase de cualquier \"Persona Mexicana\""@es ,
+                                                   "The class of any \"Mexican Person\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Mexican Person (Class)"@en ,
+                                                 "Persona Mexicana (Clase)"@es ;
+                                      rdfs:seeAlso :ba881fe7_6251_44c1_af4f_aa4d9826e864 ;
+                                      skos:prefLabel "Mexican Person"@en ,
+                                                     "Persona Mexicana"@es .
+
+
+###  http://datos.gob.mx/fef4ab2d_1443_41ea_8c88_bc4d870e0caa
+:fef4ab2d_1443_41ea_8c88_bc4d870e0caa rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "La clase de cualquier \"Territorio\""@es ,
+                                                   "The class of any \"Territory\""@en ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Territorio (Clase)"@es ,
+                                                 "Territory (Class)"@en ;
+                                      skos:prefLabel "Territorio"@es ,
+                                                     "Territory"@en .
+
+
+###  http://www.w3.org/2002/07/owl#Class
+owl:Class rdf:type owl:Class .
 
 
 #################################################################
@@ -139,33 +396,168 @@
 ###  http://datos.gob.mx/a0947516_0388_4c3a_81a1_a3888c6d5e24
 :a0947516_0388_4c3a_81a1_a3888c6d5e24 rdf:type owl:NamedIndividual ,
                                                :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
+                                      rdf:value "hombre"@es ,
+                                                "man"@en ;
+                                      rdfs:comment "An instance of a \"Gender\" with the value \"man\""@en ,
+                                                   "Una instancia de un \"Género\" con el valor \"hombre\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "hombre"@es ,
-                                                                                      "man"@en .
+                                      rdfs:label "hombre"@es ,
+                                                 "man"@en ;
+                                      rdfs:seeAlso :f7bf33a7_d6f0_4aed_b925_330dde702afb .
+
+
+###  http://datos.gob.mx/a736e2f7_f85f_4b8f_adbf_d8b273333b76
+:a736e2f7_f85f_4b8f_adbf_d8b273333b76 rdf:type owl:NamedIndividual ,
+                                               :aa1d7bc1_be09_4540_87b9_cf680ecb2158 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      rdfs:comment "An instance of a \"Nation\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de una \"Nación\" con la cualidad de ser \"Mexicana\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "La Nación Mexicana"@es ,
+                                                 "The Mexican Nation"@en ;
+                                      rdfs:seeAlso :c4945d83_7935_4f0f_aac3_76310064f96e .
+
+
+###  http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
+:a96355d4_e44d_4abf_b730_e2d69a342a12 rdf:type owl:NamedIndividual ,
+                                               :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+                                      rdfs:comment "An instance of a \"Federación\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de una \"Federación\" con la cualidad de ser \"Mexicana\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "La Federación Mexicana"@es ,
+                                                 "The Mexican Federation"@en ;
+                                      rdfs:seeAlso :b141f627_98cd_40ba_9354_cd34711b1540 .
+
+
+###  http://datos.gob.mx/adfda952_c0f7_4c7b_b973_cb1037fe93a5
+:adfda952_c0f7_4c7b_b973_cb1037fe93a5 rdf:type owl:NamedIndividual ,
+                                               :c064c390_4edb_4f89_a671_301fb774f9ef ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      rdfs:comment "An instance of a \"Nation-State\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de un \"Estado-Nación\" con la cualidad de ser \"Mexicano\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Los Estados Unidos Mexicanos"@es ,
+                                                 "The United Mexican States"@en ;
+                                      rdfs:seeAlso :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba .
+
+
+###  http://datos.gob.mx/b5948746_9a94_4f3d_a8bc_ef9a0463a20e
+:b5948746_9a94_4f3d_a8bc_ef9a0463a20e rdf:type owl:NamedIndividual ,
+                                               :c6032a59_87b0_4b19_b2b2_d881814e1de4 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76 ;
+                                      rdfs:comment "An instance of a \"People\" that has the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de un \"Pueblo\" con la cualidad de ser \"Mexicano\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Pueblo Mexicano"@es ,
+                                                 "The Mexican People"@en ;
+                                      rdfs:seeAlso :e62a535e_a6af_471c_9ef6_55d716ebd4fb .
+
+
+###  http://datos.gob.mx/c9734edd_846f_44e1_9e03_cb90f17e852d
+:c9734edd_846f_44e1_9e03_cb90f17e852d rdf:type owl:NamedIndividual ,
+                                               :ba571c3e_119f_4148_a4fc_c5ad83359590 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76 ;
+                                      rdfs:comment "An instance of a \"Culture\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de una \"Cultura\" con la cualidad de ser \"Mexicana\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "La Cultura Mexicana"@es ,
+                                                 "The Mexican Culture"@en ;
+                                      rdfs:seeAlso :f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9 .
 
 
 ###  http://datos.gob.mx/cae12296_c19d_4002_872f_4cce6818ad96
 :cae12296_c19d_4002_872f_4cce6818ad96 rdf:type owl:NamedIndividual ,
                                                :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
+                                      rdf:value "macho"@es ,
+                                                "male"@en ;
+                                      rdfs:comment "An instance of a \"Sex\" with the value \"male\""@en ,
+                                                   "Una instancia de un \"Sexo\" con el valor \"macho\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "macho"@es ,
-                                                                                      "male"@en .
+                                      rdfs:label "macho"@es ,
+                                                 "male"@en ;
+                                      rdfs:seeAlso :f7d86ba7_f612_4cef_916c_f6d80d230b64 .
+
+
+###  http://datos.gob.mx/d791553e_fc86_4b25_bead_a4dd5982de4f
+:d791553e_fc86_4b25_bead_a4dd5982de4f rdf:type owl:NamedIndividual ,
+                                               :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :b5948746_9a94_4f3d_a8bc_ef9a0463a20e ;
+                                      rdfs:comment "An instance of a \"Republic\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de una \"República\" con la cualidad de ser \"Mexicana\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "La República Mexicana"@es ,
+                                                 "The Mexican Republic"@en ;
+                                      rdfs:seeAlso :e98eaf63_8f23_4454_99f5_6b71f2acde01 .
+
+
+###  http://datos.gob.mx/e0e72c41_9fd7_4087_b78e_b401a3192873
+:e0e72c41_9fd7_4087_b78e_b401a3192873 rdf:type owl:NamedIndividual ,
+                                               :fef4ab2d_1443_41ea_8c88_bc4d870e0caa ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      rdfs:comment "An instance of a \"Territory\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de un \"Territorio\" con la cualidad de ser \"Mexicano\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Territorio Mexicano"@es ,
+                                                 "The Mexican Territory"@en ;
+                                      rdfs:seeAlso :a24c56f1_8e46_40d6_8008_92c6c7fc1d00 .
 
 
 ###  http://datos.gob.mx/e488f280_77a9_4eb8_b753_8e3cd0fbf34e
 :e488f280_77a9_4eb8_b753_8e3cd0fbf34e rdf:type owl:NamedIndividual ,
                                                :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
+                                      rdf:value "female"@es ,
+                                                "hembra"@es ;
+                                      rdfs:comment "An instance of a \"Sex\" with the value \"female\""@en ,
+                                                   "Una instancia de un \"Sexo\" con el valor \"hembra\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "female"@en ,
-                                                                                      "hembra"@es .
+                                      rdfs:label "female"@en ,
+                                                 "hembra"@es ;
+                                      rdfs:seeAlso :ff11d93b_5c11_45ac_8d7a_ce37714788be .
+
+
+###  http://datos.gob.mx/eb84f160_07b5_4299_828a_12a3ed67b49f
+:eb84f160_07b5_4299_828a_12a3ed67b49f rdf:type owl:NamedIndividual ,
+                                               :dbe933ba_935f_4e29_81da_216dd71590ba ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
+                                      rdfs:comment "An instance of a \"State\" with the quality of being \"Mexican\""@en ,
+                                                   "Una instancia de un \"Estado\" con la cualidad de ser \"Mexicano\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Estado Mexicano"@es ,
+                                                 "The Mexican State"@en ;
+                                      rdfs:seeAlso :c5574968_dcd6_4ed7_a404_abfb378c7ab3 .
 
 
 ###  http://datos.gob.mx/f7a4f75e_0eac_4c0e_bb39_24351ce93c51
 :f7a4f75e_0eac_4c0e_bb39_24351ce93c51 rdf:type owl:NamedIndividual ,
                                                :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
+                                      rdf:value "mujer"@es ,
+                                                "woman"@es ;
+                                      rdfs:comment "An instance of a \"Gender\" with the value \"woman\""@en ,
+                                                   "Una instancia de un \"Género\" con el valor \"mujer\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "mujer"@es ,
-                                                                                      "woman"@en .
+                                      rdfs:label "mujer"@es ,
+                                                 "woman"@en ;
+                                      rdfs:seeAlso :e06a1482_4394_423b_a2ba_a5f5942fb284 .
+
+
+###  http://datos.gob.mx/ff47663c_36a2_4d26_9948_c47e6f473f8b
+:ff47663c_36a2_4d26_9948_c47e6f473f8b rdf:type owl:NamedIndividual ,
+                                               :dda89cac_96bb_4347_a189_796811cc542a ;
+                                      rdf:value "mexican"@en ,
+                                                "mexicana"@es ,
+                                                "mexicano"@es ;
+                                      rdfs:comment "An instance of a \"Quality\" with the value \"mexican\""@en ,
+                                                   "Una instancia de una \"Cualidad\" con el valor \"mexicana\" o \"mexicano\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Lo Mexicano"@es ,
+                                                 "The Mexican"@en ;
+                                      rdfs:seeAlso :a54afb44_8ce8_446b_bde2_339f7f01bcc8 .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
