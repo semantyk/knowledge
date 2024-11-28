@@ -4,11 +4,13 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix mex_voc: <http://datos.gob.mx/voc/> .
 @base <http://datos.gob.mx/> .
 
 <http://datos.gob.mx/voc/> rdf:type owl:Ontology ;
                             owl:versionIRI <http://datos.gob.mx/voc/0.0.0> ;
-                            owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                            owl:imports <http://datos.gob.mx/0.0.0> ;
                             rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
                             rdfs:label "Mexico Controlled Vocabulary"@es ,
                                        "Vocabulario Controlado de México"@es .
