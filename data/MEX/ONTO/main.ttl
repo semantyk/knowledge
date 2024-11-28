@@ -17,6 +17,15 @@
 #    Classes
 #################################################################
 
+###  http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
+:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Persona"@en ,
+                                                 "Persona"@es ;
+                                      rdfs:seeAlso :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 .
+
+
 ###  http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
 :ee401492_9c90_4700_96aa_21c48538b1e0 rdf:type owl:Class ;
                                       rdfs:subClassOf owl:Thing ;
