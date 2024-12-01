@@ -229,7 +229,8 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 
 ###  http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
-:ee401492_9c90_4700_96aa_21c48538b1e0 rdf:type owl:Class .
+:ee401492_9c90_4700_96aa_21c48538b1e0 rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing .
 
 
 ###  http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
@@ -285,8 +286,8 @@ owl:Class rdf:type owl:Class .
                                                :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9 ;
-                                      rdfs:comment "A 'Gender' labeled 'man'. Formally defines the 'Gender' of an instance by conceptually defining it as a 'Man'"@en ,
-                                                   "Un 'Género' etiquetado 'hombre'. Define formalmente el 'Género' de una instancia al definirla conceptualmente como un 'Hombre'"@es ;
+                                      rdfs:comment "A 'Gender' labeled 'man'. Formally defines the 'Gender' of an instance based on the conceptual definition of 'man'"@en ,
+                                                   "Un 'Género' etiquetado 'hombre'. Define formalmente el 'Género' de una instancia a partir de la definición conceptual de \"hombre\"."@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "hombre"@es ,
                                                  "man"@en .
@@ -310,8 +311,8 @@ owl:Class rdf:type owl:Class .
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :c4945d83_7935_4f0f_aac3_76310064f96e ;
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :c4945d83_7935_4f0f_aac3_76310064f96e ;
-                                      rdfs:comment "A 'Nation' labeled 'The Mexican Nation'. It is conceptually defined as 'The Mexican Nation' and has the 'mexican' quality"@en ,
-                                                   "Una 'Nación' etiquetada 'La Nación Mexicana'. Se define conceptualmente como 'La Nación Mexicana' y tiene la cualidad 'mexicana'"@es ;
+                                      rdfs:comment "A 'Nation' labeled 'The Mexican Nation'. It is defined as 'The Mexican Nation' and has the 'mexican' quality"@en ,
+                                                   "Una 'Nación' etiquetada 'La Nación Mexicana'. Se define como 'La Nación Mexicana' y tiene la cualidad 'mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "La Nación Mexicana"@es ,
                                                  "The Mexican Nation"@en .
@@ -324,8 +325,8 @@ owl:Class rdf:type owl:Class .
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :b141f627_98cd_40ba_9354_cd34711b1540 ;
-                                      rdfs:comment "A 'Federación' labeled 'The Mexican Federation'. It is conceptually defined as 'The Mexican Culture' and has the 'mexican' quality"@en ,
-                                                   "Una 'Federación' etiquetada 'La Federación Mexicana'. Se define conceptualmente como 'La Federación Mexicana' y tiene la cualidad 'mexicana'"@es ;
+                                      rdfs:comment "A 'Federación' labeled 'The Mexican Federation'. It is defined as 'The Mexican Culture' and has the 'mexican' quality"@en ,
+                                                   "Una 'Federación' etiquetada 'La Federación Mexicana'. Se define como 'La Federación Mexicana' y tiene la cualidad 'mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "La Federación Mexicana"@es ,
                                                  "The Mexican Federation"@en .
@@ -344,8 +345,8 @@ owl:Class rdf:type owl:Class .
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba ;
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba ;
-                                      rdfs:comment "A 'Nation-State' labeled 'The United Mexican States'. It is conceptually defined as 'The United Mexican States' and has the 'mexican' quality"@en ,
-                                                   "Un 'Estado-Nación' etiquetado 'Los Estados Unidos Mexicanos'. Se define conceptualmente como 'Los Estados Unidos Mexicanos' y tiene la cualidad 'mexicano'"@es ;
+                                      rdfs:comment "A 'Nation-State' labeled 'The United Mexican States'. It is defined as 'The United Mexican States' and has the 'mexican' quality"@en ,
+                                                   "Un 'Estado-Nación' etiquetado 'Los Estados Unidos Mexicanos'. Se define como 'Los Estados Unidos Mexicanos' y tiene la cualidad 'mexicano'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Los Estados Unidos Mexicanos"@es ,
                                                  "The United Mexican States"@en .
@@ -357,8 +358,9 @@ owl:Class rdf:type owl:Class .
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :e62a535e_a6af_471c_9ef6_55d716ebd4fb ;
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76 ;
-                                      rdfs:comment "A 'People' labeled 'The Mexican People'. It is conceptually defined as 'The Mexican People' and has the 'mexican' quality"@en ,
-                                                   "Un 'Pueblo' etiquetado 'El Pueblo Mexicano'. Se define conceptualmente como 'El Pueblo Mexicano' y tiene la cualidad 'mexicano'"@es ;
+                                      :f0b0c790_e005_4539_80b5_263dc433ebc0 :e62a535e_a6af_471c_9ef6_55d716ebd4fb ;
+                                      rdfs:comment "A 'People' labeled 'The Mexican People'. It is defined as 'The Mexican People' and has the 'mexican' quality"@en ,
+                                                   "Un 'Pueblo' etiquetado 'El Pueblo Mexicano'. Se define como 'El Pueblo Mexicano' y tiene la cualidad 'mexicano'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "El Pueblo Mexicano"@es ,
                                                  "The Mexican People"@en .
@@ -411,8 +413,8 @@ owl:Class rdf:type owl:Class .
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9 ;
-                                      rdfs:comment "A 'Culture' labeled 'The Mexican Culture'. It is conceptually defined as 'The Mexican Culture' and has the 'mexican' quality"@en ,
-                                                   "Una 'Cultura' etiquetada 'La Cultura Mexicana'. Se define conceptualmente como 'La Cultura Mexicana' y tiene la cualidad 'mexicana'"@es ;
+                                      rdfs:comment "A 'Culture' labeled 'The Mexican Culture'. It is defined as 'The Mexican Culture' and has the 'mexican' quality"@en ,
+                                                   "Una 'Cultura' etiquetada 'La Cultura Mexicana'. Se define como 'La Cultura Mexicana' y tiene la cualidad 'mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "La Cultura Mexicana"@es ,
                                                  "The Mexican Culture"@en .
@@ -423,8 +425,8 @@ owl:Class rdf:type owl:Class .
                                                :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :fa57b4a9_7c59_4c0f_a0a1_b4d44538c611 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :fa57b4a9_7c59_4c0f_a0a1_b4d44538c611 ;
-                                      rdfs:comment "A 'Sex' labeled 'male'. Formally defines the 'Sex' of an instance by conceptually defining it as a 'male'"@en ,
-                                                   "Un 'Sexo' etiquetado 'macho'. Define formalmente el 'Sexo' de una instancia al definirla conceptualmente como un 'macho'"@es ;
+                                      rdfs:comment "A 'Sex' labeled 'male'. Formally defines the 'Sex' of an instance based on the conceptual definition of 'male'"@en ,
+                                                   "Un 'Sexo' etiquetado 'macho'. Define formalmente el 'Sexo' de una instancia a partir de la definición conceptual de \"macho\"."@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "macho"@es ,
                                                  "male"@en .
@@ -450,8 +452,8 @@ owl:Class rdf:type owl:Class .
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :b5948746_9a94_4f3d_a8bc_ef9a0463a20e ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :e98eaf63_8f23_4454_99f5_6b71f2acde01 ;
-                                      rdfs:comment "A 'Republic' labeled 'The Mexican Republic'. It is conceptually defined as 'The Mexican Republic' and has the 'mexican' quality"@en ,
-                                                   "Una 'República' etiquetada 'La República Mexicana'. Se define conceptualmente como 'La República Mexicana' y tiene la cualidad 'mexicana'"@es ;
+                                      rdfs:comment "A 'Republic' labeled 'The Mexican Republic'. It is defined as 'The Mexican Republic' and has the 'mexican' quality"@en ,
+                                                   "Una 'República' etiquetada 'La República Mexicana'. Se define como 'La República Mexicana' y tiene la cualidad 'mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "La República Mexicana"@es ,
                                                  "The Mexican Republic"@en .
@@ -477,8 +479,8 @@ owl:Class rdf:type owl:Class .
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :a24c56f1_8e46_40d6_8008_92c6c7fc1d00 ;
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :a24c56f1_8e46_40d6_8008_92c6c7fc1d00 ;
-                                      rdfs:comment "A 'Territory' labeled 'The Mexican Territory'. It is conceptually defined as 'The Mexican Territory' and has the 'mexican' quality"@en ,
-                                                   "Un 'Territorio' etiquetado 'El Territorio Mexicano'. Se define conceptualmente como 'El Territorio Mexicano' y tiene la cualidad 'mexicano'"@es ;
+                                      rdfs:comment "A 'Territory' labeled 'The Mexican Territory'. It is defined as 'The Mexican Territory' and has the 'mexican' quality"@en ,
+                                                   "Un 'Territorio' etiquetado 'El Territorio Mexicano'. Se define como 'El Territorio Mexicano' y tiene la cualidad 'mexicano'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "El Territorio Mexicano"@es ,
                                                  "The Mexican Territory"@en .
@@ -495,8 +497,8 @@ owl:Class rdf:type owl:Class .
                                                :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :ca5379ce_307a_4cee_8af8_541a26eb475d ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :ca5379ce_307a_4cee_8af8_541a26eb475d ;
-                                      rdfs:comment "A 'Sex' labeled 'female'. Formally defines the 'Sex' of an instance by conceptually defining it as a 'Female'"@en ,
-                                                   "Un 'Sexo' etiquetado 'hembra'. Define formalmente el 'Sexo' de una instancia al definirla conceptualmente como una 'Hembra'"@es ;
+                                      rdfs:comment "A 'Sex' labeled 'female'. Formally defines the 'Sex' of an instance based on the conceptual definition of 'female'"@en ,
+                                                   "Un 'Sexo' etiquetado 'hembra'. Define formalmente el 'Sexo' de una instancia a partir de la definición conceptual de \"hembra\"."@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "female"@en ,
                                                  "hembra"@es .
@@ -509,8 +511,8 @@ owl:Class rdf:type owl:Class .
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
                                       :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :c5574968_dcd6_4ed7_a404_abfb378c7ab3 ;
-                                      rdfs:comment "A 'State' labeled 'The Mexican State'. It is conceptually defined as 'The Mexican State' and has the 'mexican' quality"@en ,
-                                                   "Un 'Estado' etiquetado 'El Estado Mexicano'. Se define conceptualmente como 'El Estado Mexicano' y tiene la cualidad 'mexicano'"@es ;
+                                      rdfs:comment "A 'State' labeled 'The Mexican State'. It is defined as 'The Mexican State' and has the 'mexican' quality"@en ,
+                                                   "Un 'Estado' etiquetado 'El Estado Mexicano'. Se define como 'El Estado Mexicano' y tiene la cualidad 'mexicano'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "El Estado Mexicano"@es ,
                                                  "The Mexican State"@en .
@@ -560,8 +562,8 @@ owl:Class rdf:type owl:Class .
                                                :c2871766_bffb_4a9b_9a67_4a84f149c11c ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :b780c9a0_57c4_4985_8c6f_83c9140803f5 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :b780c9a0_57c4_4985_8c6f_83c9140803f5 ;
-                                      rdfs:comment "A 'Gender' labeled 'woman'. Formally defines the 'Gender' of an instance by conceptually defining it as a 'Woman'"@en ,
-                                                   "Un 'Género' etiquetado 'mujer'. Define formalmente el 'Género' de una instancia al definirla conceptualmente como una 'Mujer'"@es ;
+                                      rdfs:comment "A 'Gender' labeled 'woman'. Formally defines the 'Gender' of an instance based on the conceptual definition of 'woman'"@en ,
+                                                   "Un 'Género' etiquetado 'mujer'. Define formalmente el 'Género' de una instancia a partir de la definición conceptual de \"mujer\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "mujer"@es ,
                                                  "woman"@en .
@@ -593,8 +595,8 @@ owl:Class rdf:type owl:Class .
                                                :dda89cac_96bb_4347_a189_796811cc542a ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :a54afb44_8ce8_446b_bde2_339f7f01bcc8 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :a54afb44_8ce8_446b_bde2_339f7f01bcc8 ;
-                                      rdfs:comment "A 'Quality' labeled 'mexican'. Formally defines the 'Quality' of an instance by conceptually defining it as 'mexican'"@en ,
-                                                   "Una 'Cualidad' etiquetada 'mexicana' o 'mexicano'. Define formalmente la 'Cualidad' de una instancia al definirla conceptualmente como 'mexicana' o 'mexicano'"@es ;
+                                      rdfs:comment "A 'Quality' labeled 'mexican'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'mexican'"@en ,
+                                                   "Una 'Cualidad' etiquetada 'mexicana' o 'mexicano'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de \"mexicana\" o \"mexicano\""@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "mexican"@en ,
                                                  "mexicana"@es ,
@@ -605,8 +607,8 @@ owl:Class rdf:type owl:Class .
 #    Annotations
 #################################################################
 
-:a418160a_c783_42e9_97d6_baffb88467a0 rdfs:comment "A 'Class' labeled 'Male' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Male' and has the 'male' sex"@en ,
-                                                   "Una 'Clase' etiquetada 'Macho' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Macho' y tiene el sexo 'macho'"@es ;
+:a418160a_c783_42e9_97d6_baffb88467a0 rdfs:comment "A 'Class' labeled 'Male' subclass of 'Thing'. Each of its instances is defined as a 'Male' and has the 'male' sex"@en ,
+                                                   "Una 'Clase' etiquetada 'Macho' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Macho' y tiene el sexo 'macho'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Macho (Clase)"@es ,
                                                  "Male (Class)"@en ;
@@ -614,8 +616,8 @@ owl:Class rdf:type owl:Class .
                                                      "Male"@en .
 
 
-:a59b12bb_7630_4d82_95bb_34de9b8e922e rdfs:comment "A 'Class' labeled 'Female' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Female' and has the 'female' sex"@en ,
-                                                   "Una 'Clase' etiquetada 'Hembra' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Hembra' y tiene el sexo 'hembra'"@es ;
+:a59b12bb_7630_4d82_95bb_34de9b8e922e rdfs:comment "A 'Class' labeled 'Female' subclass of 'Thing'. Each of its instances is defined as a 'Female' and has the 'female' sex"@en ,
+                                                   "Una 'Clase' etiquetada 'Hembra' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Hembra' y tiene el sexo 'hembra'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Female (Class)"@en ,
                                                  "Hembra (Clase)"@es ;
@@ -623,8 +625,8 @@ owl:Class rdf:type owl:Class .
                                                      "Hembra"@es .
 
 
-:aa1d7bc1_be09_4540_87b9_cf680ecb2158 rdfs:comment "A 'Class' labeled 'Nation' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Nation'"@en ,
-                                                   "Una 'Clase' etiquetada 'Nación' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Nación'"@es ;
+:aa1d7bc1_be09_4540_87b9_cf680ecb2158 rdfs:comment "A 'Class' labeled 'Nation' subclass of 'Thing'. Each of its instances is defined as a 'Nation'"@en ,
+                                                   "Una 'Clase' etiquetada 'Nación' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Nación'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Nación (Clase)"@es ,
                                                  "Nation (Class)"@en ;
@@ -632,8 +634,8 @@ owl:Class rdf:type owl:Class .
                                                      "Nation"@en .
 
 
-:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdfs:comment "A 'Class' labeled 'Person' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Person'"@en ,
-                                                   "Una 'Clase' etiquetada 'Persona' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Persona'"@es ;
+:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdfs:comment "A 'Class' labeled 'Person' subclass of 'Thing'. Each of its instances is defined as a 'Person'"@en ,
+                                                   "Una 'Clase' etiquetada 'Persona' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Persona'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Person (Class)"@en ,
                                                  "Persona (Clase)"@es ;
@@ -641,8 +643,8 @@ owl:Class rdf:type owl:Class .
                                                      "Persona"@es .
 
 
-:ba571c3e_119f_4148_a4fc_c5ad83359590 rdfs:comment "A 'Class' labeled 'Culture' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Culture'"@en ,
-                                                   "Una 'Clase' etiquetada 'Cultura' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Cultura'"@es ;
+:ba571c3e_119f_4148_a4fc_c5ad83359590 rdfs:comment "A 'Class' labeled 'Culture' subclass of 'Thing'. Each of its instances is defined as a 'Culture'"@en ,
+                                                   "Una 'Clase' etiquetada 'Cultura' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cultura'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Cultura (Clase)"@es ,
                                                  "Culture (Class)"@en ;
@@ -650,8 +652,8 @@ owl:Class rdf:type owl:Class .
                                                      "Culture"@en .
 
 
-:c064c390_4edb_4f89_a671_301fb774f9ef rdfs:comment "A 'Class' labeled 'Nation-State' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Nation-State'"@en ,
-                                                   "Una 'Clase' etiquetada 'Estado-Nación' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Estado-Nación'"@es ;
+:c064c390_4edb_4f89_a671_301fb774f9ef rdfs:comment "A 'Class' labeled 'Nation-State' subclass of 'Thing'. Each of its instances is defined as a 'Nation-State'"@en ,
+                                                   "Una 'Clase' etiquetada 'Estado-Nación' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Estado-Nación'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Estado-Nación (Clase)"@es ,
                                                  "Nation-State (Class)"@en ;
@@ -659,8 +661,8 @@ owl:Class rdf:type owl:Class .
                                                      "Nation-State"@en .
 
 
-:c10984dc_f290_4880_a60b_d6f8b6b22105 rdfs:comment "A 'Class' labeled 'Sex' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Sex'"@en ,
-                                                   "Una 'Clase' etiquetada 'Sexo' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Sexo'"@es ;
+:c10984dc_f290_4880_a60b_d6f8b6b22105 rdfs:comment "A 'Class' labeled 'Sex' subclass of 'Thing'. Each of its instances is defined as a 'Sex'"@en ,
+                                                   "Una 'Clase' etiquetada 'Sexo' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Sexo'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Sex (Class)"@en ,
                                                  "Sexo (Clase)"@es ;
@@ -668,8 +670,8 @@ owl:Class rdf:type owl:Class .
                                                      "Sexo"@es .
 
 
-:c2871766_bffb_4a9b_9a67_4a84f149c11c rdfs:comment "A 'Class' labeled 'Gender' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Gender'"@en ,
-                                                   "Una 'Clase' etiquetada 'Género' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Género'"@es ;
+:c2871766_bffb_4a9b_9a67_4a84f149c11c rdfs:comment "A 'Class' labeled 'Gender' subclass of 'Thing'. Each of its instances is defined as a 'Gender'"@en ,
+                                                   "Una 'Clase' etiquetada 'Género' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Género'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Gender (Class)"@en ,
                                                  "Género (Clase)"@es ;
@@ -677,8 +679,8 @@ owl:Class rdf:type owl:Class .
                                                      "Género"@es .
 
 
-:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdfs:comment "A 'Class' labeled 'People' subclass of 'Thing'. Each of its instances is conceptually defined as a 'People'"@en ,
-                                                   "Una 'Clase' etiquetada 'Pueblo' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Pueblo'"@es ;
+:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdfs:comment "A 'Class' labeled 'People' subclass of 'Thing'. Each of its instances is defined as a 'People'"@en ,
+                                                   "Una 'Clase' etiquetada 'Pueblo' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Pueblo'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "People (Class)"@en ,
                                                  "Pueblo (Clase)"@es ;
@@ -686,8 +688,8 @@ owl:Class rdf:type owl:Class .
                                                      "Pueblo"@es .
 
 
-:d3c3da1e_369b_4103_b5bf_58daba879d87 rdfs:comment "A 'Class' labeled 'Woman' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Woman' and has the 'woman' gender"@en ,
-                                                   "Una 'Clase' etiquetada 'Mujer' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Mujer' y tiene el género 'mujer'"@es ;
+:d3c3da1e_369b_4103_b5bf_58daba879d87 rdfs:comment "A 'Class' labeled 'Woman' subclass of 'Thing'. Each of its instances is defined as a 'Woman' and has the 'woman' gender"@en ,
+                                                   "Una 'Clase' etiquetada 'Mujer' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Mujer' y tiene el género 'mujer'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Mujer (Clase)"@es ,
                                                  "Woman (Class)"@en ;
@@ -695,8 +697,8 @@ owl:Class rdf:type owl:Class .
                                                      "Woman"@en .
 
 
-:d52561c8_00a1_4af3_9d98_71b6e9e191a3 rdfs:comment "A 'Class' labeled 'Federation' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Federation'"@en ,
-                                                   "Una 'Clase' etiquetada 'Federación' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Federación'"@es ;
+:d52561c8_00a1_4af3_9d98_71b6e9e191a3 rdfs:comment "A 'Class' labeled 'Federation' subclass of 'Thing'. Each of its instances is defined as a 'Federation'"@en ,
+                                                   "Una 'Clase' etiquetada 'Federación' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Federación'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Federación (Clase)"@es ,
                                                  "Federation (Class)"@en ;
@@ -704,8 +706,8 @@ owl:Class rdf:type owl:Class .
                                                      "Federation"@en .
 
 
-:dbe933ba_935f_4e29_81da_216dd71590ba rdfs:comment "A 'Class' labeled 'State' subclass of 'Thing'. Each of its instances is conceptually defined as a 'State'"@en ,
-                                                   "Una 'Clase' etiquetada 'Estado' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Estado'"@es ;
+:dbe933ba_935f_4e29_81da_216dd71590ba rdfs:comment "A 'Class' labeled 'State' subclass of 'Thing'. Each of its instances is defined as a 'State'"@en ,
+                                                   "Una 'Clase' etiquetada 'Estado' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Estado'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Estado (Clase)"@es ,
                                                  "State (Class)"@en ;
@@ -713,8 +715,8 @@ owl:Class rdf:type owl:Class .
                                                      "State"@en .
 
 
-:dda89cac_96bb_4347_a189_796811cc542a rdfs:comment "A 'Class' labeled 'Quality' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Quality'"@en ,
-                                                   "Una 'Clase' etiquetada 'Cualidad' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Cualidad'"@es ;
+:dda89cac_96bb_4347_a189_796811cc542a rdfs:comment "A 'Class' labeled 'Quality' subclass of 'Thing'. Each of its instances is defined as a 'Quality'"@en ,
+                                                   "Una 'Clase' etiquetada 'Cualidad' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cualidad'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Cualidad (Clase)"@es ,
                                                  "Quality (Class)"@en ;
@@ -722,8 +724,8 @@ owl:Class rdf:type owl:Class .
                                                      "Quality"@en .
 
 
-:e1b671b2_280a_4841_a569_76eb85d9473f rdfs:comment "A 'Class' labeled 'Man' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Man' and has the 'man' gender"@en ,
-                                                   "Una 'Clase' etiquetada 'Hombre' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Hombre' y tiene el género 'hombre'"@es ;
+:e1b671b2_280a_4841_a569_76eb85d9473f rdfs:comment "A 'Class' labeled 'Man' subclass of 'Thing'. Each of its instances is defined as a 'Man' and has the 'man' gender"@en ,
+                                                   "Una 'Clase' etiquetada 'Hombre' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Hombre' y tiene el género 'hombre'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Hombre (Clase)"@es ,
                                                  "Man (Class)"@en ;
@@ -731,8 +733,8 @@ owl:Class rdf:type owl:Class .
                                                      "Man"@en .
 
 
-:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdfs:comment "A 'Class' labeled 'Concept Scheme' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Concept Scheme'"@en ,
-                                                   "Una 'Clase' etiquetada 'Esquema de Conceptos' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Esquema de Conceptos'"@es ;
+:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdfs:comment "A 'Class' labeled 'Concept Scheme' subclass of 'Thing'. Each of its instancesis a 'Concept Scheme'"@en ,
+                                                   "Una 'Clase' etiquetada 'Esquema de Conceptos' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Esquema de Conceptos'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Concept Scheme (Class)"@en ,
                                                  "Esquema de Conceptos (Clase)"@es ;
@@ -740,8 +742,8 @@ owl:Class rdf:type owl:Class .
                                                      "Esquema de Conceptos"@es .
 
 
-:ee401492_9c90_4700_96aa_21c48538b1e0 rdfs:comment "A 'Class' labeled 'Thing'. Each of its instances is conceptually defined as a 'Thing'"@en ,
-                                                   "Una 'Clase' etiquetada 'Cosa'. Cada una de sus instancias se define conceptualmente cómo una 'Cosa'"@es ;
+:ee401492_9c90_4700_96aa_21c48538b1e0 rdfs:comment "A 'Class' labeled 'Thing'. Each of its instances is defined as a 'Thing'"@en ,
+                                                   "Una 'Clase' etiquetada 'Cosa'. Cada una de sus instancias se define cómo una 'Cosa'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Cosa (Clase)"@es ,
                                                  "Thing (Class)"@en ;
@@ -749,8 +751,8 @@ owl:Class rdf:type owl:Class .
                                                      "Thing"@en .
 
 
-:eea43024_2453_4f4b_80cf_cad96fccfcd4 rdfs:comment "A 'Class' labeled 'Class'. Each of its instances is conceptually defined as a 'Class'"@en ,
-                                                   "Una 'Clase' etiquetada 'Clase'. Cada una de sus instancias se define conceptualmente como una 'Clase'"@es ;
+:eea43024_2453_4f4b_80cf_cad96fccfcd4 rdfs:comment "A 'Class' labeled 'Class'. Each of its instances is defined as a 'Class'"@en ,
+                                                   "Una 'Clase' etiquetada 'Clase'. Cada una de sus instancias se define como una 'Clase'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Clase (Clase)"@es ,
                                                  "Class (Class)"@en ;
@@ -758,8 +760,8 @@ owl:Class rdf:type owl:Class .
                                                      "Class"@en .
 
 
-:f279e690_fe1f_45c8_8201_fc46f32114e1 rdfs:comment "A 'Class' labeled 'Mexican Thing' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Mexican Thing' and has the 'mexican' quality"@en ,
-                                                   "Una 'Clase' etiquetada 'Cosa Mexicana' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Cosa Mexicana' y tiene la cualidad 'mexicana'"@es ;
+:f279e690_fe1f_45c8_8201_fc46f32114e1 rdfs:comment "A 'Class' labeled 'Mexican Thing' subclass of 'Thing'. Each of its instances is defined as a 'Mexican Thing' and has the 'mexican' quality"@en ,
+                                                   "Una 'Clase' etiquetada 'Cosa Mexicana' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cosa Mexicana' y tiene la cualidad 'mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Cosa Mexicana (Clase)"@es ,
                                                  "Mexican Thing (Class)"@en ;
@@ -767,8 +769,8 @@ owl:Class rdf:type owl:Class .
                                                      "Mexican Thing"@en .
 
 
-:f30c1027_78c0_401d_a38c_9a1622b9eba8 rdfs:comment "A 'Class' labeled 'Concept' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Concept'"@en ,
-                                                   "Una 'Clase' etiquetada 'Concepto' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Concepto'"@es ;
+:f30c1027_78c0_401d_a38c_9a1622b9eba8 rdfs:comment "A 'Class' labeled 'Concept' subclass of 'Thing'. Each of its instances is defined as a 'Concept'"@en ,
+                                                   "Una 'Clase' etiquetada 'Concepto' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Concepto'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Concept (Class)"@en ,
                                                  "Concepto (Clase)"@es ;
@@ -776,8 +778,8 @@ owl:Class rdf:type owl:Class .
                                                      "Concepto"@es .
 
 
-:f5e86a44_aabe_4209_8635_ea5cca897e3d rdfs:comment "A 'Class' labeled 'Organization' subclass of 'Thing'. Each of its instances is conceptually defined as an 'Organization'"@en ,
-                                                   "Una 'Clase' etiquetada 'Organización' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'Organización'"@es ;
+:f5e86a44_aabe_4209_8635_ea5cca897e3d rdfs:comment "A 'Class' labeled 'Organization' subclass of 'Thing'. Each of its instances is defined as an 'Organization'"@en ,
+                                                   "Una 'Clase' etiquetada 'Organización' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Organización'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Organización (Clase)"@es ,
                                                  "Organization (Class)"@en ;
@@ -785,8 +787,8 @@ owl:Class rdf:type owl:Class .
                                                      "Organization"@en .
 
 
-:f8c7746c_a1cb_4f99_a8af_0c8a338e0230 rdfs:comment "A 'Class' labeled 'Republic' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Republic'"@en ,
-                                                   "Una 'Clase' etiquetada 'República' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como una 'República'"@es ;
+:f8c7746c_a1cb_4f99_a8af_0c8a338e0230 rdfs:comment "A 'Class' labeled 'Republic' subclass of 'Thing'. Each of its instances is defined as a 'Republic'"@en ,
+                                                   "Una 'Clase' etiquetada 'República' subclase de 'Cosa'. Cada una de sus instancias se define como una 'República'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Republic (Class)"@en ,
                                                  "República (Clase)"@es ;
@@ -794,8 +796,8 @@ owl:Class rdf:type owl:Class .
                                                      "República"@es .
 
 
-:fc851746_03d3_4420_8d59_f9f7d6e325e4 rdfs:comment "A 'Class' labeled 'Mexican Person' subclass of 'Mexican Thing' and 'Person'. Each of its instances is conceptually defined as a 'Mexican Person'"@en ,
-                                                   "Una 'Clase' etiquetada 'Persona Mexicana' subclase de 'Cosa Mexicana' y 'Persona'. Cada una de sus instancias se define conceptualmente como una 'Persona Mexicana'"@es ;
+:fc851746_03d3_4420_8d59_f9f7d6e325e4 rdfs:comment "A 'Class' labeled 'Mexican Person' subclass of 'Mexican Thing' and 'Person'. Each of its instances is defined as a 'Mexican Person'"@en ,
+                                                   "Una 'Clase' etiquetada 'Persona Mexicana' subclase de 'Cosa Mexicana' y 'Persona'. Cada una de sus instancias se define como una 'Persona Mexicana'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Mexican Person (Class)"@en ,
                                                  "Persona Mexicana (Clase)"@es ;
@@ -803,8 +805,8 @@ owl:Class rdf:type owl:Class .
                                                      "Persona Mexicana"@es .
 
 
-:fef4ab2d_1443_41ea_8c88_bc4d870e0caa rdfs:comment "A 'Class' labeled 'Territory' subclass of 'Thing'. Each of its instances is conceptually defined as a 'Territory'"@en ,
-                                                   "Una 'Clase' etiquetada 'Territorio' subclase de 'Cosa'. Cada una de sus instancias se define conceptualmente como un 'Territorio'"@es ;
+:fef4ab2d_1443_41ea_8c88_bc4d870e0caa rdfs:comment "A 'Class' labeled 'Territory' subclass of 'Thing'. Each of its instances is defined as a 'Territory'"@en ,
+                                                   "Una 'Clase' etiquetada 'Territorio' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Territorio'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Territorio (Clase)"@es ,
                                                  "Territory (Class)"@en ;
