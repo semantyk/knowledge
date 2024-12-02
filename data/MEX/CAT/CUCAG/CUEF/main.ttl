@@ -1,3 +1,4 @@
+@base <http://datos.gob.mx/> .
 @prefix : <http://datos.gob.mx/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -6,456 +7,390 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://datos.gob.mx/> .
-
-<http://datos.gob.mx/cat/cuef/> rdf:type owl:Ontology ;
-                                 owl:versionIRI <http://datos.gob.mx/cat/cuef/0.0.0> ;
-                                 owl:imports <http://datos.gob.mx/cat/cucag/> ;
-                                 rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> .
-
-#################################################################
-#    Object Properties
-#################################################################
-
-###  http://purl.org/dc/terms/hasPart
-dcterms:hasPart rdf:type owl:ObjectProperty .
-
-
-###  http://purl.org/dc/terms/isPartOf
-dcterms:isPartOf rdf:type owl:ObjectProperty .
-
-
-###  http://www.w3.org/2004/02/skos/core#inScheme
-skos:inScheme rdf:type owl:ObjectProperty .
-
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.w3.org/2004/02/skos/core#notation
-skos:notation rdf:type owl:DatatypeProperty .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-
-###  http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
-:e40a5e47_3fa8_40cc_adda_c9e6f43569ff rdf:type owl:NamedIndividual ,
-                                               :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-                                      dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-                                      skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-                                      skos:notation 01 ;
-                                      rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-                                      rdfs:label "El Código de Aguascalientes"@es ,
-                                                 "The Aguascalientes Code"@en ;
-                                      skos:prefLabel "Aguascalientes"@en ,
-                                                     "Aguascalientes"@es .
-
-:a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f rdf:type owl:NamedIndividual ,
-                                       :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-                                      dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-                                      skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-                                      skos:notation 02 ;
-                                      rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-                                      rdfs:label "El Código de Baja California"@es ,
-                                                 "The Baja California Code"@en ;
-                                      skos:prefLabel "Baja California"@es ,
-                                                     "Baja California"@en .
-
-:b6b58a54_2085_4146_8c5c_4c76ae938355 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 03 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Baja California Sur"@es ,
-                       "The Baja California Sur Code"@en ;
-            skos:prefLabel "Baja California Sur"@es ,
-                           "Baja California Sur"@en .
-
-
-:b4e2201c_7536_4bbf_8a8c_1d6c5692d041 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 02 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Baja California"@es ,
-                       "The Baja California Code"@en ;
-            skos:prefLabel "Baja California"@es ,
-                           "Baja California"@en .
-
-
-:b6b58a54_2085_4146_8c5c_4c76ae938355 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 03 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Baja California Sur"@es ,
-                       "The Baja California Sur Code"@en ;
-            skos:prefLabel "Baja California Sur"@es ,
-                           "Baja California Sur"@en .
-
-
-:e2f991aa_d311_4896_9cd2_6a13efce3de6 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 04 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Campeche"@es ,
-                       "The Campeche Code"@en ;
-            skos:prefLabel "Campeche"@es ,
-                           "Campeche"@en .
-
-
-:c439a131_0695_4a1a_b31c_14452d6218cd rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 05 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Coahuila de Zaragoza"@es ,
-                       "The Coahuila de Zaragoza Code"@en ;
-            skos:prefLabel "Coahuila de Zaragoza"@es ,
-                           "Coahuila de Zaragoza"@en .
-
-
-:eff96bf8_ee3c_40fe_b993_cc04a019131e rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 06 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Colima"@es ,
-                       "The Colima Code"@en ;
-            skos:prefLabel "Colima"@es ,
-                           "Colima"@en .
-
-
-:bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 07 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Chiapas"@es ,
-                       "The Chiapas Code"@en ;
-            skos:prefLabel "Chiapas"@es ,
-                           "Chiapas"@en .
-
-
-:b9674ff0_3060_446c_a526_154fc980db30 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 08 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Chihuahua"@es ,
-                       "The Chihuahua Code"@en ;
-            skos:prefLabel "Chihuahua"@es ,
-                           "Chihuahua"@en .
-
-
-:a46deff3_59fe_413e_9d73_c3859b0faa48 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 09 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Ciudad de México"@es ,
-                       "The Ciudad de México Code"@en ;
-            skos:prefLabel "Ciudad de México"@es ,
-                           "Ciudad de México"@en .
-
-
-:dad4e5af_2124_4f12_92de_8acd02e502d4 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 10 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Durango"@es ,
-                       "The Durango Code"@en ;
-            skos:prefLabel "Durango"@es ,
-                           "Durango"@en .
-
-
-:cf09a6a0_f74a_4e19_b34a_9315977a85da rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 11 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Guanajuato"@es ,
-                       "The Guanajuato Code"@en ;
-            skos:prefLabel "Guanajuato"@es ,
-                           "Guanajuato"@en .
-
-
-:dcdd4971_3783_45c8_9aa3_c369e99dd9bf rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 12 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Guerrero"@es ,
-                       "The Guerrero Code"@en ;
-            skos:prefLabel "Guerrero"@es ,
-                           "Guerrero"@en .
-
-
-:a2376873_5961_493d_a4a5_44e366b3a72e rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 13 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Hidalgo"@es ,
-                       "The Hidalgo Code"@en ;
-            skos:prefLabel "Hidalgo"@es ,
-                           "Hidalgo"@en .
-
-
-:d4a9df88_fff3_49fa_8aca_df3453f52f90 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 14 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Jalisco"@es ,
-                       "The Jalisco Code"@en ;
-            skos:prefLabel "Jalisco"@es ,
-                           "Jalisco"@en .
-
-
-:b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 15 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de México"@es ,
-                       "The México Code"@en ;
-            skos:prefLabel "México"@es ,
-                           "México"@en .
-
-
-:f7765109_dadd_41f1_84c8_3d7738ec23c4 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 16 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Michoacán de Ocampo"@es ,
-                       "The Michoacán de Ocampo Code"@en ;
-            skos:prefLabel "Michoacán de Ocampo"@es ,
-                           "Michoacán de Ocampo"@en .
-
-
-:cc9884ef_999d_4cf2_bf72_47575917a6ad rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 17 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Morelos"@es ,
-                       "The Morelos Code"@en ;
-            skos:prefLabel "Morelos"@es ,
-                           "Morelos"@en .
-
-
-:e601a68d_ea1b_4ac9_b222_b146f0839481 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 18 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Nayarit"@es ,
-                       "The Nayarit Code"@en ;
-            skos:prefLabel "Nayarit"@es ,
-                           "Nayarit"@en .
-
-
-:f3e47a7b_d977_4ddc_ba35_272d98e5fdaf rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 19 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Nuevo León"@es ,
-                       "The Nuevo León Code"@en ;
-            skos:prefLabel "Nuevo León"@es ,
-                           "Nuevo León"@en .
-
-
-:db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 20 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Oaxaca"@es ,
-                       "The Oaxaca Code"@en ;
-            skos:prefLabel "Oaxaca"@es ,
-                           "Oaxaca"@en .
-
-
-:f17fff98_735a_443a_8d82_3b4afedb1214 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 21 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Puebla"@es ,
-                       "The Puebla Code"@en ;
-            skos:prefLabel "Puebla"@es ,
-                           "Puebla"@en .
-
-
-:d13bfc7d_a096_40f6_801f_2acea59d434c rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 22 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Querétaro"@es ,
-                       "The Querétaro Code"@en ;
-            skos:prefLabel "Querétaro"@es ,
-                           "Querétaro"@en .
-
-
-:e161c75a_17b7_4a58_a725_5e61acbd609c rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 23 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Quintana Roo"@es ,
-                       "The Quintana Roo Code"@en ;
-            skos:prefLabel "Quintana Roo"@es ,
-                           "Quintana Roo"@en .
-
-
-:fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 24 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de San Luis Potosí"@es ,
-                       "The San Luis Potosí Code"@en ;
-            skos:prefLabel "San Luis Potosí"@es ,
-                           "San Luis Potosí"@en .
-
-
-:a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 25 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Sinaloa"@es ,
-                       "The Sinaloa Code"@en ;
-            skos:prefLabel "Sinaloa"@es ,
-                           "Sinaloa"@en .
-
-
-:bb840da2_f815_45ef_97e5_af9c06d75876 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 26 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Sonora"@es ,
-                       "The Sonora Code"@en ;
-            skos:prefLabel "Sonora"@es ,
-                           "Sonora"@en .
-
-
-:b9791ab2_384e_4d4b_986a_ba9f8b67471d rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 27 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Tabasco"@es ,
-                       "The Tabasco Code"@en ;
-            skos:prefLabel "Tabasco"@es ,
-                           "Tabasco"@en .
-
-
-:f133fc27_6776_461f_a070_2ffb95584414 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 28 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Tamaulipas"@es ,
-                       "The Tamaulipas Code"@en ;
-            skos:prefLabel "Tamaulipas"@es ,
-                           "Tamaulipas"@en .
-
-
-:c16e3867_6e48_4bc6_b75b_5b86b2d764e3 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 29 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Tlaxcala"@es ,
-                       "The Tlaxcala Code"@en ;
-            skos:prefLabel "Tlaxcala"@es ,
-                           "Tlaxcala"@en .
-
-
-:b31bb503_039c_4093_995e_e76d2ee48291 rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 30 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Veracruz de Ignacio de la Llave"@es ,
-                       "The Veracruz de Ignacio de la Llave Code"@en ;
-            skos:prefLabel "Veracruz de Ignacio de la Llave"@es ,
-                           "Veracruz de Ignacio de la Llave"@en .
-
-
-:afc50617_af12_4f7b_a5c9_6e6bf86d207e rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 31 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Yucatán"@es ,
-                       "The Yucatán Code"@en ;
-            skos:prefLabel "Yucatán"@es ,
-                           "Yucatán"@en .
-
-
-:c024a609_e955_4ae6_af7b_5b10809f3fac rdf:type owl:NamedIndividual ,
-                      :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
-            dcterms:isPartOf <http://datos.gob.mx/cat/cuef#> ;
-            skos:inScheme <http://datos.gob.mx/cat/cuef#> ;
-            skos:notation 32 ;
-            rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-            rdfs:label "El Código de Zacatecas"@es ,
-                       "The Zacatecas Code"@en ;
-            skos:prefLabel "Zacatecas"@es ,
-                           "Zacatecas"@en .
-
-###  http://datos.gob.mx/cat/cuef#
-<http://datos.gob.mx/cat/cuef#> rdf:type skos:ConceptScheme ,
-                                         <http://www.w3.org/ns/dcat#Dataset> ;
-                                rdfs:comment "A 'Catalog' labeled 'The Unique National Catalog of Federal Entities'"@en ,
-                                             "Un 'Catálogo' etiquetado 'El Catálogo Único de Entidades Federativas Nacional'"@es ;
-                                rdfs:isDefinedBy <http://datos.gob.mx/cat/cuef/> ;
-                                rdfs:label "El Catálogo Único de Entidades Federativas Nacional"@es ,
-                                           "The Unique National Catalog of Federal Entities"@en .
-
-
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/hasPart
+# 
+# http://purl.org/dc/terms/isPartOf
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://datos.gob.mx/a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f
+# 
+# http://datos.gob.mx/a2376873_5961_493d_a4a5_44e366b3a72e
+# 
+# http://datos.gob.mx/a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c
+# 
+# http://datos.gob.mx/a46deff3_59fe_413e_9d73_c3859b0faa48
+# 
+# http://datos.gob.mx/afc50617_af12_4f7b_a5c9_6e6bf86d207e
+# 
+# http://datos.gob.mx/b31bb503_039c_4093_995e_e76d2ee48291
+# 
+# http://datos.gob.mx/b4e2201c_7536_4bbf_8a8c_1d6c5692d041
+# 
+# http://datos.gob.mx/b6b58a54_2085_4146_8c5c_4c76ae938355
+# 
+# http://datos.gob.mx/b723f1b4_d73d_4348_8a4e_31e0bbcce5d9
+# 
+# http://datos.gob.mx/b9674ff0_3060_446c_a526_154fc980db30
+# 
+# http://datos.gob.mx/b9791ab2_384e_4d4b_986a_ba9f8b67471d
+# 
+# http://datos.gob.mx/bb840da2_f815_45ef_97e5_af9c06d75876
+# 
+# http://datos.gob.mx/bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2
+# 
+# http://datos.gob.mx/c024a609_e955_4ae6_af7b_5b10809f3fac
+# 
+# http://datos.gob.mx/c16e3867_6e48_4bc6_b75b_5b86b2d764e3
+# 
+# http://datos.gob.mx/c439a131_0695_4a1a_b31c_14452d6218cd
+# 
+# http://datos.gob.mx/cc9884ef_999d_4cf2_bf72_47575917a6ad
+# 
+# http://datos.gob.mx/cf09a6a0_f74a_4e19_b34a_9315977a85da
+# 
+# http://datos.gob.mx/d13bfc7d_a096_40f6_801f_2acea59d434c
+# 
+# http://datos.gob.mx/d4a9df88_fff3_49fa_8aca_df3453f52f90
+# 
+# http://datos.gob.mx/dad4e5af_2124_4f12_92de_8acd02e502d4
+# 
+# http://datos.gob.mx/db13c3fb_656a_4fb9_ac7a_2f1e74449ca1
+# 
+# http://datos.gob.mx/dcdd4971_3783_45c8_9aa3_c369e99dd9bf
+# 
+# http://datos.gob.mx/e161c75a_17b7_4a58_a725_5e61acbd609c
+# 
+# http://datos.gob.mx/e2f991aa_d311_4896_9cd2_6a13efce3de6
+# 
+# http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
+# 
+# http://datos.gob.mx/e601a68d_ea1b_4ac9_b222_b146f0839481
+# 
+# http://datos.gob.mx/eff96bf8_ee3c_40fe_b993_cc04a019131e
+# 
+# http://datos.gob.mx/f133fc27_6776_461f_a070_2ffb95584414
+# 
+# http://datos.gob.mx/f17fff98_735a_443a_8d82_3b4afedb1214
+# 
+# http://datos.gob.mx/f3e47a7b_d977_4ddc_ba35_272d98e5fdaf
+# 
+# http://datos.gob.mx/f7765109_dadd_41f1_84c8_3d7738ec23c4
+# 
+# http://datos.gob.mx/fe6609f2_f88c_4dc0_a8ad_6c6cd5750204
+# 
+# http://datos.gob.mx/cat/cuef#
+# 
+# Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+
+<cat/cuef/> a owl:Ontology;
+  owl:versionIRI <cat/cuef/0.0.0>;
+  owl:imports <cat/cucag/0.0.0>;
+  rdfs:isDefinedBy <cat/cuef/> .
+
+dcterms:hasPart a owl:ObjectProperty .
+
+dcterms:isPartOf a owl:ObjectProperty .
+
+skos:inScheme a owl:ObjectProperty .
+
+skos:notation a owl:DatatypeProperty .
+
+:a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 2;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Baja California"@es, "The Baja California Code"@en;
+  skos:prefLabel "Baja California"@en, "Baja California"@es .
+
+:a2376873_5961_493d_a4a5_44e366b3a72e a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 13;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Hidalgo"@es, "The Hidalgo Code"@en;
+  skos:prefLabel "Hidalgo"@en, "Hidalgo"@es .
+
+:a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 25;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Sinaloa"@es, "The Sinaloa Code"@en;
+  skos:prefLabel "Sinaloa"@en, "Sinaloa"@es .
+
+:a46deff3_59fe_413e_9d73_c3859b0faa48 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 9;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Ciudad de México"@es, "The Ciudad de México Code"@en;
+  skos:prefLabel "Ciudad de México"@en, "Ciudad de México"@es .
+
+:afc50617_af12_4f7b_a5c9_6e6bf86d207e a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 31;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Yucatán"@es, "The Yucatán Code"@en;
+  skos:prefLabel "Yucatán"@en, "Yucatán"@es .
+
+:b31bb503_039c_4093_995e_e76d2ee48291 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 30;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Veracruz de Ignacio de la Llave"@es, "The Veracruz de Ignacio de la Llave Code"@en;
+  skos:prefLabel "Veracruz de Ignacio de la Llave"@en, "Veracruz de Ignacio de la Llave"@es .
+
+:b4e2201c_7536_4bbf_8a8c_1d6c5692d041 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 2;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Baja California"@es, "The Baja California Code"@en;
+  skos:prefLabel "Baja California"@en, "Baja California"@es .
+
+:b6b58a54_2085_4146_8c5c_4c76ae938355 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 3;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Baja California Sur"@es, "The Baja California Sur Code"@en;
+  skos:prefLabel "Baja California Sur"@en, "Baja California Sur"@es .
+
+:b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 15;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de México"@es, "The México Code"@en;
+  skos:prefLabel "México"@en, "México"@es .
+
+:b9674ff0_3060_446c_a526_154fc980db30 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 8;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Chihuahua"@es, "The Chihuahua Code"@en;
+  skos:prefLabel "Chihuahua"@en, "Chihuahua"@es .
+
+:b9791ab2_384e_4d4b_986a_ba9f8b67471d a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 27;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Tabasco"@es, "The Tabasco Code"@en;
+  skos:prefLabel "Tabasco"@en, "Tabasco"@es .
+
+:bb840da2_f815_45ef_97e5_af9c06d75876 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 26;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Sonora"@es, "The Sonora Code"@en;
+  skos:prefLabel "Sonora"@en, "Sonora"@es .
+
+:bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 7;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Chiapas"@es, "The Chiapas Code"@en;
+  skos:prefLabel "Chiapas"@en, "Chiapas"@es .
+
+:c024a609_e955_4ae6_af7b_5b10809f3fac a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 32;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Zacatecas"@es, "The Zacatecas Code"@en;
+  skos:prefLabel "Zacatecas"@en, "Zacatecas"@es .
+
+:c16e3867_6e48_4bc6_b75b_5b86b2d764e3 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 29;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Tlaxcala"@es, "The Tlaxcala Code"@en;
+  skos:prefLabel "Tlaxcala"@en, "Tlaxcala"@es .
+
+:c439a131_0695_4a1a_b31c_14452d6218cd a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 5;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Coahuila de Zaragoza"@es, "The Coahuila de Zaragoza Code"@en;
+  skos:prefLabel "Coahuila de Zaragoza"@en, "Coahuila de Zaragoza"@es .
+
+:cc9884ef_999d_4cf2_bf72_47575917a6ad a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 17;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Morelos"@es, "The Morelos Code"@en;
+  skos:prefLabel "Morelos"@en, "Morelos"@es .
+
+:cf09a6a0_f74a_4e19_b34a_9315977a85da a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 11;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Guanajuato"@es, "The Guanajuato Code"@en;
+  skos:prefLabel "Guanajuato"@en, "Guanajuato"@es .
+
+:d13bfc7d_a096_40f6_801f_2acea59d434c a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 22;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Querétaro"@es, "The Querétaro Code"@en;
+  skos:prefLabel "Querétaro"@en, "Querétaro"@es .
+
+:d4a9df88_fff3_49fa_8aca_df3453f52f90 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 14;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Jalisco"@es, "The Jalisco Code"@en;
+  skos:prefLabel "Jalisco"@en, "Jalisco"@es .
+
+:dad4e5af_2124_4f12_92de_8acd02e502d4 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 10;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Durango"@es, "The Durango Code"@en;
+  skos:prefLabel "Durango"@en, "Durango"@es .
+
+:db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 20;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Oaxaca"@es, "The Oaxaca Code"@en;
+  skos:prefLabel "Oaxaca"@en, "Oaxaca"@es .
+
+:dcdd4971_3783_45c8_9aa3_c369e99dd9bf a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 12;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Guerrero"@es, "The Guerrero Code"@en;
+  skos:prefLabel "Guerrero"@en, "Guerrero"@es .
+
+:e161c75a_17b7_4a58_a725_5e61acbd609c a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 23;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Quintana Roo"@es, "The Quintana Roo Code"@en;
+  skos:prefLabel "Quintana Roo"@en, "Quintana Roo"@es .
+
+:e2f991aa_d311_4896_9cd2_6a13efce3de6 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 4;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Campeche"@es, "The Campeche Code"@en;
+  skos:prefLabel "Campeche"@en, "Campeche"@es .
+
+:e40a5e47_3fa8_40cc_adda_c9e6f43569ff a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 1;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Aguascalientes"@es, "The Aguascalientes Code"@en;
+  skos:prefLabel "Aguascalientes"@en, "Aguascalientes"@es .
+
+:e601a68d_ea1b_4ac9_b222_b146f0839481 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 18;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Nayarit"@es, "The Nayarit Code"@en;
+  skos:prefLabel "Nayarit"@en, "Nayarit"@es .
+
+:eff96bf8_ee3c_40fe_b993_cc04a019131e a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 6;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Colima"@es, "The Colima Code"@en;
+  skos:prefLabel "Colima"@en, "Colima"@es .
+
+:f133fc27_6776_461f_a070_2ffb95584414 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 28;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Tamaulipas"@es, "The Tamaulipas Code"@en;
+  skos:prefLabel "Tamaulipas"@en, "Tamaulipas"@es .
+
+:f17fff98_735a_443a_8d82_3b4afedb1214 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 21;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Puebla"@es, "The Puebla Code"@en;
+  skos:prefLabel "Puebla"@en, "Puebla"@es .
+
+:f3e47a7b_d977_4ddc_ba35_272d98e5fdaf a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 19;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Nuevo León"@es, "The Nuevo León Code"@en;
+  skos:prefLabel "Nuevo León"@en, "Nuevo León"@es .
+
+:f7765109_dadd_41f1_84c8_3d7738ec23c4 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 16;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de Michoacán de Ocampo"@es, "The Michoacán de Ocampo Code"@en;
+  skos:prefLabel "Michoacán de Ocampo"@en, "Michoacán de Ocampo"@es .
+
+:fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
+  dcterms:isPartOf <cat/cuef#>;
+  skos:inScheme <cat/cuef#>;
+  skos:notation 24;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Código de San Luis Potosí"@es, "The San Luis Potosí Code"@en;
+  skos:prefLabel "San Luis Potosí"@en, "San Luis Potosí"@es .
+
+<cat/cuef#> a skos:ConceptScheme, <http://www.w3.org/ns/dcat#Dataset>;
+  rdfs:comment "A 'Catalog' labeled 'The Unique National Catalog of Federal Entities'"@en,
+    "Un 'Catálogo' etiquetado 'El Catálogo Único de Entidades Federativas Nacional'"@es;
+  rdfs:isDefinedBy <cat/cuef/>;
+  rdfs:label "El Catálogo Único de Entidades Federativas Nacional"@es, "The Unique National Catalog of Federal Entities"@en .
