@@ -11,16 +11,12 @@
 
 <http://datos.gob.mx/cat/cum/> rdf:type owl:Ontology ;
                                 owl:versionIRI <http://datos.gob.mx/cat/cum/0.0.0> ;
-                                owl:imports <http://datos.gob.mx/cat/cuef/0.0.0> ;
+                                owl:imports <http://datos.gob.mx/cat/cucag/0.0.0> ;
                                 rdfs:isDefinedBy <http://datos.gob.mx/cat/cum/> .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
-:e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 rdf:type owl:ObjectProperty .
-
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
@@ -29,6 +25,10 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
+:e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 rdf:type owl:ObjectProperty .
+
 
 ###  http://purl.org/dc/terms/isPartOf
 dcterms:isPartOf rdf:type owl:ObjectProperty .
@@ -892,6 +892,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "La Cruz"@es .
 
 
+###  http://datos.gob.mx/a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f
+:a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/a231630c_9cf6_4578_bf56_8ce97dacfcae
 :a231630c_9cf6_4578_bf56_8ce97dacfcae rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -904,6 +908,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Calnali Municipality Code"@en ;
                                       skos:prefLabel "Calnali"@en ,
                                                      "Calnali"@es .
+
+
+###  http://datos.gob.mx/a2376873_5961_493d_a4a5_44e366b3a72e
+:a2376873_5961_493d_a4a5_44e366b3a72e rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/a24ae79d_9fb4_43e5_8dde_6bbafbca5f82
@@ -1382,6 +1390,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Rincón de Romos"@es .
 
 
+###  http://datos.gob.mx/a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c
+:a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/a3a93b7a_db1f_49b1_998c_41d3549a8e4f
 :a3a93b7a_db1f_49b1_998c_41d3549a8e4f rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -1730,6 +1742,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The General Francisco R. Murguía Municipality Code"@en ;
                                       skos:prefLabel "General Francisco R. Murguía"@en ,
                                                      "General Francisco R. Murguía"@es .
+
+
+###  http://datos.gob.mx/a46deff3_59fe_413e_9d73_c3859b0faa48
+:a46deff3_59fe_413e_9d73_c3859b0faa48 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/a474f5f9_17db_41a9_aab2_4c119b1b8c15
@@ -5960,6 +5976,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Coyuca de Benítez"@es .
 
 
+###  http://datos.gob.mx/afc50617_af12_4f7b_a5c9_6e6bf86d207e
+:afc50617_af12_4f7b_a5c9_6e6bf86d207e rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/afc7d7e3_87c2_4a81_bb6e_09cd06442a8c
 :afc7d7e3_87c2_4a81_bb6e_09cd06442a8c rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -6938,6 +6958,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Colón Municipality Code"@en ;
                                       skos:prefLabel "Colón"@en ,
                                                      "Colón"@es .
+
+
+###  http://datos.gob.mx/b31bb503_039c_4093_995e_e76d2ee48291
+:b31bb503_039c_4093_995e_e76d2ee48291 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/b31bea01_383a_4dac_b879_fc564d40525f
@@ -8186,6 +8210,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "San Jorge Nuchita"@es .
 
 
+###  http://datos.gob.mx/b6b58a54_2085_4146_8c5c_4c76ae938355
+:b6b58a54_2085_4146_8c5c_4c76ae938355 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/b6b6edf9_9223_4ee0_9e16_896871d429ac
 :b6b6edf9_9223_4ee0_9e16_896871d429ac rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -8324,6 +8352,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Ciudad Madero Municipality Code"@en ;
                                       skos:prefLabel "Ciudad Madero"@en ,
                                                      "Ciudad Madero"@es .
+
+
+###  http://datos.gob.mx/b723f1b4_d73d_4348_8a4e_31e0bbcce5d9
+:b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/b7317d09_0b50_4908_8692_63722ac7a8ac
@@ -9138,6 +9170,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Benito Juárez"@es .
 
 
+###  http://datos.gob.mx/b9674ff0_3060_446c_a526_154fc980db30
+:b9674ff0_3060_446c_a526_154fc980db30 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/b96f1a3b_b55b_45f9_a44d_d91ce9b39398
 :b96f1a3b_b55b_45f9_a44d_d91ce9b39398 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -9150,6 +9186,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Gómez Farías Municipality Code"@en ;
                                       skos:prefLabel "Gómez Farías"@en ,
                                                      "Gómez Farías"@es .
+
+
+###  http://datos.gob.mx/b9791ab2_384e_4d4b_986a_ba9f8b67471d
+:b9791ab2_384e_4d4b_986a_ba9f8b67471d rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/b97e84d4_200a_43e4_a09e_43a8e3804307
@@ -9810,6 +9850,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Copanatoyac"@es .
 
 
+###  http://datos.gob.mx/bb840da2_f815_45ef_97e5_af9c06d75876
+:bb840da2_f815_45ef_97e5_af9c06d75876 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/bb9b297c_1165_43d0_b4d4_bbaa3e6dd171
 :bb9b297c_1165_43d0_b4d4_bbaa3e6dd171 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -10116,6 +10160,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Cozumel Municipality Code"@en ;
                                       skos:prefLabel "Cozumel"@en ,
                                                      "Cozumel"@es .
+
+
+###  http://datos.gob.mx/bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2
+:bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/bcc6dada_a993_4aad_852c_9f52f8acf2f1
@@ -11434,6 +11482,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Salvador Alvarado"@es .
 
 
+###  http://datos.gob.mx/c024a609_e955_4ae6_af7b_5b10809f3fac
+:c024a609_e955_4ae6_af7b_5b10809f3fac rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/c02537cf_a414_4f88_a137_99507d117cc7
 :c02537cf_a414_4f88_a137_99507d117cc7 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -11964,6 +12016,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Villa de la Paz Municipality Code"@en ;
                                       skos:prefLabel "Villa de la Paz"@en ,
                                                      "Villa de la Paz"@es .
+
+
+###  http://datos.gob.mx/c16e3867_6e48_4bc6_b75b_5b86b2d764e3
+:c16e3867_6e48_4bc6_b75b_5b86b2d764e3 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/c17b42d9_2776_426d_9ed2_dcbce33d2203
@@ -13028,6 +13084,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Tezontepec de Aldama Municipality Code"@en ;
                                       skos:prefLabel "Tezontepec de Aldama"@en ,
                                                      "Tezontepec de Aldama"@es .
+
+
+###  http://datos.gob.mx/c439a131_0695_4a1a_b31c_14452d6218cd
+:c439a131_0695_4a1a_b31c_14452d6218cd rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/c456383a_fca3_4ba6_8dab_2580c655712b
@@ -15690,6 +15750,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Etzatlán"@es .
 
 
+###  http://datos.gob.mx/cc9884ef_999d_4cf2_bf72_47575917a6ad
+:cc9884ef_999d_4cf2_bf72_47575917a6ad rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/cc99dff6_2c36_4b07_814d_8159e8f04198
 :cc99dff6_2c36_4b07_814d_8159e8f04198 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -16614,6 +16678,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Gómez Farías"@es .
 
 
+###  http://datos.gob.mx/cf09a6a0_f74a_4e19_b34a_9315977a85da
+:cf09a6a0_f74a_4e19_b34a_9315977a85da rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/cf10dbe1_de11_43c7_90ef_c5076fac687f
 :cf10dbe1_de11_43c7_90ef_c5076fac687f rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -17368,6 +17436,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The San Pedro Municipality Code"@en ;
                                       skos:prefLabel "San Pedro"@en ,
                                                      "San Pedro"@es .
+
+
+###  http://datos.gob.mx/d13bfc7d_a096_40f6_801f_2acea59d434c
+:d13bfc7d_a096_40f6_801f_2acea59d434c rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/d143a8fe_7fa4_4ab3_b522_78e8e8089c16
@@ -18642,6 +18714,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The San Antonino el Alto Municipality Code"@en ;
                                       skos:prefLabel "San Antonino el Alto"@en ,
                                                      "San Antonino el Alto"@es .
+
+
+###  http://datos.gob.mx/d4a9df88_fff3_49fa_8aca_df3453f52f90
+:d4a9df88_fff3_49fa_8aca_df3453f52f90 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/d4b909bf_6e43_438e_8733_169a06271a47
@@ -21122,6 +21198,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Reforma"@es .
 
 
+###  http://datos.gob.mx/dad4e5af_2124_4f12_92de_8acd02e502d4
+:dad4e5af_2124_4f12_92de_8acd02e502d4 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/dadab3f8_c650_4bbc_8e99_7b723ac8fd7a
 :dadab3f8_c650_4bbc_8e99_7b723ac8fd7a rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -21190,6 +21270,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The San Agustín Loxicha Municipality Code"@en ;
                                       skos:prefLabel "San Agustín Loxicha"@en ,
                                                      "San Agustín Loxicha"@es .
+
+
+###  http://datos.gob.mx/db13c3fb_656a_4fb9_ac7a_2f1e74449ca1
+:db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/db18f91e_e86d_4002_b917_6c74d5e5612a
@@ -21904,6 +21988,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Tarímbaro Municipality Code"@en ;
                                       skos:prefLabel "Tarímbaro"@en ,
                                                      "Tarímbaro"@es .
+
+
+###  http://datos.gob.mx/dcdd4971_3783_45c8_9aa3_c369e99dd9bf
+:dcdd4971_3783_45c8_9aa3_c369e99dd9bf rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/dcdd5ced_5bce_42d9_b972_4ad7d896b2f2
@@ -23628,6 +23716,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Chapab"@es .
 
 
+###  http://datos.gob.mx/e161c75a_17b7_4a58_a725_5e61acbd609c
+:e161c75a_17b7_4a58_a725_5e61acbd609c rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/e16a8e1f_2723_42f8_9bc4_7d134ce7867b
 :e16a8e1f_2723_42f8_9bc4_7d134ce7867b rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -24104,6 +24196,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Atotonilco el Grande"@es .
 
 
+###  http://datos.gob.mx/e2f991aa_d311_4896_9cd2_6a13efce3de6
+:e2f991aa_d311_4896_9cd2_6a13efce3de6 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/e2ff9b52_5e50_4e88_be9f_bf0c794bd64a
 :e2ff9b52_5e50_4e88_be9f_bf0c794bd64a rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -24396,6 +24492,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Xalatlaco Municipality Code"@en ;
                                       skos:prefLabel "Xalatlaco"@en ,
                                                      "Xalatlaco"@es .
+
+
+###  http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
+:e40a5e47_3fa8_40cc_adda_c9e6f43569ff rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/e40ad23d_c929_470e_a99d_62fda987d327
@@ -25138,6 +25238,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Solidaridad Municipality Code"@en ;
                                       skos:prefLabel "Solidaridad"@en ,
                                                      "Solidaridad"@es .
+
+
+###  http://datos.gob.mx/e601a68d_ea1b_4ac9_b222_b146f0839481
+:e601a68d_ea1b_4ac9_b222_b146f0839481 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/e6022154_fe4d_4eb3_96aa_69fd5ae723d4
@@ -28822,6 +28926,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "San Simón Zahuatlán"@es .
 
 
+###  http://datos.gob.mx/eff96bf8_ee3c_40fe_b993_cc04a019131e
+:eff96bf8_ee3c_40fe_b993_cc04a019131e rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/eff9bcf4_4d84_497b_a79f_370638893599
 :eff9bcf4_4d84_497b_a79f_370638893599 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -29340,6 +29448,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Pinal de Amoles"@es .
 
 
+###  http://datos.gob.mx/f133fc27_6776_461f_a070_2ffb95584414
+:f133fc27_6776_461f_a070_2ffb95584414 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/f1353ec4_c0f6_479d_a504_270797836fb9
 :f1353ec4_c0f6_479d_a504_270797836fb9 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9d5b4d5a0886 ;
@@ -29464,6 +29576,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Nanacamilpa de Mariano Arista Municipality Code"@en ;
                                       skos:prefLabel "Nanacamilpa de Mariano Arista"@en ,
                                                      "Nanacamilpa de Mariano Arista"@es .
+
+
+###  http://datos.gob.mx/f17fff98_735a_443a_8d82_3b4afedb1214
+:f17fff98_735a_443a_8d82_3b4afedb1214 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/f1896658_b44e_4b72_bb0f_3f79b8e87323
@@ -30514,6 +30630,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Villa Corzo Municipality Code"@en ;
                                       skos:prefLabel "Villa Corzo"@en ,
                                                      "Villa Corzo"@es .
+
+
+###  http://datos.gob.mx/f3e47a7b_d977_4ddc_ba35_272d98e5fdaf
+:f3e47a7b_d977_4ddc_ba35_272d98e5fdaf rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/f3e94f4a_7a65_4354_8515_4d24d1b2e14b
@@ -31928,6 +32048,10 @@ dcat:Dataset rdf:type owl:Class .
                                                  "The Charcas Municipality Code"@en ;
                                       skos:prefLabel "Charcas"@en ,
                                                      "Charcas"@es .
+
+
+###  http://datos.gob.mx/f7765109_dadd_41f1_84c8_3d7738ec23c4
+:f7765109_dadd_41f1_84c8_3d7738ec23c4 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/f7774eef_9786_4f45_b04d_3647ca30cbe6
@@ -34212,6 +34336,10 @@ dcat:Dataset rdf:type owl:Class .
                                                      "Siltepec"@es .
 
 
+###  http://datos.gob.mx/fe6609f2_f88c_4dc0_a8ad_6c6cd5750204
+:fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/fe70f863_15b3_40b3_af37_50c35984a577
 :fe70f863_15b3_40b3_af37_50c35984a577 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -34732,6 +34860,7 @@ dcat:Dataset rdf:type owl:Class .
 
 ###  http://datos.gob.mx/cat/cum#
 <http://datos.gob.mx/cat/cum#> rdf:type owl:NamedIndividual ,
+                                        skos:ConceptScheme ,
                                         dcat:Dataset ;
                                rdfs:comment "A 'Catalog' labeled 'The Unique National Catalog of Municipalities'"@en ,
                                             "Un 'Catálogo' etiquetado 'El Catálogo Único de Municipios Nacional'"@es ;

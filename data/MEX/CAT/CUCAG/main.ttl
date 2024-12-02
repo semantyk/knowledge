@@ -10,7 +10,10 @@
 
 <http://datos.gob.mx/cat/cucag/> rdf:type owl:Ontology ;
                                   owl:versionIRI <http://datos.gob.mx/cat/cucag/0.0.0> ;
-                                  owl:imports <http://datos.gob.mx/0.0.0> ;
+                                  owl:imports <http://datos.gob.mx/0.0.0> ,
+                                              <http://datos.gob.mx/cat/cuef/0.0.0> ,
+                                              <http://datos.gob.mx/cat/cul/0.0.0> ,
+                                              <http://datos.gob.mx/cat/cum/0.0.0> ;
                                   rdfs:isDefinedBy <http://datos.gob.mx/cat/cucag/> .
 
 #################################################################
