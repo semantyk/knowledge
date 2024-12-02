@@ -3,6 +3,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <http://datos.gob.mx/> .
@@ -11,15 +12,36 @@
                              owl:versionIRI <http://datos.gob.mx/onto/0.0.0> ;
                              owl:imports <http://datos.gob.mx/0.0.0> ;
                              rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
-                             rdfs:label "El Grafo de Conocimiento de México"@es ,
-                                        "The Mexico Knowledge Graph"@es .
+                             rdfs:label "La Ontología de México"@es ,
+                                        "The Mexico Ontology"@es .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:AnnotationProperty ;
+                                  rdfs:subPropertyOf <http://purl.org/dc/terms/hasPart> .
+
+
+###  http://purl.org/dc/terms/hasPart
+<http://purl.org/dc/terms/hasPart> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate
+rdf:predicate rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/dcat#inCatalog
+<http://www.w3.org/ns/dcat#inCatalog> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -56,6 +78,14 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "es definición formal de"@es ,
                                                  "is formal definition of"@en .
+
+
+###  http://datos.gob.mx/b0c54ceb_ca3f_441e_8f4d_002d8fa7ab25
+:b0c54ceb_ca3f_441e_8f4d_002d8fa7ab25 rdf:type owl:ObjectProperty ;
+                                      owl:inverseOf skos:inScheme ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "has concept"@en ,
+                                                 "tiene concepto"@es .
 
 
 ###  http://datos.gob.mx/b64ea212_cb7d_473d_9f38_5d1a8911b8ca
@@ -124,9 +154,33 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                  "tiene definición conceptual"@es .
 
 
+###  http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
+rdf:subject rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+skos:hasTopConcept rdfs:subPropertyOf :b0c54ceb_ca3f_441e_8f4d_002d8fa7ab25 .
+
+
+###  http://xmlns.com/foaf/0.1/homepage
+foaf:homepage rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/page
+foaf:page rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#object
+rdf:object rdf:type owl:DatatypeProperty .
+
 
 ###  http://www.w3.org/1999/02/22-rdf-syntax-ns#value
 rdf:value rdf:type owl:DatatypeProperty .
@@ -156,6 +210,11 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 ###  http://datos.gob.mx/aa1d7bc1_be09_4540_87b9_cf680ecb2158
 :aa1d7bc1_be09_4540_87b9_cf680ecb2158 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 .
+
+
+###  http://datos.gob.mx/b0984e57_8b64_484b_81c2_b143dd70181a
+:b0984e57_8b64_484b_81c2_b143dd70181a rdf:type owl:Class ;
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 .
 
 
@@ -238,6 +297,18 @@ rdf:value rdf:type owl:DatatypeProperty .
                                       rdfs:subClassOf owl:Class .
 
 
+###  http://datos.gob.mx/f1e41185_de3d_414f_bb94_ffa46189de8c
+:f1e41185_de3d_414f_bb94_ffa46189de8c rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ;
+                                      rdfs:comment "A 'Class' labeled 'Constitution' subclass of 'Thing'. Each of its instances is defined as a 'Constitution'"@en ,
+                                                   "Una 'Clase' etiquetada 'Constitución' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Constitución'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Constitución (Clase)"@es ,
+                                                 "Constitution (Class)"@en ;
+                                      skos:prefLabel "Constitución"@es ,
+                                                     "Constitution"@en .
+
+
 ###  http://datos.gob.mx/f279e690_fe1f_45c8_8201_fc46f32114e1
 :f279e690_fe1f_45c8_8201_fc46f32114e1 rdf:type owl:Class ;
                                       owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -248,7 +319,8 @@ rdf:value rdf:type owl:DatatypeProperty .
 
 
 ###  http://datos.gob.mx/f30c1027_78c0_401d_a38c_9a1622b9eba8
-:f30c1027_78c0_401d_a38c_9a1622b9eba8 rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ,
+:f30c1027_78c0_401d_a38c_9a1622b9eba8 rdf:type owl:Class ;
+                                      rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 ,
                                                       skos:Concept .
 
 
@@ -273,8 +345,24 @@ rdf:value rdf:type owl:DatatypeProperty .
                                       rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0 .
 
 
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement
+rdf:Statement rdf:type owl:Class .
+
+
 ###  http://www.w3.org/2002/07/owl#Class
 owl:Class rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> rdf:type owl:Class .
 
 
 #################################################################
@@ -293,14 +381,44 @@ owl:Class rdf:type owl:Class .
                                                  "man"@en .
 
 
+###  http://datos.gob.mx/a24c56f1_8e46_40d6_8008_92c6c7fc1d00
+:a24c56f1_8e46_40d6_8008_92c6c7fc1d00 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a287a1f0_6414_4847_ba06_7ccf34bd0756
+:a287a1f0_6414_4847_ba06_7ccf34bd0756 rdf:type owl:NamedIndividual ,
+                                               :f5e86a44_aabe_4209_8635_ea5cca897e3d ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+                                      foaf:homepage <https://www.inegi.org.mx/> ;
+                                      rdfs:comment "An 'Organization' labeled 'The National System of Statistical and Geographic Information'"@en ,
+                                                   "Una 'Organización' etiquetada 'El Instituto Nacional de Estadística y Geografía'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Instituto Nacional de Estadística y Geografía"@es ,
+                                                 "The National Institute of Statistics and Geography"@en .
+
+
+###  http://datos.gob.mx/a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9
+:a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0
+:a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
-:a418160a_c783_42e9_97d6_baffb88467a0 rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:a418160a_c783_42e9_97d6_baffb88467a0 rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :f7d86ba7_f612_4cef_916c_f6d80d230b64 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :f7d86ba7_f612_4cef_916c_f6d80d230b64 .
 
 
+###  http://datos.gob.mx/a54afb44_8ce8_446b_bde2_339f7f01bcc8
+:a54afb44_8ce8_446b_bde2_339f7f01bcc8 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/a59b12bb_7630_4d82_95bb_34de9b8e922e
-:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :ff11d93b_5c11_45ac_8d7a_ce37714788be ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :ff11d93b_5c11_45ac_8d7a_ce37714788be .
 
@@ -318,6 +436,10 @@ owl:Class rdf:type owl:Class .
                                                  "The Mexican Nation"@en .
 
 
+###  http://datos.gob.mx/a8fe9c49_4473_448c_b666_c6f99c609cdd
+:a8fe9c49_4473_448c_b666_c6f99c609cdd rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
 :a96355d4_e44d_4abf_b730_e2d69a342a12 rdf:type owl:NamedIndividual ,
                                                :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ;
@@ -332,6 +454,10 @@ owl:Class rdf:type owl:Class .
                                                  "The Mexican Federation"@en .
 
 
+###  http://datos.gob.mx/a9b56b3f_fe56_45d2_922c_c21c6e9c276d
+:a9b56b3f_fe56_45d2_922c_c21c6e9c276d rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/aa1d7bc1_be09_4540_87b9_cf680ecb2158
 :aa1d7bc1_be09_4540_87b9_cf680ecb2158 rdf:type owl:NamedIndividual ,
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
@@ -339,17 +465,66 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :d567ba41_6051_4f26_8d4d_2d8a68068531 .
 
 
+###  http://datos.gob.mx/aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a
+:aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/ab118fe2_9773_44cd_8178_8a503ea1dea8
+:ab118fe2_9773_44cd_8178_8a503ea1dea8 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/adfda952_c0f7_4c7b_b973_cb1037fe93a5
 :adfda952_c0f7_4c7b_b973_cb1037fe93a5 rdf:type owl:NamedIndividual ,
                                                :c064c390_4edb_4f89_a671_301fb774f9ef ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba ;
                                       :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :d16b0c0e_1ce5_4c01_a81b_62630072fb4d ,
+                                                                            :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ,
+                                                                            :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba ;
                                       rdfs:comment "A 'Nation-State' labeled 'The United Mexican States'. It is defined as 'The United Mexican States' and has the 'mexican' quality"@en ,
                                                    "Un 'Estado-Nación' etiquetado 'Los Estados Unidos Mexicanos'. Se define como 'Los Estados Unidos Mexicanos' y tiene la cualidad 'mexicano'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "Los Estados Unidos Mexicanos"@es ,
                                                  "The United Mexican States"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
+   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 ;
+   owl:annotatedTarget :d16b0c0e_1ce5_4c01_a81b_62630072fb4d ;
+   owl:versionInfo "relación: constitución"@es ,
+                   "relation: constitution"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
+   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 ;
+   owl:annotatedTarget :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ;
+   owl:versionInfo "relation: class of State"@en
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5 ;
+   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 ;
+   owl:annotatedTarget :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 ;
+   owl:versionInfo "relación: clase de gobierno"@es ,
+                   "relation: class of government"@en
+ ] .
+
+
+###  http://datos.gob.mx/b0984e57_8b64_484b_81c2_b143dd70181a
+:b0984e57_8b64_484b_81c2_b143dd70181a rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+                                      :a55a93ef_28dc_41b2_b537_eb916507bfdd :cff8a44f_b27f_485e_b2f2_210be0df7192 ;
+                                      :f0b0c790_e005_4539_80b5_263dc433ebc0 :cff8a44f_b27f_485e_b2f2_210be0df7192 .
+
+
+###  http://datos.gob.mx/b141f627_98cd_40ba_9354_cd34711b1540
+:b141f627_98cd_40ba_9354_cd34711b1540 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b46e3fe1_96d1_41f6_957f_f7823d50a8c0
+:b46e3fe1_96d1_41f6_957f_f7823d50a8c0 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/b5948746_9a94_4f3d_a8bc_ef9a0463a20e
@@ -366,10 +541,23 @@ owl:Class rdf:type owl:Class .
                                                  "The Mexican People"@en .
 
 
+###  http://datos.gob.mx/b780c9a0_57c4_4985_8c6f_83c9140803f5
+:b780c9a0_57c4_4985_8c6f_83c9140803f5 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b7c0ca8d_4519_43bc_82c0_5a331cb799e5
+:b7c0ca8d_4519_43bc_82c0_5a331cb799e5 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
-:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 .
+
+
+###  http://datos.gob.mx/b9e92c2a_6e79_4015_9256_e33deaeec8ad
+:b9e92c2a_6e79_4015_9256_e33deaeec8ad rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/ba571c3e_119f_4148_a4fc_c5ad83359590
@@ -377,6 +565,35 @@ owl:Class rdf:type owl:Class .
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :b9e92c2a_6e79_4015_9256_e33deaeec8ad ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :b9e92c2a_6e79_4015_9256_e33deaeec8ad .
+
+
+###  http://datos.gob.mx/ba881fe7_6251_44c1_af4f_aa4d9826e864
+:ba881fe7_6251_44c1_af4f_aa4d9826e864 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/bcd29bfa_369e_4ec2_a1cc_2240e1993a70
+:bcd29bfa_369e_4ec2_a1cc_2240e1993a70 rdf:type owl:NamedIndividual ,
+                                               :f5e86a44_aabe_4209_8635_ea5cca897e3d ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756 ,
+                                                                            :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+                                      foaf:homepage <https://www.snieg.mx/> ;
+                                      rdfs:comment "An 'Organization' labeled 'The National System of Statistical and Geographic Information'"@en ,
+                                                   "Una 'Organización' etiquetada 'El Sistema Nacional de Información Estadística y Geográfica'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Sistema Nacional de Información Estadística y Geográfica"@es ,
+                                                 "The National System of Statistical and Geographic Information"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :bcd29bfa_369e_4ec2_a1cc_2240e1993a70 ;
+   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 ;
+   owl:annotatedTarget :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+   owl:versionInfo "relación: parte de"@es ,
+                   "relation: part of"@en
+ ] .
+
+
+###  http://datos.gob.mx/bf4e6b3a_c931_4464_b4a5_e278d8cee8a9
+:bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/c064c390_4edb_4f89_a671_301fb774f9ef
@@ -393,6 +610,18 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :cba263e2_24ca_4849_ac58_6ac534083033 .
 
 
+###  http://datos.gob.mx/c1f338f6_006d_4ef2_a9ba_d0b9fb66502d
+:c1f338f6_006d_4ef2_a9ba_d0b9fb66502d rdf:type owl:NamedIndividual ,
+                                               :b0984e57_8b64_484b_81c2_b143dd70181a ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756 ;
+                                      foaf:page <https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf> ;
+                                      rdfs:comment "A 'Project' labeled 'The Statistical Business Register of Mexico'"@en ,
+                                                   "Un 'Proyecto' etiquetado 'El Registro Estadístico de Negocios de México'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Registro Estadístico de Negocios de México"@es ,
+                                                 "The Statistical Business Register of Mexico"@en .
+
+
 ###  http://datos.gob.mx/c2871766_bffb_4a9b_9a67_4a84f149c11c
 :c2871766_bffb_4a9b_9a67_4a84f149c11c rdf:type owl:NamedIndividual ,
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
@@ -400,10 +629,23 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 .
 
 
+###  http://datos.gob.mx/c4945d83_7935_4f0f_aac3_76310064f96e
+:c4945d83_7935_4f0f_aac3_76310064f96e rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/c5574968_dcd6_4ed7_a404_abfb378c7ab3
+:c5574968_dcd6_4ed7_a404_abfb378c7ab3 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/c6032a59_87b0_4b19_b2b2_d881814e1de4
-:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :a9b56b3f_fe56_45d2_922c_c21c6e9c276d ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :a9b56b3f_fe56_45d2_922c_c21c6e9c276d .
+
+
+###  http://datos.gob.mx/c6c110fa_8f7f_4297_b3ab_523ce3966dd9
+:c6c110fa_8f7f_4297_b3ab_523ce3966dd9 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/c9734edd_846f_44e1_9e03_cb90f17e852d
@@ -420,6 +662,10 @@ owl:Class rdf:type owl:Class .
                                                  "The Mexican Culture"@en .
 
 
+###  http://datos.gob.mx/ca5379ce_307a_4cee_8af8_541a26eb475d
+:ca5379ce_307a_4cee_8af8_541a26eb475d rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/cae12296_c19d_4002_872f_4cce6818ad96
 :cae12296_c19d_4002_872f_4cce6818ad96 rdf:type owl:NamedIndividual ,
                                                :c10984dc_f290_4880_a60b_d6f8b6b22105 ;
@@ -432,10 +678,53 @@ owl:Class rdf:type owl:Class .
                                                  "male"@en .
 
 
+###  http://datos.gob.mx/cba263e2_24ca_4849_ac58_6ac534083033
+:cba263e2_24ca_4849_ac58_6ac534083033 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/cff8a44f_b27f_485e_b2f2_210be0df7192
+:cff8a44f_b27f_485e_b2f2_210be0df7192 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/d16b0c0e_1ce5_4c01_a81b_62630072fb4d
+:d16b0c0e_1ce5_4c01_a81b_62630072fb4d rdf:type owl:NamedIndividual ,
+                                               :f1e41185_de3d_414f_bb94_ffa46189de8c ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :d1e3d97a_92e8_4b09_b9e1_371147398945 ;
+                                      rdfs:comment "A 'Constitution' labeled 'The Political Constitution of the United Mexican States'. Has the 'political' quality"@en ,
+                                                   "Una 'Constitución' etiquetada 'La Constitución Política de los Estados Unidos Mexicanos'. Tiene la cualidad 'política'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "La Constitución Política de los Estados Unidos Mexicanos"@es ,
+                                                 "The Political Constitution of the United Mexican States"@en .
+
+
+###  http://datos.gob.mx/d1e3d97a_92e8_4b09_b9e1_371147398945
+:d1e3d97a_92e8_4b09_b9e1_371147398945 rdf:type owl:NamedIndividual ,
+                                               :dda89cac_96bb_4347_a189_796811cc542a ;
+                                      rdfs:comment "A 'Quality' labeled 'political'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'political'"@en ,
+                                                   "Una 'Cualidad' etiquetada 'política' o 'político'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de \"política\" o \"político\""@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "political"@en ,
+                                                 "política"@es ,
+                                                 "político"@es .
+
+
+###  http://datos.gob.mx/d3b514db_c9e0_40f1_b38c_92cdf0e1aa41
+:d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
-:d3c3da1e_369b_4103_b5bf_58daba879d87 rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:d3c3da1e_369b_4103_b5bf_58daba879d87 rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :e06a1482_4394_423b_a2ba_a5f5942fb284 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :e06a1482_4394_423b_a2ba_a5f5942fb284 .
+
+
+###  http://datos.gob.mx/d4090495_7f84_422e_ac20_305b0d94a91a
+:d4090495_7f84_422e_ac20_305b0d94a91a rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/d4a42972_30ab_4d65_9818_102a8b0f4935
+:d4a42972_30ab_4d65_9818_102a8b0f4935 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/d52561c8_00a1_4af3_9d98_71b6e9e191a3
@@ -443,6 +732,10 @@ owl:Class rdf:type owl:Class .
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :b7c0ca8d_4519_43bc_82c0_5a331cb799e5 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :b7c0ca8d_4519_43bc_82c0_5a331cb799e5 .
+
+
+###  http://datos.gob.mx/d567ba41_6051_4f26_8d4d_2d8a68068531
+:d567ba41_6051_4f26_8d4d_2d8a68068531 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/d791553e_fc86_4b25_bead_a4dd5982de4f
@@ -473,6 +766,10 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 .
 
 
+###  http://datos.gob.mx/e06a1482_4394_423b_a2ba_a5f5942fb284
+:e06a1482_4394_423b_a2ba_a5f5942fb284 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/e0e72c41_9fd7_4087_b78e_b401a3192873
 :e0e72c41_9fd7_4087_b78e_b401a3192873 rdf:type owl:NamedIndividual ,
                                                :fef4ab2d_1443_41ea_8c88_bc4d870e0caa ;
@@ -487,9 +784,14 @@ owl:Class rdf:type owl:Class .
 
 
 ###  http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
-:e1b671b2_280a_4841_a569_76eb85d9473f rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:e1b671b2_280a_4841_a569_76eb85d9473f rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :f7bf33a7_d6f0_4aed_b925_330dde702afb ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :f7bf33a7_d6f0_4aed_b925_330dde702afb .
+
+
+###  http://datos.gob.mx/e46eeee1_4f8c_44ec_98a4_8eb491eec2ba
+:e46eeee1_4f8c_44ec_98a4_8eb491eec2ba rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/e488f280_77a9_4eb8_b753_8e3cd0fbf34e
@@ -502,6 +804,31 @@ owl:Class rdf:type owl:Class .
                                       rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
                                       rdfs:label "female"@en ,
                                                  "hembra"@es .
+
+
+###  http://datos.gob.mx/e49a234f_0ac2_47d8_ac03_0a9788cd24f9
+:e49a234f_0ac2_47d8_ac03_0a9788cd24f9 rdf:type owl:NamedIndividual ,
+                                               :b0984e57_8b64_484b_81c2_b143dd70181a ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756 ;
+                                      foaf:page <https://www.census.gov/naics/> ,
+                                                <https://www.inegi.org.mx/scian/> ;
+                                      rdfs:comment "A 'Project' labeled 'The North American Industry Classification System'"@en ,
+                                                   "Un 'Proyecto' etiquetado 'El Sistema de Clasificación Industrial de América del Norte'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Sistema de Clasificación Industrial de América del Norte"@es ,
+                                                 "The North American Industry Classification System"@en .
+
+
+###  http://datos.gob.mx/e62a535e_a6af_471c_9ef6_55d716ebd4fb
+:e62a535e_a6af_471c_9ef6_55d716ebd4fb rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e9849ae8_891a_4131_9ccb_31a6991c1e4c
+:e9849ae8_891a_4131_9ccb_31a6991c1e4c rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e98eaf63_8f23_4454_99f5_6b71f2acde01
+:e98eaf63_8f23_4454_99f5_6b71f2acde01 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/eb84f160_07b5_4299_828a_12a3ed67b49f
@@ -518,8 +845,13 @@ owl:Class rdf:type owl:Class .
                                                  "The Mexican State"@en .
 
 
+###  http://datos.gob.mx/ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0
+:ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
-:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :d4a42972_30ab_4d65_9818_102a8b0f4935 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :d4a42972_30ab_4d65_9818_102a8b0f4935 .
 
@@ -532,7 +864,8 @@ owl:Class rdf:type owl:Class .
 
 
 ###  http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
-:eea43024_2453_4f4b_80cf_cad96fccfcd4 rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:eea43024_2453_4f4b_80cf_cad96fccfcd4 rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :ab118fe2_9773_44cd_8178_8a503ea1dea8 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :ab118fe2_9773_44cd_8178_8a503ea1dea8 .
 
@@ -551,10 +884,27 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :fd1cb96d_35a9_495a_a6c1_ea441f9a77db .
 
 
+###  http://datos.gob.mx/f4aae162_faa9_40d9_89cf_0a95d109bb9e
+:f4aae162_faa9_40d9_89cf_0a95d109bb9e rdf:type owl:NamedIndividual ,
+                                               :b0984e57_8b64_484b_81c2_b143dd70181a ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756 ;
+                                      foaf:page <https://www.inegi.org.mx/app/mapa/denue/default.aspx> ;
+                                      rdfs:comment "A 'Project' labeled 'The National Statistical Directory of Economic Units'"@en ,
+                                                   "Un 'Proyecto' etiquetado 'El Directorio Estadístico Nacional de Unidades Económicas'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "El Directorio Estadístico Nacional de Unidades Económicas"@es ,
+                                                 "The National Statistical Directory of Economic Units"@en .
+
+
 ###  http://datos.gob.mx/f5e86a44_aabe_4209_8635_ea5cca897e3d
-:f5e86a44_aabe_4209_8635_ea5cca897e3d rdf:type :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
+:f5e86a44_aabe_4209_8635_ea5cca897e3d rdf:type owl:NamedIndividual ,
+                                               :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :c6c110fa_8f7f_4297_b3ab_523ce3966dd9 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :c6c110fa_8f7f_4297_b3ab_523ce3966dd9 .
+
+
+###  http://datos.gob.mx/f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9
+:f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/f7a4f75e_0eac_4c0e_bb39_24351ce93c51
@@ -569,11 +919,23 @@ owl:Class rdf:type owl:Class .
                                                  "woman"@en .
 
 
+###  http://datos.gob.mx/f7bf33a7_d6f0_4aed_b925_330dde702afb
+:f7bf33a7_d6f0_4aed_b925_330dde702afb rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/f7d86ba7_f612_4cef_916c_f6d80d230b64
+:f7d86ba7_f612_4cef_916c_f6d80d230b64 rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/f8c7746c_a1cb_4f99_a8af_0c8a338e0230
 :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 rdf:type owl:NamedIndividual ,
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :b46e3fe1_96d1_41f6_957f_f7823d50a8c0 ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :b46e3fe1_96d1_41f6_957f_f7823d50a8c0 .
+
+
+###  http://datos.gob.mx/fa57b4a9_7c59_4c0f_a0a1_b4d44538c611
+:fa57b4a9_7c59_4c0f_a0a1_b4d44538c611 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/fc851746_03d3_4420_8d59_f9f7d6e325e4
@@ -583,11 +945,19 @@ owl:Class rdf:type owl:Class .
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :ba881fe7_6251_44c1_af4f_aa4d9826e864 .
 
 
+###  http://datos.gob.mx/fd1cb96d_35a9_495a_a6c1_ea441f9a77db
+:fd1cb96d_35a9_495a_a6c1_ea441f9a77db rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/fef4ab2d_1443_41ea_8c88_bc4d870e0caa
 :fef4ab2d_1443_41ea_8c88_bc4d870e0caa rdf:type owl:NamedIndividual ,
                                                :eea43024_2453_4f4b_80cf_cad96fccfcd4 ;
                                       :a55a93ef_28dc_41b2_b537_eb916507bfdd :e9849ae8_891a_4131_9ccb_31a6991c1e4c ;
                                       :f0b0c790_e005_4539_80b5_263dc433ebc0 :e9849ae8_891a_4131_9ccb_31a6991c1e4c .
+
+
+###  http://datos.gob.mx/ff11d93b_5c11_45ac_8d7a_ce37714788be
+:ff11d93b_5c11_45ac_8d7a_ce37714788be rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/ff47663c_36a2_4d26_9948_c47e6f473f8b
@@ -601,6 +971,34 @@ owl:Class rdf:type owl:Class .
                                       rdfs:label "mexican"@en ,
                                                  "mexicana"@es ,
                                                  "mexicano"@es .
+
+
+###  https://www.census.gov/naics/
+<https://www.census.gov/naics/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf
+<https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf> rdf:type owl:NamedIndividual .
+
+
+###  https://www.inegi.org.mx/
+<https://www.inegi.org.mx/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.inegi.org.mx/app/ageeml/
+<https://www.inegi.org.mx/app/ageeml/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.inegi.org.mx/app/mapa/denue/default.aspx
+<https://www.inegi.org.mx/app/mapa/denue/default.aspx> rdf:type owl:NamedIndividual .
+
+
+###  https://www.inegi.org.mx/scian/
+<https://www.inegi.org.mx/scian/> rdf:type owl:NamedIndividual .
+
+
+###  https://www.snieg.mx/
+<https://www.snieg.mx/> rdf:type owl:NamedIndividual .
 
 
 #################################################################
@@ -632,6 +1030,15 @@ owl:Class rdf:type owl:Class .
                                                  "Nation (Class)"@en ;
                                       skos:prefLabel "Nación"@es ,
                                                      "Nation"@en .
+
+
+:b0984e57_8b64_484b_81c2_b143dd70181a rdfs:comment "A 'Class' labeled 'Project' subclass of 'Thing'. Each of its instances is defined as a 'Project'"@en ,
+                                                   "Una 'Clase' etiquetada 'Proyecto' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Proyecto'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/onto/> ;
+                                      rdfs:label "Project (Class)"@en ,
+                                                 "Proyecto (Clase)"@es ;
+                                      skos:prefLabel "Project"@en ,
+                                                     "Proyecto"@es .
 
 
 :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdfs:comment "A 'Class' labeled 'Person' subclass of 'Thing'. Each of its instances is defined as a 'Person'"@en ,

@@ -9,7 +9,8 @@
 
 <http://datos.gob.mx/voc/> rdf:type owl:Ontology ;
                             owl:versionIRI <http://datos.gob.mx/voc/0.0.0> ;
-                            owl:imports <http://datos.gob.mx/0.0.0> ;
+                            owl:imports <http://datos.gob.mx/0.0.0> ,
+                                        <http://datos.gob.mx/onto/0.0.0> ;
                             rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
                             rdfs:label "El Vocabulario Controlado de México"@es ,
                                        "The Mexico Controlled Vocabulary"@es .
@@ -41,6 +42,10 @@ skos:topConceptOf rdf:type owl:ObjectProperty .
 #################################################################
 #    Classes
 #################################################################
+
+###  http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
+:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdf:type owl:Class .
+
 
 ###  http://datos.gob.mx/f30c1027_78c0_401d_a38c_9a1622b9eba8
 :f30c1027_78c0_401d_a38c_9a1622b9eba8 rdf:type owl:Class .
@@ -97,10 +102,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                      "Quality"@en .
 
 
-###  http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
-:a418160a_c783_42e9_97d6_baffb88467a0 rdf:type owl:NamedIndividual .
-
-
 ###  http://datos.gob.mx/a54afb44_8ce8_446b_bde2_339f7f01bcc8
 :a54afb44_8ce8_446b_bde2_339f7f01bcc8 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -114,10 +115,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                       skos:prefLabel "mexican"@en ,
                                                      "mexicana"@es ,
                                                      "mexicano"@es .
-
-
-###  http://datos.gob.mx/a59b12bb_7630_4d82_95bb_34de9b8e922e
-:a59b12bb_7630_4d82_95bb_34de9b8e922e rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/a8fe9c49_4473_448c_b666_c6f99c609cdd
@@ -224,10 +221,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                      "Federation"@en .
 
 
-###  http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
-:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 rdf:type owl:NamedIndividual .
-
-
 ###  http://datos.gob.mx/b9e92c2a_6e79_4015_9256_e33deaeec8ad
 :b9e92c2a_6e79_4015_9256_e33deaeec8ad rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -293,10 +286,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                      "The Mexican State"@en .
 
 
-###  http://datos.gob.mx/c6032a59_87b0_4b19_b2b2_d881814e1de4
-:c6032a59_87b0_4b19_b2b2_d881814e1de4 rdf:type owl:NamedIndividual .
-
-
 ###  http://datos.gob.mx/c6c110fa_8f7f_4297_b3ab_523ce3966dd9
 :c6c110fa_8f7f_4297_b3ab_523ce3966dd9 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -335,6 +324,19 @@ skos:ConceptScheme rdf:type owl:Class .
                                                      "Sexo"@es .
 
 
+###  http://datos.gob.mx/cff8a44f_b27f_485e_b2f2_210be0df7192
+:cff8a44f_b27f_485e_b2f2_210be0df7192 rdf:type owl:NamedIndividual ,
+                                               :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "A 'Concept' labeled 'Project'"@en ,
+                                                   "Un 'Concepto' etiquetado 'Proyecto'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "Project (Concept)"@en ,
+                                                 "Proyecto (Concepto)"@es ;
+                                      skos:prefLabel "Project"@en ,
+                                                     "Proyecto"@es .
+
+
 ###  http://datos.gob.mx/d3b514db_c9e0_40f1_b38c_92cdf0e1aa41
 :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
@@ -346,10 +348,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                  "Persona (Concepto)"@es ;
                                       skos:prefLabel "Person"@en ,
                                                      "Persona"@es .
-
-
-###  http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
-:d3c3da1e_369b_4103_b5bf_58daba879d87 rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/d4090495_7f84_422e_ac20_305b0d94a91a
@@ -369,6 +367,7 @@ skos:ConceptScheme rdf:type owl:Class .
 :d4a42972_30ab_4d65_9818_102a8b0f4935 rdf:type owl:NamedIndividual ,
                                                :f30c1027_78c0_401d_a38c_9a1622b9eba8 ;
                                       skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      :c55f7a9f_8e55_45e2_87c0_f22a089c42d8 :ee1d0fb5_b76b_4b3a_860e_1046ef73472d ;
                                       rdfs:comment "A 'Concept' labeled 'Concept Scheme'"@en ,
                                                    "Un 'Concepto' etiquetado 'Esquema de Conceptos'"@es ;
                                       rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
@@ -404,8 +403,19 @@ skos:ConceptScheme rdf:type owl:Class .
                                                      "Woman"@en .
 
 
-###  http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
-:e1b671b2_280a_4841_a569_76eb85d9473f rdf:type owl:NamedIndividual .
+###  http://datos.gob.mx/e240586b_0bb3_463b_8458_5c0e16953b80
+:e240586b_0bb3_463b_8458_5c0e16953b80 rdf:type owl:NamedIndividual ,
+                                               skos:Concept ;
+                                      skos:inScheme <http://datos.gob.mx/voc#> ;
+                                      rdfs:comment "A 'Concept' labeled 'political'"@en ,
+                                                   "Un 'Concepto' etiquetado 'político' o 'política'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/voc/> ;
+                                      rdfs:label "political (Concept)"@en ,
+                                                 "política (Concepto)"@es ,
+                                                 "político (Concepto)"@es ;
+                                      skos:prefLabel "political"@en ,
+                                                     "política"@es ,
+                                                     "político"@es .
 
 
 ###  http://datos.gob.mx/e46eeee1_4f8c_44ec_98a4_8eb491eec2ba
@@ -471,18 +481,6 @@ skos:ConceptScheme rdf:type owl:Class .
                                                  "State (Concept)"@en ;
                                       skos:prefLabel "Estado"@es ,
                                                      "State"@en .
-
-
-###  http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
-:ee1d0fb5_b76b_4b3a_860e_1046ef73472d rdf:type owl:NamedIndividual .
-
-
-###  http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
-:eea43024_2453_4f4b_80cf_cad96fccfcd4 rdf:type owl:NamedIndividual .
-
-
-###  http://datos.gob.mx/f5e86a44_aabe_4209_8635_ea5cca897e3d
-:f5e86a44_aabe_4209_8635_ea5cca897e3d rdf:type owl:NamedIndividual .
 
 
 ###  http://datos.gob.mx/f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9
