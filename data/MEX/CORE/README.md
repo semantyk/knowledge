@@ -2,9 +2,9 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \ # `README.md`
 \ @organization: Semantyk
-\ @project: Core Knowledge Graph
+\ @project: The Core Knowledge Graph of Mexico
 \
-\ @file: This is the main README file for the Mexico Controlled Vocabulary
+\ @file: This is the main README file for the The Core Knowledge Graph of Mexico
 \ project.
 \
 \ @created: Nov 27, 2024
@@ -17,7 +17,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 )
 
-<h1 align='center'>Mexico Core Knowledge Graph | Semantyk</h1>
+<h1 align='center'>The Core Knowledge Graph of Mexico | Semantyk</h1>
 <h3 align='center'><i>Ideas Wonder</i></h3>
 <p align='center'>
   <picture>
