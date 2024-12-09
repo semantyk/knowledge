@@ -12,7 +12,7 @@
 
 <> a owl:Ontology;
   owl:versionIRI <0.0.0/>;
-  owl:imports <core/0.0.0/>, <http://usefulinc.com/ns/doap#>, <http://www.w3.org/2004/02/skos/core>,
-    <http://www.w3.org/ns/org#>, <http://xmlns.com/foaf/0.1/>;
+  owl:imports <cat/0.0.0/>, <core/0.0.0/>, <fed/0.0.0/>, <http://usefulinc.com/ns/doap#>,
+    <http://www.w3.org/2004/02/skos/core>, <http://www.w3.org/ns/org#>, <http://xmlns.com/foaf/0.1/>;
   rdfs:isDefinedBy <>;
   rdfs:label "El Grafo de Conocimiento de México"@es, "The Knowledge Graph of Mexico"@es .
