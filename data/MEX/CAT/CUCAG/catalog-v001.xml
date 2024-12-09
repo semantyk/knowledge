@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/cat/ccef/0.0.0" uri="CCEF/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/cat/ucm/0.0.0/" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/CUM/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/0.0.0" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/0.0.0" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/0.0.0" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/0.0.0" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/main.ttl"/>
