@@ -391,7 +391,6 @@
 
 <core/onto/> a owl:Ontology;
   owl:versionIRI <core/onto/0.0.0/>;
-  owl:imports <core/0.0.0/>;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "La Ontología Núcleo de México"@es, "The Core Ontology of Mexico"@es .
 
@@ -833,15 +832,7 @@ skos:ConceptScheme a owl:Class .
 
 :a8fe9c49_4473_448c_b666_c6f99c609cdd a owl:NamedIndividual .
 
-:a96355d4_e44d_4abf_b730_e2d69a342a12 a owl:NamedIndividual, :d52561c8_00a1_4af3_9d98_71b6e9e191a3;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :b141f627_98cd_40ba_9354_cd34711b1540;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :b141f627_98cd_40ba_9354_cd34711b1540;
-  rdfs:comment "A 'Federación' labeled 'The Mexican Federation'. It is defined as 'The Mexican Culture' and has the 'mexican' quality"@en,
-    "Una 'Federación' etiquetada 'La Federación Mexicana'. Se define como 'La Federación Mexicana' y tiene la cualidad 'mexicana'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "La Federación Mexicana"@es, "The Mexican Federation"@en .
+:a96355d4_e44d_4abf_b730_e2d69a342a12 a owl:NamedIndividual .
 
 :a9b56b3f_fe56_45d2_922c_c21c6e9c276d a owl:NamedIndividual .
 

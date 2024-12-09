@@ -1,4 +1,3 @@
-@base <http://datos.gob.mx/> .
 @prefix : <http://datos.gob.mx/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -8,497 +7,603 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-# 
-# 
-# #################################################################
-# #
-# #    Annotation properties
-# #
-# #################################################################
-# 
-# 
-# http://www.w3.org/2004/02/skos/core#prefLabel
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Object Properties
-# #
-# #################################################################
-# 
-# 
-# http://datos.gob.mx/dca9db1b_2f0f_49b7_bb54_223ec90c07cf
-# 
-# http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
-# 
-# http://purl.org/dc/terms/isPartOf
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Classes
-# #
-# #################################################################
-# 
-# 
-# http://datos.gob.mx/fd98d032_2fdd_4491_a235_a445ec0a7bf6
-# 
-# http://www.w3.org/ns/dcat#Dataset
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# http://datos.gob.mx/a1a017d0_7459_4001_960d_4af51bbc7baf
-# 
-# http://datos.gob.mx/a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f
-# 
-# http://datos.gob.mx/a2376873_5961_493d_a4a5_44e366b3a72e
-# 
-# http://datos.gob.mx/a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c
-# 
-# http://datos.gob.mx/a46deff3_59fe_413e_9d73_c3859b0faa48
-# 
-# http://datos.gob.mx/a62abb1c_2b16_4197_9f2c_0c29f1b9ddff
-# 
-# http://datos.gob.mx/a8c43df0_90c8_4a3c_b3af_415dece7e7c2
-# 
-# http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
-# 
-# http://datos.gob.mx/ac863815_065a_4b09_84d7_a8f260816347
-# 
-# http://datos.gob.mx/adaf5e6d_7dcd_42b3_a7e7_f2b0075114af
-# 
-# http://datos.gob.mx/afc50617_af12_4f7b_a5c9_6e6bf86d207e
-# 
-# http://datos.gob.mx/b17829a3_fc4f_42e5_beab_b53eca7a6927
-# 
-# http://datos.gob.mx/b31bb503_039c_4093_995e_e76d2ee48291
-# 
-# http://datos.gob.mx/b483df84_82cf_4bd8_8e33_37ca4352e62a
-# 
-# http://datos.gob.mx/b6b58a54_2085_4146_8c5c_4c76ae938355
-# 
-# http://datos.gob.mx/b723f1b4_d73d_4348_8a4e_31e0bbcce5d9
-# 
-# http://datos.gob.mx/b9674ff0_3060_446c_a526_154fc980db30
-# 
-# http://datos.gob.mx/b9791ab2_384e_4d4b_986a_ba9f8b67471d
-# 
-# http://datos.gob.mx/bb840da2_f815_45ef_97e5_af9c06d75876
-# 
-# http://datos.gob.mx/bc1db698_01cd_4b1b_b1ee_5d51d8c66431
-# 
-# http://datos.gob.mx/bc464513_4994_4be5_bd6e_426e8f6ce5df
-# 
-# http://datos.gob.mx/bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2
-# 
-# http://datos.gob.mx/bea20bf2_98b4_4407_a8ba_6f25a6f862a9
-# 
-# http://datos.gob.mx/c024a609_e955_4ae6_af7b_5b10809f3fac
-# 
-# http://datos.gob.mx/c073b4e3_ab08_4b6a_94e6_eed34eeebab9
-# 
-# http://datos.gob.mx/c16e3867_6e48_4bc6_b75b_5b86b2d764e3
-# 
-# http://datos.gob.mx/c3e5dd33_00d4_4b5e_8878_9b8990822871
-# 
-# http://datos.gob.mx/c439a131_0695_4a1a_b31c_14452d6218cd
-# 
-# http://datos.gob.mx/c973de06_dc0d_4309_9f94_5cd2f330f934
-# 
-# http://datos.gob.mx/c99fc5db_088d_4ef4_93cb_060317ee6653
-# 
-# http://datos.gob.mx/ca10f172_4966_450a_a3fb_37904c29cdd0
-# 
-# http://datos.gob.mx/cc9884ef_999d_4cf2_bf72_47575917a6ad
-# 
-# http://datos.gob.mx/cf09a6a0_f74a_4e19_b34a_9315977a85da
-# 
-# http://datos.gob.mx/d011f2f2_7978_427d_9b30_08037705ccfd
-# 
-# http://datos.gob.mx/d0b99840_cec6_4f73_8aea_41ec73d94442
-# 
-# http://datos.gob.mx/d1338d60_c3f0_49a4_bf29_ebbea11b5ff7
-# 
-# http://datos.gob.mx/d13bfc7d_a096_40f6_801f_2acea59d434c
-# 
-# http://datos.gob.mx/d3a42932_6526_45a6_b595_bf7c112a224a
-# 
-# http://datos.gob.mx/d4a9df88_fff3_49fa_8aca_df3453f52f90
-# 
-# http://datos.gob.mx/d8d56b63_f2ef_4218_9343_d1936765f35b
-# 
-# http://datos.gob.mx/d9c6f5a6_fde6_42f1_8f30_d5f78463f9ea
-# 
-# http://datos.gob.mx/d9dceba3_7616_4ca4_9472_2765c31f4108
-# 
-# http://datos.gob.mx/dad4e5af_2124_4f12_92de_8acd02e502d4
-# 
-# http://datos.gob.mx/db13c3fb_656a_4fb9_ac7a_2f1e74449ca1
-# 
-# http://datos.gob.mx/dcd24d02_5312_4934_bc85_bc7f64d76406
-# 
-# http://datos.gob.mx/dcdd4971_3783_45c8_9aa3_c369e99dd9bf
-# 
-# http://datos.gob.mx/de4c693c_bdb5_467f_b112_c18db1ddd627
-# 
-# http://datos.gob.mx/e161c75a_17b7_4a58_a725_5e61acbd609c
-# 
-# http://datos.gob.mx/e2b0c2ed_8ad0_47e6_9c11_8409e3327a2a
-# 
-# http://datos.gob.mx/e2f991aa_d311_4896_9cd2_6a13efce3de6
-# 
-# http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
-# 
-# http://datos.gob.mx/e5423592_6699_41fc_ab86_e4df786b05b8
-# 
-# http://datos.gob.mx/e601a68d_ea1b_4ac9_b222_b146f0839481
-# 
-# http://datos.gob.mx/e729ca23_0933_4168_b4f9_fc57a5591a13
-# 
-# http://datos.gob.mx/edce115e_62fe_434c_86fc_5e1d834e0625
-# 
-# http://datos.gob.mx/eff96bf8_ee3c_40fe_b993_cc04a019131e
-# 
-# http://datos.gob.mx/f133fc27_6776_461f_a070_2ffb95584414
-# 
-# http://datos.gob.mx/f17fff98_735a_443a_8d82_3b4afedb1214
-# 
-# http://datos.gob.mx/f3e47a7b_d977_4ddc_ba35_272d98e5fdaf
-# 
-# http://datos.gob.mx/f6ca4c30_026c_4c21_af9e_7cbb3f211740
-# 
-# http://datos.gob.mx/f7765109_dadd_41f1_84c8_3d7738ec23c4
-# 
-# http://datos.gob.mx/fcbef7bc_ab09_425f_b998_fb620c809798
-# 
-# http://datos.gob.mx/fcc5af73_c1e2_4f9e_8781_42810f37a690
-# 
-# http://datos.gob.mx/fd83f2c9_bcdd_4c3d_9b57_b142d90b8028
-# 
-# http://datos.gob.mx/fe06555f_91fa_47b6_a29d_1e0b93216a48
-# 
-# http://datos.gob.mx/fe6609f2_f88c_4dc0_a8ad_6c6cd5750204
-# 
-# Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
-
-<onto/ef/> a owl:Ontology;
-  owl:versionIRI <onto/ef/0.0.0/>;
-  rdfs:isDefinedBy <onto/ef/>;
-  rdfs:label "La Ontología de las Entidades Federales de México"@es, "The Federal Entities of Mexico Ontology"@en .
-
-skos:prefLabel a owl:AnnotationProperty .
-
-:dca9db1b_2f0f_49b7_bb54_223ec90c07cf a owl:ObjectProperty .
-
-:e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 a owl:ObjectProperty .
-
-dcterms:isPartOf a owl:ObjectProperty .
-
-:fd98d032_2fdd_4491_a235_a445ec0a7bf6 a owl:Class .
-
-dcat:Dataset a owl:Class .
-
-:a1a017d0_7459_4001_960d_4af51bbc7baf a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a46deff3_59fe_413e_9d73_c3859b0faa48;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Ciudad de México"@es, "The Ciudad de México Federal Entity"@en;
-  skos:prefLabel "Ciudad de México"@en, "Ciudad de México"@es .
-
-:a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f a owl:NamedIndividual .
-
-:a2376873_5961_493d_a4a5_44e366b3a72e a owl:NamedIndividual .
-
-:a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c a owl:NamedIndividual .
-
-:a46deff3_59fe_413e_9d73_c3859b0faa48 a owl:NamedIndividual .
-
-:a62abb1c_2b16_4197_9f2c_0c29f1b9ddff a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b9791ab2_384e_4d4b_986a_ba9f8b67471d;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Tabasco"@es, "The Tabasco Federal Entity"@en;
-  skos:prefLabel "Tabasco"@en, "Tabasco"@es .
-
-:a8c43df0_90c8_4a3c_b3af_415dece7e7c2 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b723f1b4_d73d_4348_8a4e_31e0bbcce5d9;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de México"@es, "The México Federal Entity"@en;
-  skos:prefLabel "México"@en, "México"@es .
-
-:a96355d4_e44d_4abf_b730_e2d69a342a12 a owl:NamedIndividual .
-
-:ac863815_065a_4b09_84d7_a8f260816347 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e2f991aa_d311_4896_9cd2_6a13efce3de6;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Campeche"@es, "The Campeche Federal Entity"@en;
-  skos:prefLabel "Campeche"@en, "Campeche"@es .
-
-:adaf5e6d_7dcd_42b3_a7e7_f2b0075114af a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e40a5e47_3fa8_40cc_adda_c9e6f43569ff;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Aguascalientes"@es, "The Aguascalientes Federal Entity"@en;
-  skos:prefLabel "Aguascalientes"@en, "Aguascalientes"@es .
-
-:afc50617_af12_4f7b_a5c9_6e6bf86d207e a owl:NamedIndividual .
-
-:b17829a3_fc4f_42e5_beab_b53eca7a6927 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :cf09a6a0_f74a_4e19_b34a_9315977a85da;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Guanajuato"@es, "The Guanajuato Federal Entity"@en;
-  skos:prefLabel "Guanajuato"@en, "Guanajuato"@es .
-
-:b31bb503_039c_4093_995e_e76d2ee48291 a owl:NamedIndividual .
-
-:b483df84_82cf_4bd8_8e33_37ca4352e62a a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a2376873_5961_493d_a4a5_44e366b3a72e;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Hidalgo"@es, "The Hidalgo Federal Entity"@en;
-  skos:prefLabel "Hidalgo"@en, "Hidalgo"@es .
-
-:b6b58a54_2085_4146_8c5c_4c76ae938355 a owl:NamedIndividual .
-
-:b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 a owl:NamedIndividual .
-
-:b9674ff0_3060_446c_a526_154fc980db30 a owl:NamedIndividual .
-
-:b9791ab2_384e_4d4b_986a_ba9f8b67471d a owl:NamedIndividual .
-
-:bb840da2_f815_45ef_97e5_af9c06d75876 a owl:NamedIndividual .
-
-:bc1db698_01cd_4b1b_b1ee_5d51d8c66431 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e601a68d_ea1b_4ac9_b222_b146f0839481;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Nayarit"@es, "The Nayarit Federal Entity"@en;
-  skos:prefLabel "Nayarit"@en, "Nayarit"@es .
-
-:bc464513_4994_4be5_bd6e_426e8f6ce5df a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :afc50617_af12_4f7b_a5c9_6e6bf86d207e;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Yucatán"@es, "The Yucatán Federal Entity"@en;
-  skos:prefLabel "Yucatán"@en, "Yucatán"@es .
-
-:bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 a owl:NamedIndividual .
-
-:bea20bf2_98b4_4407_a8ba_6f25a6f862a9 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :eff96bf8_ee3c_40fe_b993_cc04a019131e;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Colima"@es, "The Colima Federal Entity"@en;
-  skos:prefLabel "Colima"@en, "Colima"@es .
-
-:c024a609_e955_4ae6_af7b_5b10809f3fac a owl:NamedIndividual .
-
-:c073b4e3_ab08_4b6a_94e6_eed34eeebab9 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f3e47a7b_d977_4ddc_ba35_272d98e5fdaf;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Nuevo León"@es, "The Nuevo León Federal Entity"@en;
-  skos:prefLabel "Nuevo León"@en, "Nuevo León"@es .
-
-:c16e3867_6e48_4bc6_b75b_5b86b2d764e3 a owl:NamedIndividual .
-
-:c3e5dd33_00d4_4b5e_8878_9b8990822871 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c024a609_e955_4ae6_af7b_5b10809f3fac;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Zacatecas"@es, "The Zacatecas Federal Entity"@en;
-  skos:prefLabel "Zacatecas"@en, "Zacatecas"@es .
-
-:c439a131_0695_4a1a_b31c_14452d6218cd a owl:NamedIndividual .
-
-:c973de06_dc0d_4309_9f94_5cd2f330f934 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c16e3867_6e48_4bc6_b75b_5b86b2d764e3;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Tlaxcala"@es, "The Tlaxcala Federal Entity"@en;
-  skos:prefLabel "Tlaxcala"@en, "Tlaxcala"@es .
-
-:c99fc5db_088d_4ef4_93cb_060317ee6653 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :d4a9df88_fff3_49fa_8aca_df3453f52f90;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Jalisco"@es, "The Jalisco Federal Entity"@en;
-  skos:prefLabel "Jalisco"@en, "Jalisco"@es .
-
-:ca10f172_4966_450a_a3fb_37904c29cdd0 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b9674ff0_3060_446c_a526_154fc980db30;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Chihuahua"@es, "The Chihuahua Federal Entity"@en;
-  skos:prefLabel "Chihuahua"@en, "Chihuahua"@es .
-
-:cc9884ef_999d_4cf2_bf72_47575917a6ad a owl:NamedIndividual .
-
-:cf09a6a0_f74a_4e19_b34a_9315977a85da a owl:NamedIndividual .
-
-:d011f2f2_7978_427d_9b30_08037705ccfd a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :fe6609f2_f88c_4dc0_a8ad_6c6cd5750204;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de San Luis Potosí"@es, "The San Luis Potosí Federal Entity"@en;
-  skos:prefLabel "San Luis Potosí"@en, "San Luis Potosí"@es .
-
-:d0b99840_cec6_4f73_8aea_41ec73d94442 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :db13c3fb_656a_4fb9_ac7a_2f1e74449ca1;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Oaxaca"@es, "The Oaxaca Federal Entity"@en;
-  skos:prefLabel "Oaxaca"@en, "Oaxaca"@es .
-
-:d1338d60_c3f0_49a4_bf29_ebbea11b5ff7 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Sinaloa"@es, "The Sinaloa Federal Entity"@en;
-  skos:prefLabel "Sinaloa"@en, "Sinaloa"@es .
-
-:d13bfc7d_a096_40f6_801f_2acea59d434c a owl:NamedIndividual .
-
-:d3a42932_6526_45a6_b595_bf7c112a224a a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Baja California"@es, "The Baja California Federal Entity"@en;
-  skos:prefLabel "Baja California"@en, "Baja California"@es .
-
-:d4a9df88_fff3_49fa_8aca_df3453f52f90 a owl:NamedIndividual .
-
-:d8d56b63_f2ef_4218_9343_d1936765f35b a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e161c75a_17b7_4a58_a725_5e61acbd609c;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Quintana Roo"@es, "The Quintana Roo Federal Entity"@en;
-  skos:prefLabel "Quintana Roo"@en, "Quintana Roo"@es .
-
-:d9c6f5a6_fde6_42f1_8f30_d5f78463f9ea a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :dcdd4971_3783_45c8_9aa3_c369e99dd9bf;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Guerrero"@es, "The Guerrero Federal Entity"@en;
-  skos:prefLabel "Guerrero"@en, "Guerrero"@es .
-
-:d9dceba3_7616_4ca4_9472_2765c31f4108 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b6b58a54_2085_4146_8c5c_4c76ae938355;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Baja California Sur"@es, "The Baja California Sur Federal Entity"@en;
-  skos:prefLabel "Baja California Sur"@en, "Baja California Sur"@es .
-
-:dad4e5af_2124_4f12_92de_8acd02e502d4 a owl:NamedIndividual .
-
-:db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 a owl:NamedIndividual .
-
-:dcd24d02_5312_4934_bc85_bc7f64d76406 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :d13bfc7d_a096_40f6_801f_2acea59d434c;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Querétaro"@es, "The Querétaro Federal Entity"@en;
-  skos:prefLabel "Querétaro"@en, "Querétaro"@es .
-
-:dcdd4971_3783_45c8_9aa3_c369e99dd9bf a owl:NamedIndividual .
-
-:de4c693c_bdb5_467f_b112_c18db1ddd627 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :bb840da2_f815_45ef_97e5_af9c06d75876;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Sonora"@es, "The Sonora Federal Entity"@en;
-  skos:prefLabel "Sonora"@en, "Sonora"@es .
-
-:e161c75a_17b7_4a58_a725_5e61acbd609c a owl:NamedIndividual .
-
-:e2b0c2ed_8ad0_47e6_9c11_8409e3327a2a a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f17fff98_735a_443a_8d82_3b4afedb1214;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Puebla"@es, "The Puebla Federal Entity"@en;
-  skos:prefLabel "Puebla"@en, "Puebla"@es .
-
-:e2f991aa_d311_4896_9cd2_6a13efce3de6 a owl:NamedIndividual .
-
-:e40a5e47_3fa8_40cc_adda_c9e6f43569ff a owl:NamedIndividual .
-
-:e5423592_6699_41fc_ab86_e4df786b05b8 a owl:NamedIndividual, dcat:Dataset;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a96355d4_e44d_4abf_b730_e2d69a342a12;
-  rdfs:comment "A 'Dataset' labeled 'The Set of Federal Entities'"@en, "Un 'Conjunto de Datos' etiquetado 'El Conjunto de Entidades Federales'"@es;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "El Conjunto de Entidades Federales"@es, "The Set of Federal Entities"@en .
-
-:e601a68d_ea1b_4ac9_b222_b146f0839481 a owl:NamedIndividual .
-
-:e729ca23_0933_4168_b4f9_fc57a5591a13 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c439a131_0695_4a1a_b31c_14452d6218cd;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Coahuila de Zaragoza"@es, "The Coahuila de Zaragoza Federal Entity"@en;
-  skos:prefLabel "Coahuila de Zaragoza"@en, "Coahuila de Zaragoza"@es .
-
-:edce115e_62fe_434c_86fc_5e1d834e0625 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f7765109_dadd_41f1_84c8_3d7738ec23c4;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Michoacán de Ocampo"@es, "The Michoacán de Ocampo Federal Entity"@en;
-  skos:prefLabel "Michoacán de Ocampo"@en, "Michoacán de Ocampo"@es .
-
-:eff96bf8_ee3c_40fe_b993_cc04a019131e a owl:NamedIndividual .
-
-:f133fc27_6776_461f_a070_2ffb95584414 a owl:NamedIndividual .
-
-:f17fff98_735a_443a_8d82_3b4afedb1214 a owl:NamedIndividual .
-
-:f3e47a7b_d977_4ddc_ba35_272d98e5fdaf a owl:NamedIndividual .
-
-:f6ca4c30_026c_4c21_af9e_7cbb3f211740 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :dad4e5af_2124_4f12_92de_8acd02e502d4;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Durango"@es, "The Durango Federal Entity"@en;
-  skos:prefLabel "Durango"@en, "Durango"@es .
-
-:f7765109_dadd_41f1_84c8_3d7738ec23c4 a owl:NamedIndividual .
-
-:fcbef7bc_ab09_425f_b998_fb620c809798 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b31bb503_039c_4093_995e_e76d2ee48291;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Veracruz de Ignacio de la Llave"@es, "The Veracruz de Ignacio de la Llave Federal Entity"@en;
-  skos:prefLabel "Veracruz de Ignacio de la Llave"@en, "Veracruz de Ignacio de la Llave"@es .
-
-:fcc5af73_c1e2_4f9e_8781_42810f37a690 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Chiapas"@es, "The Chiapas Federal Entity"@en;
-  skos:prefLabel "Chiapas"@en, "Chiapas"@es .
-
-:fd83f2c9_bcdd_4c3d_9b57_b142d90b8028 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :cc9884ef_999d_4cf2_bf72_47575917a6ad;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Morelos"@es, "The Morelos Federal Entity"@en;
-  skos:prefLabel "Morelos"@en, "Morelos"@es .
-
-:fe06555f_91fa_47b6_a29d_1e0b93216a48 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
-  :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f133fc27_6776_461f_a070_2ffb95584414;
-  dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8;
-  rdfs:isDefinedBy <cat/ccef/>;
-  rdfs:label "La Entidad Federal de Tamaulipas"@es, "The Tamaulipas Federal Entity"@en;
-  skos:prefLabel "Tamaulipas"@en, "Tamaulipas"@es .
-
-:fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 a owl:NamedIndividual .
+@base <http://datos.gob.mx/> .
+
+<http://datos.gob.mx/fed/oef/> rdf:type owl:Ontology ;
+                                owl:versionIRI <http://datos.gob.mx/fed/oef/0.0.0/> ;
+                                owl:imports <http://datos.gob.mx/fed/0.0.0/> ;
+                                rdfs:isDefinedBy <http://datos.gob.mx/onto/ef/> ;
+                                rdfs:label "La Ontología de las Entidades Federales de México"@es ,
+                                           "The Federal Entities of Mexico Ontology"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://datos.gob.mx/a55a93ef_28dc_41b2_b537_eb916507bfdd
+:a55a93ef_28dc_41b2_b537_eb916507bfdd rdf:type owl:ObjectProperty .
+
+
+###  http://datos.gob.mx/b64ea212_cb7d_473d_9f38_5d1a8911b8ca
+:b64ea212_cb7d_473d_9f38_5d1a8911b8ca rdf:type owl:ObjectProperty .
+
+
+###  http://datos.gob.mx/dca9db1b_2f0f_49b7_bb54_223ec90c07cf
+:dca9db1b_2f0f_49b7_bb54_223ec90c07cf rdf:type owl:ObjectProperty .
+
+
+###  http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
+:e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 rdf:type owl:ObjectProperty .
+
+
+###  http://datos.gob.mx/f0b0c790_e005_4539_80b5_263dc433ebc0
+:f0b0c790_e005_4539_80b5_263dc433ebc0 rdf:type owl:ObjectProperty .
+
+
+###  http://purl.org/dc/terms/isPartOf
+dcterms:isPartOf rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://datos.gob.mx/fd98d032_2fdd_4491_a235_a445ec0a7bf6
+:fd98d032_2fdd_4491_a235_a445ec0a7bf6 rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/dcat#Dataset
+dcat:Dataset rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://datos.gob.mx/a1a017d0_7459_4001_960d_4af51bbc7baf
+:a1a017d0_7459_4001_960d_4af51bbc7baf rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a46deff3_59fe_413e_9d73_c3859b0faa48 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Ciudad de México"@es ,
+                                                 "The Ciudad de México Federal Entity"@en ;
+                                      skos:prefLabel "Ciudad de México"@en ,
+                                                     "Ciudad de México"@es .
+
+
+###  http://datos.gob.mx/a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f
+:a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a2376873_5961_493d_a4a5_44e366b3a72e
+:a2376873_5961_493d_a4a5_44e366b3a72e rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c
+:a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a46deff3_59fe_413e_9d73_c3859b0faa48
+:a46deff3_59fe_413e_9d73_c3859b0faa48 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/a62abb1c_2b16_4197_9f2c_0c29f1b9ddff
+:a62abb1c_2b16_4197_9f2c_0c29f1b9ddff rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b9791ab2_384e_4d4b_986a_ba9f8b67471d ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Tabasco"@es ,
+                                                 "The Tabasco Federal Entity"@en ;
+                                      skos:prefLabel "Tabasco"@en ,
+                                                     "Tabasco"@es .
+
+
+###  http://datos.gob.mx/a8c43df0_90c8_4a3c_b3af_415dece7e7c2
+:a8c43df0_90c8_4a3c_b3af_415dece7e7c2 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de México"@es ,
+                                                 "The México Federal Entity"@en ;
+                                      skos:prefLabel "México"@en ,
+                                                     "México"@es .
+
+
+###  http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
+:a96355d4_e44d_4abf_b730_e2d69a342a12 rdf:type owl:NamedIndividual ,
+                                               :d52561c8_00a1_4af3_9d98_71b6e9e191a3 ;
+                                      :a55a93ef_28dc_41b2_b537_eb916507bfdd :b141f627_98cd_40ba_9354_cd34711b1540 ;
+                                      :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f ;
+                                      :f0b0c790_e005_4539_80b5_263dc433ebc0 :b141f627_98cd_40ba_9354_cd34711b1540 ;
+                                      rdfs:comment "A 'Federación' labeled 'The Mexican Federation'. It is defined as 'The Mexican Federation' and has the 'mexican' quality"@en ,
+                                                   "Una 'Federación' etiquetada 'La Federación Mexicana'. Se define como 'La Federación Mexicana' y tiene la cualidad 'mexicana'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/core/onto/> ;
+                                      rdfs:label "La Federación Mexicana"@es ,
+                                                 "The Mexican Federation"@en .
+
+
+###  http://datos.gob.mx/ac863815_065a_4b09_84d7_a8f260816347
+:ac863815_065a_4b09_84d7_a8f260816347 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e2f991aa_d311_4896_9cd2_6a13efce3de6 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Campeche"@es ,
+                                                 "The Campeche Federal Entity"@en ;
+                                      skos:prefLabel "Campeche"@en ,
+                                                     "Campeche"@es .
+
+
+###  http://datos.gob.mx/adaf5e6d_7dcd_42b3_a7e7_f2b0075114af
+:adaf5e6d_7dcd_42b3_a7e7_f2b0075114af rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e40a5e47_3fa8_40cc_adda_c9e6f43569ff ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a96355d4_e44d_4abf_b730_e2d69a342a12 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Aguascalientes"@es ,
+                                                 "The Aguascalientes Federal Entity"@en ;
+                                      skos:prefLabel "Aguascalientes"@en ,
+                                                     "Aguascalientes"@es .
+
+
+###  http://datos.gob.mx/afc50617_af12_4f7b_a5c9_6e6bf86d207e
+:afc50617_af12_4f7b_a5c9_6e6bf86d207e rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b17829a3_fc4f_42e5_beab_b53eca7a6927
+:b17829a3_fc4f_42e5_beab_b53eca7a6927 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :cf09a6a0_f74a_4e19_b34a_9315977a85da ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Guanajuato"@es ,
+                                                 "The Guanajuato Federal Entity"@en ;
+                                      skos:prefLabel "Guanajuato"@en ,
+                                                     "Guanajuato"@es .
+
+
+###  http://datos.gob.mx/b31bb503_039c_4093_995e_e76d2ee48291
+:b31bb503_039c_4093_995e_e76d2ee48291 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b483df84_82cf_4bd8_8e33_37ca4352e62a
+:b483df84_82cf_4bd8_8e33_37ca4352e62a rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a2376873_5961_493d_a4a5_44e366b3a72e ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Hidalgo"@es ,
+                                                 "The Hidalgo Federal Entity"@en ;
+                                      skos:prefLabel "Hidalgo"@en ,
+                                                     "Hidalgo"@es .
+
+
+###  http://datos.gob.mx/b6b58a54_2085_4146_8c5c_4c76ae938355
+:b6b58a54_2085_4146_8c5c_4c76ae938355 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b723f1b4_d73d_4348_8a4e_31e0bbcce5d9
+:b723f1b4_d73d_4348_8a4e_31e0bbcce5d9 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b9674ff0_3060_446c_a526_154fc980db30
+:b9674ff0_3060_446c_a526_154fc980db30 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/b9791ab2_384e_4d4b_986a_ba9f8b67471d
+:b9791ab2_384e_4d4b_986a_ba9f8b67471d rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/bb840da2_f815_45ef_97e5_af9c06d75876
+:bb840da2_f815_45ef_97e5_af9c06d75876 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/bc1db698_01cd_4b1b_b1ee_5d51d8c66431
+:bc1db698_01cd_4b1b_b1ee_5d51d8c66431 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e601a68d_ea1b_4ac9_b222_b146f0839481 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Nayarit"@es ,
+                                                 "The Nayarit Federal Entity"@en ;
+                                      skos:prefLabel "Nayarit"@en ,
+                                                     "Nayarit"@es .
+
+
+###  http://datos.gob.mx/bc464513_4994_4be5_bd6e_426e8f6ce5df
+:bc464513_4994_4be5_bd6e_426e8f6ce5df rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :afc50617_af12_4f7b_a5c9_6e6bf86d207e ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Yucatán"@es ,
+                                                 "The Yucatán Federal Entity"@en ;
+                                      skos:prefLabel "Yucatán"@en ,
+                                                     "Yucatán"@es .
+
+
+###  http://datos.gob.mx/bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2
+:bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/bea20bf2_98b4_4407_a8ba_6f25a6f862a9
+:bea20bf2_98b4_4407_a8ba_6f25a6f862a9 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :eff96bf8_ee3c_40fe_b993_cc04a019131e ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Colima"@es ,
+                                                 "The Colima Federal Entity"@en ;
+                                      skos:prefLabel "Colima"@en ,
+                                                     "Colima"@es .
+
+
+###  http://datos.gob.mx/c024a609_e955_4ae6_af7b_5b10809f3fac
+:c024a609_e955_4ae6_af7b_5b10809f3fac rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/c073b4e3_ab08_4b6a_94e6_eed34eeebab9
+:c073b4e3_ab08_4b6a_94e6_eed34eeebab9 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f3e47a7b_d977_4ddc_ba35_272d98e5fdaf ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Nuevo León"@es ,
+                                                 "The Nuevo León Federal Entity"@en ;
+                                      skos:prefLabel "Nuevo León"@en ,
+                                                     "Nuevo León"@es .
+
+
+###  http://datos.gob.mx/c16e3867_6e48_4bc6_b75b_5b86b2d764e3
+:c16e3867_6e48_4bc6_b75b_5b86b2d764e3 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/c3e5dd33_00d4_4b5e_8878_9b8990822871
+:c3e5dd33_00d4_4b5e_8878_9b8990822871 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c024a609_e955_4ae6_af7b_5b10809f3fac ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Zacatecas"@es ,
+                                                 "The Zacatecas Federal Entity"@en ;
+                                      skos:prefLabel "Zacatecas"@en ,
+                                                     "Zacatecas"@es .
+
+
+###  http://datos.gob.mx/c439a131_0695_4a1a_b31c_14452d6218cd
+:c439a131_0695_4a1a_b31c_14452d6218cd rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/c973de06_dc0d_4309_9f94_5cd2f330f934
+:c973de06_dc0d_4309_9f94_5cd2f330f934 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c16e3867_6e48_4bc6_b75b_5b86b2d764e3 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Tlaxcala"@es ,
+                                                 "The Tlaxcala Federal Entity"@en ;
+                                      skos:prefLabel "Tlaxcala"@en ,
+                                                     "Tlaxcala"@es .
+
+
+###  http://datos.gob.mx/c99fc5db_088d_4ef4_93cb_060317ee6653
+:c99fc5db_088d_4ef4_93cb_060317ee6653 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :d4a9df88_fff3_49fa_8aca_df3453f52f90 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Jalisco"@es ,
+                                                 "The Jalisco Federal Entity"@en ;
+                                      skos:prefLabel "Jalisco"@en ,
+                                                     "Jalisco"@es .
+
+
+###  http://datos.gob.mx/ca10f172_4966_450a_a3fb_37904c29cdd0
+:ca10f172_4966_450a_a3fb_37904c29cdd0 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b9674ff0_3060_446c_a526_154fc980db30 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Chihuahua"@es ,
+                                                 "The Chihuahua Federal Entity"@en ;
+                                      skos:prefLabel "Chihuahua"@en ,
+                                                     "Chihuahua"@es .
+
+
+###  http://datos.gob.mx/cc9884ef_999d_4cf2_bf72_47575917a6ad
+:cc9884ef_999d_4cf2_bf72_47575917a6ad rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/cf09a6a0_f74a_4e19_b34a_9315977a85da
+:cf09a6a0_f74a_4e19_b34a_9315977a85da rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/d011f2f2_7978_427d_9b30_08037705ccfd
+:d011f2f2_7978_427d_9b30_08037705ccfd rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de San Luis Potosí"@es ,
+                                                 "The San Luis Potosí Federal Entity"@en ;
+                                      skos:prefLabel "San Luis Potosí"@en ,
+                                                     "San Luis Potosí"@es .
+
+
+###  http://datos.gob.mx/d0b99840_cec6_4f73_8aea_41ec73d94442
+:d0b99840_cec6_4f73_8aea_41ec73d94442 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Oaxaca"@es ,
+                                                 "The Oaxaca Federal Entity"@en ;
+                                      skos:prefLabel "Oaxaca"@en ,
+                                                     "Oaxaca"@es .
+
+
+###  http://datos.gob.mx/d1338d60_c3f0_49a4_bf29_ebbea11b5ff7
+:d1338d60_c3f0_49a4_bf29_ebbea11b5ff7 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a3927a8a_5bb7_4e42_91d3_b5d8819fdd9c ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Sinaloa"@es ,
+                                                 "The Sinaloa Federal Entity"@en ;
+                                      skos:prefLabel "Sinaloa"@en ,
+                                                     "Sinaloa"@es .
+
+
+###  http://datos.gob.mx/d13bfc7d_a096_40f6_801f_2acea59d434c
+:d13bfc7d_a096_40f6_801f_2acea59d434c rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/d3a42932_6526_45a6_b595_bf7c112a224a
+:d3a42932_6526_45a6_b595_bf7c112a224a rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Baja California"@es ,
+                                                 "The Baja California Federal Entity"@en ;
+                                      skos:prefLabel "Baja California"@en ,
+                                                     "Baja California"@es .
+
+
+###  http://datos.gob.mx/d4a9df88_fff3_49fa_8aca_df3453f52f90
+:d4a9df88_fff3_49fa_8aca_df3453f52f90 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/d8d56b63_f2ef_4218_9343_d1936765f35b
+:d8d56b63_f2ef_4218_9343_d1936765f35b rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :e161c75a_17b7_4a58_a725_5e61acbd609c ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Quintana Roo"@es ,
+                                                 "The Quintana Roo Federal Entity"@en ;
+                                      skos:prefLabel "Quintana Roo"@en ,
+                                                     "Quintana Roo"@es .
+
+
+###  http://datos.gob.mx/d9c6f5a6_fde6_42f1_8f30_d5f78463f9ea
+:d9c6f5a6_fde6_42f1_8f30_d5f78463f9ea rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :dcdd4971_3783_45c8_9aa3_c369e99dd9bf ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Guerrero"@es ,
+                                                 "The Guerrero Federal Entity"@en ;
+                                      skos:prefLabel "Guerrero"@en ,
+                                                     "Guerrero"@es .
+
+
+###  http://datos.gob.mx/d9dceba3_7616_4ca4_9472_2765c31f4108
+:d9dceba3_7616_4ca4_9472_2765c31f4108 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b6b58a54_2085_4146_8c5c_4c76ae938355 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Baja California Sur"@es ,
+                                                 "The Baja California Sur Federal Entity"@en ;
+                                      skos:prefLabel "Baja California Sur"@en ,
+                                                     "Baja California Sur"@es .
+
+
+###  http://datos.gob.mx/dad4e5af_2124_4f12_92de_8acd02e502d4
+:dad4e5af_2124_4f12_92de_8acd02e502d4 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/db13c3fb_656a_4fb9_ac7a_2f1e74449ca1
+:db13c3fb_656a_4fb9_ac7a_2f1e74449ca1 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/dcd24d02_5312_4934_bc85_bc7f64d76406
+:dcd24d02_5312_4934_bc85_bc7f64d76406 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :d13bfc7d_a096_40f6_801f_2acea59d434c ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Querétaro"@es ,
+                                                 "The Querétaro Federal Entity"@en ;
+                                      skos:prefLabel "Querétaro"@en ,
+                                                     "Querétaro"@es .
+
+
+###  http://datos.gob.mx/dcdd4971_3783_45c8_9aa3_c369e99dd9bf
+:dcdd4971_3783_45c8_9aa3_c369e99dd9bf rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/de4c693c_bdb5_467f_b112_c18db1ddd627
+:de4c693c_bdb5_467f_b112_c18db1ddd627 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :bb840da2_f815_45ef_97e5_af9c06d75876 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Sonora"@es ,
+                                                 "The Sonora Federal Entity"@en ;
+                                      skos:prefLabel "Sonora"@en ,
+                                                     "Sonora"@es .
+
+
+###  http://datos.gob.mx/e161c75a_17b7_4a58_a725_5e61acbd609c
+:e161c75a_17b7_4a58_a725_5e61acbd609c rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e2b0c2ed_8ad0_47e6_9c11_8409e3327a2a
+:e2b0c2ed_8ad0_47e6_9c11_8409e3327a2a rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f17fff98_735a_443a_8d82_3b4afedb1214 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Puebla"@es ,
+                                                 "The Puebla Federal Entity"@en ;
+                                      skos:prefLabel "Puebla"@en ,
+                                                     "Puebla"@es .
+
+
+###  http://datos.gob.mx/e2f991aa_d311_4896_9cd2_6a13efce3de6
+:e2f991aa_d311_4896_9cd2_6a13efce3de6 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
+:e40a5e47_3fa8_40cc_adda_c9e6f43569ff rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e5423592_6699_41fc_ab86_e4df786b05b8
+:e5423592_6699_41fc_ab86_e4df786b05b8 rdf:type owl:NamedIndividual ,
+                                               dcat:Dataset ;
+                                      :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a96355d4_e44d_4abf_b730_e2d69a342a12 ;
+                                      rdfs:comment "A 'Dataset' labeled 'The Set of Federal Entities'"@en ,
+                                                   "Un 'Conjunto de Datos' etiquetado 'El Conjunto de Entidades Federales'"@es ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "El Conjunto de Entidades Federales"@es ,
+                                                 "The Set of Federal Entities"@en .
+
+
+###  http://datos.gob.mx/e601a68d_ea1b_4ac9_b222_b146f0839481
+:e601a68d_ea1b_4ac9_b222_b146f0839481 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/e729ca23_0933_4168_b4f9_fc57a5591a13
+:e729ca23_0933_4168_b4f9_fc57a5591a13 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :c439a131_0695_4a1a_b31c_14452d6218cd ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Coahuila de Zaragoza"@es ,
+                                                 "The Coahuila de Zaragoza Federal Entity"@en ;
+                                      skos:prefLabel "Coahuila de Zaragoza"@en ,
+                                                     "Coahuila de Zaragoza"@es .
+
+
+###  http://datos.gob.mx/edce115e_62fe_434c_86fc_5e1d834e0625
+:edce115e_62fe_434c_86fc_5e1d834e0625 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f7765109_dadd_41f1_84c8_3d7738ec23c4 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Michoacán de Ocampo"@es ,
+                                                 "The Michoacán de Ocampo Federal Entity"@en ;
+                                      skos:prefLabel "Michoacán de Ocampo"@en ,
+                                                     "Michoacán de Ocampo"@es .
+
+
+###  http://datos.gob.mx/eff96bf8_ee3c_40fe_b993_cc04a019131e
+:eff96bf8_ee3c_40fe_b993_cc04a019131e rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/f133fc27_6776_461f_a070_2ffb95584414
+:f133fc27_6776_461f_a070_2ffb95584414 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/f17fff98_735a_443a_8d82_3b4afedb1214
+:f17fff98_735a_443a_8d82_3b4afedb1214 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/f3e47a7b_d977_4ddc_ba35_272d98e5fdaf
+:f3e47a7b_d977_4ddc_ba35_272d98e5fdaf rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/f6ca4c30_026c_4c21_af9e_7cbb3f211740
+:f6ca4c30_026c_4c21_af9e_7cbb3f211740 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :dad4e5af_2124_4f12_92de_8acd02e502d4 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Durango"@es ,
+                                                 "The Durango Federal Entity"@en ;
+                                      skos:prefLabel "Durango"@en ,
+                                                     "Durango"@es .
+
+
+###  http://datos.gob.mx/f7765109_dadd_41f1_84c8_3d7738ec23c4
+:f7765109_dadd_41f1_84c8_3d7738ec23c4 rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/fcbef7bc_ab09_425f_b998_fb620c809798
+:fcbef7bc_ab09_425f_b998_fb620c809798 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b31bb503_039c_4093_995e_e76d2ee48291 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Veracruz de Ignacio de la Llave"@es ,
+                                                 "The Veracruz de Ignacio de la Llave Federal Entity"@en ;
+                                      skos:prefLabel "Veracruz de Ignacio de la Llave"@en ,
+                                                     "Veracruz de Ignacio de la Llave"@es .
+
+
+###  http://datos.gob.mx/fcc5af73_c1e2_4f9e_8781_42810f37a690
+:fcc5af73_c1e2_4f9e_8781_42810f37a690 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :bcb6f743_d432_4a27_9dcc_b3fb40f9b6b2 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Chiapas"@es ,
+                                                 "The Chiapas Federal Entity"@en ;
+                                      skos:prefLabel "Chiapas"@en ,
+                                                     "Chiapas"@es .
+
+
+###  http://datos.gob.mx/fd83f2c9_bcdd_4c3d_9b57_b142d90b8028
+:fd83f2c9_bcdd_4c3d_9b57_b142d90b8028 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :cc9884ef_999d_4cf2_bf72_47575917a6ad ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Morelos"@es ,
+                                                 "The Morelos Federal Entity"@en ;
+                                      skos:prefLabel "Morelos"@en ,
+                                                     "Morelos"@es .
+
+
+###  http://datos.gob.mx/fe06555f_91fa_47b6_a29d_1e0b93216a48
+:fe06555f_91fa_47b6_a29d_1e0b93216a48 rdf:type owl:NamedIndividual ,
+                                               :fd98d032_2fdd_4491_a235_a445ec0a7bf6 ;
+                                      :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :f133fc27_6776_461f_a070_2ffb95584414 ;
+                                      dcterms:isPartOf :e5423592_6699_41fc_ab86_e4df786b05b8 ;
+                                      rdfs:isDefinedBy <http://datos.gob.mx/fed/oef/> ;
+                                      rdfs:label "La Entidad Federal de Tamaulipas"@es ,
+                                                 "The Tamaulipas Federal Entity"@en ;
+                                      skos:prefLabel "Tamaulipas"@en ,
+                                                     "Tamaulipas"@es .
+
+
+###  http://datos.gob.mx/fe6609f2_f88c_4dc0_a8ad_6c6cd5750204
+:fe6609f2_f88c_4dc0_a8ad_6c6cd5750204 rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
