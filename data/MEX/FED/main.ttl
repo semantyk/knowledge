@@ -9,6 +9,6 @@
 
 <fed/> a owl:Ontology;
   owl:versionIRI <fed/0.0.0/>;
-  owl:imports <0.0.0/>, <fed/oef/0.0.0/>, <onto/mun/0.0.0/>;
+  owl:imports <0.0.0/>, <fed/oef/0.0.0/>, <fed/omun/0.0.0/>;
   rdfs:isDefinedBy <fed/>;
   rdfs:label "El Grafo de Conocimiento de la Federación Mexicana"@es, "The Mexican Federation Knowledge Graph"@en .
