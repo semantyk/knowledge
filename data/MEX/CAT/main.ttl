@@ -66,7 +66,8 @@ dcat:Catalog a owl:Class .
 
 <cat#> a owl:NamedIndividual, dcat:Catalog;
   dcat:catalog <cat/cucag#>;
-  dcat:dataset :e5423592_6699_41fc_ab86_e4df786b05b8, :f8f0d595_a8fa_454d_ba17_5e1030607e2c;
+  dcat:dataset :e5423592_6699_41fc_ab86_e4df786b05b8, :f8f0d595_a8fa_454d_ba17_5e1030607e2c,
+    :f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8;
   rdfs:comment "A 'Catalog' labeled 'The Catalog of Mexico'"@en, "Un 'Catálogo' etiquetado 'El Catálogo de México'"@es;
   rdfs:isDefinedBy <cat/>;
   rdfs:label "El Catálogo de México"@es, "The Catalog of Mexico"@en .

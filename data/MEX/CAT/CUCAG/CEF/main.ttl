@@ -4,6 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -155,7 +156,7 @@ skos:notation a owl:DatatypeProperty .
 
 :c8d8cdf0_8173_4233_9c11_a21c40337503 a owl:Class .
 
-<http://www.w3.org/ns/dcat#Dataset> a owl:Class .
+dcat:Dataset a owl:Class .
 
 :a22fcd21_58d3_4e2a_b9e1_3ac8fb03b86f a owl:NamedIndividual, :c8d8cdf0_8173_4233_9c11_a21c40337503;
   dcterms:isPartOf <cat/cef#>;
@@ -382,7 +383,7 @@ skos:notation a owl:DatatypeProperty .
   rdfs:label "El Código de la Entidad Federal de San Luis Potosí"@es, "The San Luis Potosí Federal Entity Code"@en;
   skos:prefLabel "San Luis Potosí"@en, "San Luis Potosí"@es .
 
-<cat/cef#> a owl:NamedIndividual, <http://www.w3.org/ns/dcat#Dataset>;
+<cat/cef#> a owl:NamedIndividual, dcat:Dataset;
   rdfs:comment "A 'Dataset' labeled 'The Set of Federal Entities Codes'"@en, "Un 'Conjunto de Datos' etiquetado 'El Conjunto de Códigos de Entidades Federales'"@es;
   rdfs:isDefinedBy <cat/cef/>;
   rdfs:label "El Conjunto de Códigos de Entidades Federales"@es, "The Set of Federal Entities Codes"@en .
