@@ -2,7 +2,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \ # `README.md`
 \ @organization: Semantyk
-\ @project: Mexico Knowledge Graph
+\ @project: The Knowledge Graph of Mexico
 \
 \ @file: This is the main README file for the Mexico Knowledge Graph project.
 \
@@ -16,7 +16,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 )
 
-<h1 align='center'>Mexico Knowledge Graph | Semantyk</h1>
+<h1 align='center'> The Knowledge Graph of Mexico | Semantyk</h1>
 <h3 align='center'><i>Ideas Wonder</i></h3>
 <p align='center'>
   <picture>
