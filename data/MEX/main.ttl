@@ -11,7 +11,8 @@
 
 <http://datos.gob.mx/> rdf:type owl:Ontology ;
                         owl:versionIRI <http://datos.gob.mx/0.0.0/> ;
-                        owl:imports <http://usefulinc.com/ns/doap#> ,
+                        owl:imports <http://datos.gob.mx/core/0.0.0/> ,
+                                    <http://usefulinc.com/ns/doap#> ,
                                     <http://www.w3.org/2004/02/skos/core> ,
                                     <http://www.w3.org/ns/org#> ,
                                     foaf: ;

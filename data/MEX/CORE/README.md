@@ -2,7 +2,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \ # `README.md`
 \ @organization: Semantyk
-\ @project: Mexico Knowledge Graph - Controlled Vocabulary
+\ @project: Core Knowledge Graph
 \
 \ @file: This is the main README file for the Mexico Controlled Vocabulary
 \ project.
@@ -17,7 +17,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 )
 
-<h1 align='center'>Mexico Ontology | Semantyk</h1>
+<h1 align='center'>Mexico Core Knowledge Graph | Semantyk</h1>
 <h3 align='center'><i>Ideas Wonder</i></h3>
 <p align='center'>
   <picture>
