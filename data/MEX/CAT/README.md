@@ -2,7 +2,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 \ # `README.md`
 \ @organization: Semantyk
-\ @project: Unique Catalog of Mexico - Catalog
+\ @project: The Catalog of Mexico
 \
 \ @file: This is the main README file for the Unique Catalog of Mexico project.
 \
@@ -16,7 +16,7 @@
 \ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 )
 
-<h1 align='center'>Unique Catalog of Mexico | Semantyk</h1>
+<h1 align='center'>The Catalog of Mexico | Semantyk</h1>
 <h3 align='center'><i>Ideas Wonder</i></h3>
 <p align='center'>
   <picture>
