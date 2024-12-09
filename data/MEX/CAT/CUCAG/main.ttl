@@ -10,10 +10,10 @@
 
 <http://datos.gob.mx/cat/cucag/> rdf:type owl:Ontology ;
                                   owl:versionIRI <http://datos.gob.mx/cat/cucag/0.0.0> ;
-                                  owl:imports <http://datos.gob.mx/cat/ccef/0.0.0> ,
-                                              <http://datos.gob.mx/cat/cul/0.0.0> ,
-                                              <http://datos.gob.mx/cat/cum/0.0.0> ,
-                                              <http://datos.gob.mx/cat/ucm/0.0.0/> ;
+                                  owl:imports <http://datos.gob.mx/cat/0.0.0/> ,
+                                              <http://datos.gob.mx/cat/cef/0.0.0> ,
+                                              <http://datos.gob.mx/cat/cloc/0.0.0> ,
+                                              <http://datos.gob.mx/cat/cmun/0.0.0> ;
                                   rdfs:isDefinedBy <http://datos.gob.mx/cat/cucag/> .
 
 #################################################################
@@ -56,31 +56,31 @@ dcat:Dataset rdf:type owl:Class .
 :a287a1f0_6414_4847_ba06_7ccf34bd0756 rdf:type owl:NamedIndividual .
 
 
+###  http://datos.gob.mx/cat/cef#
+<http://datos.gob.mx/cat/cef#> rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/cat/cloc#
+<http://datos.gob.mx/cat/cloc#> rdf:type owl:NamedIndividual .
+
+
+###  http://datos.gob.mx/cat/cmun#
+<http://datos.gob.mx/cat/cmun#> rdf:type owl:NamedIndividual .
+
+
 ###  http://datos.gob.mx/cat/cucag#
 <http://datos.gob.mx/cat/cucag#> rdf:type owl:NamedIndividual ,
                                           dcat:Catalog ;
                                  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756 ;
-                                 dcat:dataset <http://datos.gob.mx/cat/cuef#> ,
-                                              <http://datos.gob.mx/cat/cul#> ,
-                                              <http://datos.gob.mx/cat/cum#> ;
+                                 dcat:dataset <http://datos.gob.mx/cat/cef#> ,
+                                              <http://datos.gob.mx/cat/cloc#> ,
+                                              <http://datos.gob.mx/cat/cmun#> ;
                                  foaf:page <https://www.inegi.org.mx/app/ageeml/> ;
                                  rdfs:comment "A 'Catalog' labeled 'The Catalog of Geo-Statistical Area Codes'"@en ,
                                               "Un 'Catálogo' etiquetado 'El Catálogo de Códigos de Áreas Geoestadísticas'"@es ;
                                  rdfs:isDefinedBy <http://datos.gob.mx/cat/cucag/> ;
                                  rdfs:label "El Catálogo de Códigos de Áreas Geoestadísticas"@es ,
                                             "The Catalog of Geo-Statistical Area Codes"@en .
-
-
-###  http://datos.gob.mx/cat/cuef#
-<http://datos.gob.mx/cat/cuef#> rdf:type owl:NamedIndividual .
-
-
-###  http://datos.gob.mx/cat/cul#
-<http://datos.gob.mx/cat/cul#> rdf:type owl:NamedIndividual .
-
-
-###  http://datos.gob.mx/cat/cum#
-<http://datos.gob.mx/cat/cum#> rdf:type owl:NamedIndividual .
 
 
 ###  https://www.inegi.org.mx/app/ageeml/

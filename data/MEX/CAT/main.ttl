@@ -10,7 +10,7 @@
 <http://datos.gob.mx/cat/> rdf:type owl:Ontology ;
                             owl:versionIRI <http://datos.gob.mx/cat/0.0.0/> ;
                             owl:imports <http://datos.gob.mx/0.0.0/> ;
-                            rdfs:isDefinedBy <http://datos.gob.mx/cat/ucm/> .
+                            rdfs:isDefinedBy <http://datos.gob.mx/cat/> .
 
 #################################################################
 #    Object Properties
@@ -52,7 +52,7 @@ dcat:Catalog rdf:type owl:Class .
                                         :f8f0d595_a8fa_454d_ba17_5e1030607e2c ;
                            rdfs:comment "A 'Catalog' labeled 'The Catalog of Mexico'"@en ,
                                         "Un 'Catálogo' etiquetado 'El Catálogo de México'"@es ;
-                           rdfs:isDefinedBy <http://datos.gob.mx/cat/ucm/> ;
+                           rdfs:isDefinedBy <http://datos.gob.mx/cat/> ;
                            rdfs:label "El Catálogo de México"@es ,
                                       "The Catalog of Mexico"@en .
 
