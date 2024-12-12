@@ -28,6 +28,8 @@
 # #################################################################
 # 
 # 
+# http://www.w3.org/2002/07/owl#Ontology
+# 
 # http://www.w3.org/ns/dcat#Catalog
 # 
 # 
@@ -41,11 +43,7 @@
 # 
 # http://datos.gob.mx/c009b94d_da5f_4f35_a1d3_d6515df21ca5
 # 
-# http://datos.gob.mx/e5423592_6699_41fc_ab86_e4df786b05b8
-# 
 # http://datos.gob.mx/f8a4cd20_110e_4a90_9c8c_83af097a291d
-# 
-# http://datos.gob.mx/f8f0d595_a8fa_454d_ba17_5e1030607e2c
 # 
 # http://datos.gob.mx/f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8
 # 
@@ -57,22 +55,20 @@
 
 <cat/> a owl:Ontology;
   owl:versionIRI <cat/0.0.0/>;
-  owl:imports <cat/cucag/0.0.0>;
-  rdfs:isDefinedBy <cat/> .
+  rdfs:isDefinedBy <cat/>;
+  rdfs:label "El Grafo de Conocimiento del Catálogo de México"@es, "The Catalog of Mexico Knowledge Graph"@en .
 
 dcat:catalog a owl:ObjectProperty .
 
 dcat:dataset a owl:ObjectProperty .
 
+owl:Ontology a owl:Class .
+
 dcat:Catalog a owl:Class .
 
 :c009b94d_da5f_4f35_a1d3_d6515df21ca5 a owl:NamedIndividual .
 
-:e5423592_6699_41fc_ab86_e4df786b05b8 a owl:NamedIndividual .
-
 :f8a4cd20_110e_4a90_9c8c_83af097a291d a owl:NamedIndividual .
-
-:f8f0d595_a8fa_454d_ba17_5e1030607e2c a owl:NamedIndividual .
 
 :f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8 a owl:NamedIndividual .
 
