@@ -139,8 +139,8 @@
 
 <cat/cef/> a owl:Ontology;
   owl:versionIRI <cat/cef/0.0.0>;
-  owl:imports <cat/cucag/0.0.0>;
-  rdfs:isDefinedBy <cat/cef/> .
+  rdfs:isDefinedBy <cat/cef/>;
+  rdfs:label "The Set of Federal Entities Codes Knowledge Graph"@en, "El Grafo de Conocimiento del Conjunto de Códigos de Entidades Federativas" .
 
 skos:prefLabel a owl:AnnotationProperty .
 

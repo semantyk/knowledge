@@ -62,6 +62,7 @@
 
 <cat/cucag/> a owl:Ontology;
   owl:versionIRI <cat/cucag/0.0.0>;
+  owl:imports <cat/cef/0.0.0>, <cat/cloc/0.0.0>, <cat/cmun/0.0.0>;
   rdfs:isDefinedBy <cat/cucag/>;
   rdfs:label "El Grafo de Conocimiento del CUCAG"@es, "The CUCAG Knowledge Graph"@en .
 
