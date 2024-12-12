@@ -10,369 +10,207 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-#
-#
+# 
+# 
 # #################################################################
 # #
 # #    Annotation properties
 # #
 # #################################################################
-#
-#
+# 
+# 
+# http://purl.org/dc/dcam/domainIncludes
+# 
+# http://purl.org/dc/dcam/rangeIncludes
+# 
+# http://purl.org/dc/elements/1.1/contributor
+# 
+# http://purl.org/dc/elements/1.1/coverage
+# 
+# http://purl.org/dc/elements/1.1/creator
+# 
+# http://purl.org/dc/elements/1.1/format
+# 
+# http://purl.org/dc/elements/1.1/identifier
+# 
+# http://purl.org/dc/elements/1.1/language
+# 
+# http://purl.org/dc/elements/1.1/publisher
+# 
+# http://purl.org/dc/elements/1.1/relation
+# 
+# http://purl.org/dc/elements/1.1/rights
+# 
+# http://purl.org/dc/elements/1.1/source
+# 
+# http://purl.org/dc/elements/1.1/subject
+# 
+# http://purl.org/dc/elements/1.1/type
+# 
 # http://xmlns.com/foaf/0.1/page
-#
-#
-#
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Object Properties
 # #
 # #################################################################
-#
-#
+# 
+# 
 # http://datos.gob.mx/a278ea71_1682_4765_ad90_979b1c68ce58
-#
+# 
 # http://datos.gob.mx/a3497142_8f28_4f79_8c43_bc0cb4fcbc17
-#
+# 
 # http://datos.gob.mx/a4194abe_6ce5_46bd_b32e_1a9b6f3543a4
-#
+# 
 # http://datos.gob.mx/a55a93ef_28dc_41b2_b537_eb916507bfdd
-#
+# 
 # http://datos.gob.mx/b0c54ceb_ca3f_441e_8f4d_002d8fa7ab25
-#
+# 
 # http://datos.gob.mx/b64ea212_cb7d_473d_9f38_5d1a8911b8ca
-#
+# 
 # http://datos.gob.mx/bb5ce225_5e0d_4bea_bd71_68b2dfb9969f
-#
+# 
 # http://datos.gob.mx/c55f7a9f_8e55_45e2_87c0_f22a089c42d8
-#
+# 
 # http://datos.gob.mx/c6a447d1_49f6_441d_a374_e307cbc18272
-#
+# 
 # http://datos.gob.mx/cabcae4c_d47e_4c55_bf57_a5c3fd628ad9
-#
+# 
 # http://datos.gob.mx/dca9db1b_2f0f_49b7_bb54_223ec90c07cf
-#
+# 
 # http://datos.gob.mx/ddf2406c_67d2_4619_8e7a_cc9bd5460f69
-#
+# 
 # http://datos.gob.mx/e3a20fec_2cb0_44a7_8183_9d5b4d5a0886
-#
+# 
 # http://datos.gob.mx/e6c26c87_1587_4af0_a72a_bcbb8b90973c
-#
+# 
 # http://datos.gob.mx/ec815c33_1ca3_4421_b71b_091a628b8b63
-#
+# 
 # http://datos.gob.mx/f0b0c790_e005_4539_80b5_263dc433ebc0
-#
-# http://purl.org/dc/terms/hasPart
-#
-# http://purl.org/dc/terms/isPartOf
-#
+# 
 # http://www.w3.org/2004/02/skos/core#hasTopConcept
-#
+# 
 # http://www.w3.org/2004/02/skos/core#inScheme
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Classes
 # #
 # #################################################################
-#
-#
+# 
+# 
 # http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
-#
+# 
 # http://datos.gob.mx/a59b12bb_7630_4d82_95bb_34de9b8e922e
-#
+# 
 # http://datos.gob.mx/aa1d7bc1_be09_4540_87b9_cf680ecb2158
-#
+# 
 # http://datos.gob.mx/ac38393d_92a8_4d93_bf6c_f8ee103784ab
-#
+# 
 # http://datos.gob.mx/b0984e57_8b64_484b_81c2_b143dd70181a
-#
+# 
 # http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
-#
+# 
 # http://datos.gob.mx/b93687e2_3083_4aca_bda4_2b1eec9ef932
-#
+# 
 # http://datos.gob.mx/ba571c3e_119f_4148_a4fc_c5ad83359590
-#
+# 
 # http://datos.gob.mx/bfc04bc1_1415_49b8_a58f_6f6831e5bd11
-#
+# 
 # http://datos.gob.mx/bfcd1a25_1e78_4168_8e4d_f19885dbce23
-#
+# 
 # http://datos.gob.mx/c064c390_4edb_4f89_a671_301fb774f9ef
-#
+# 
 # http://datos.gob.mx/c10984dc_f290_4880_a60b_d6f8b6b22105
-#
+# 
 # http://datos.gob.mx/c2871766_bffb_4a9b_9a67_4a84f149c11c
-#
+# 
 # http://datos.gob.mx/c6032a59_87b0_4b19_b2b2_d881814e1de4
-#
+# 
 # http://datos.gob.mx/c8d8cdf0_8173_4233_9c11_a21c40337503
-#
+# 
 # http://datos.gob.mx/cfd6b6b3_92a7_4a12_9080_92ff26f6c85c
-#
+# 
 # http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
-#
+# 
 # http://datos.gob.mx/d52561c8_00a1_4af3_9d98_71b6e9e191a3
-#
+# 
 # http://datos.gob.mx/dbe933ba_935f_4e29_81da_216dd71590ba
-#
+# 
 # http://datos.gob.mx/dda89cac_96bb_4347_a189_796811cc542a
-#
+# 
 # http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
-#
+# 
 # http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
-#
+# 
 # http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
-#
+# 
 # http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
-#
+# 
 # http://datos.gob.mx/f1e41185_de3d_414f_bb94_ffa46189de8c
-#
+# 
 # http://datos.gob.mx/f279e690_fe1f_45c8_8201_fc46f32114e1
-#
+# 
 # http://datos.gob.mx/f30c1027_78c0_401d_a38c_9a1622b9eba8
-#
+# 
 # http://datos.gob.mx/f5e86a44_aabe_4209_8635_ea5cca897e3d
-#
+# 
 # http://datos.gob.mx/f84bdd2f_2c97_4710_93a0_1217c658e7b7
-#
+# 
 # http://datos.gob.mx/f8c7746c_a1cb_4f99_a8af_0c8a338e0230
-#
+# 
 # http://datos.gob.mx/fc851746_03d3_4420_8d59_f9f7d6e325e4
-#
+# 
 # http://datos.gob.mx/fd98d032_2fdd_4491_a235_a445ec0a7bf6
-#
+# 
 # http://datos.gob.mx/fef4ab2d_1443_41ea_8c88_bc4d870e0caa
-#
+# 
 # http://www.w3.org/2002/07/owl#Class
-#
+# 
 # http://www.w3.org/2002/07/owl#Ontology
-#
+# 
 # http://www.w3.org/2004/02/skos/core#Concept
-#
+# 
 # http://www.w3.org/2004/02/skos/core#ConceptScheme
-#
-#
-#
+# 
+# 
+# 
 # #################################################################
 # #
 # #    Individuals
 # #
 # #################################################################
-#
-#
+# 
+# 
 # http://datos.gob.mx/a0947516_0388_4c3a_81a1_a3888c6d5e24
-#
-# http://datos.gob.mx/a24c56f1_8e46_40d6_8008_92c6c7fc1d00
-#
-# http://datos.gob.mx/a287a1f0_6414_4847_ba06_7ccf34bd0756
-#
-# http://datos.gob.mx/a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9
-#
-# http://datos.gob.mx/a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0
-#
+# 
 # http://datos.gob.mx/a34b36e4_5235_494f_a487_8003203e2897
-#
-# http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
-#
-# http://datos.gob.mx/a54afb44_8ce8_446b_bde2_339f7f01bcc8
-#
-# http://datos.gob.mx/a59b12bb_7630_4d82_95bb_34de9b8e922e
-#
-# http://datos.gob.mx/a736e2f7_f85f_4b8f_adbf_d8b273333b76
-#
-# http://datos.gob.mx/a8fe9c49_4473_448c_b666_c6f99c609cdd
-#
-# http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
-#
-# http://datos.gob.mx/a9b56b3f_fe56_45d2_922c_c21c6e9c276d
-#
-# http://datos.gob.mx/aa1d7bc1_be09_4540_87b9_cf680ecb2158
-#
-# http://datos.gob.mx/aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a
-#
-# http://datos.gob.mx/ab118fe2_9773_44cd_8178_8a503ea1dea8
-#
-# http://datos.gob.mx/adfda952_c0f7_4c7b_b973_cb1037fe93a5
-#
-# http://datos.gob.mx/b0984e57_8b64_484b_81c2_b143dd70181a
-#
-# http://datos.gob.mx/b46e3fe1_96d1_41f6_957f_f7823d50a8c0
-#
-# http://datos.gob.mx/b5948746_9a94_4f3d_a8bc_ef9a0463a20e
-#
-# http://datos.gob.mx/b780c9a0_57c4_4985_8c6f_83c9140803f5
-#
-# http://datos.gob.mx/b7c0ca8d_4519_43bc_82c0_5a331cb799e5
-#
-# http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
-#
-# http://datos.gob.mx/b9e92c2a_6e79_4015_9256_e33deaeec8ad
-#
-# http://datos.gob.mx/ba571c3e_119f_4148_a4fc_c5ad83359590
-#
-# http://datos.gob.mx/ba881fe7_6251_44c1_af4f_aa4d9826e864
-#
-# http://datos.gob.mx/bf4e6b3a_c931_4464_b4a5_e278d8cee8a9
-#
-# http://datos.gob.mx/c064c390_4edb_4f89_a671_301fb774f9ef
-#
-# http://datos.gob.mx/c10984dc_f290_4880_a60b_d6f8b6b22105
-#
-# http://datos.gob.mx/c1f338f6_006d_4ef2_a9ba_d0b9fb66502d
-#
-# http://datos.gob.mx/c2871766_bffb_4a9b_9a67_4a84f149c11c
-#
-# http://datos.gob.mx/c3003dc5_e891_4d38_a5b7_f6041566ce4e
-#
-# http://datos.gob.mx/c4945d83_7935_4f0f_aac3_76310064f96e
-#
-# http://datos.gob.mx/c5574968_dcd6_4ed7_a404_abfb378c7ab3
-#
-# http://datos.gob.mx/c6032a59_87b0_4b19_b2b2_d881814e1de4
-#
-# http://datos.gob.mx/c6c110fa_8f7f_4297_b3ab_523ce3966dd9
-#
-# http://datos.gob.mx/c9734edd_846f_44e1_9e03_cb90f17e852d
-#
-# http://datos.gob.mx/ca5379ce_307a_4cee_8af8_541a26eb475d
-#
+# 
 # http://datos.gob.mx/cae12296_c19d_4002_872f_4cce6818ad96
-#
-# http://datos.gob.mx/cba263e2_24ca_4849_ac58_6ac534083033
-#
-# http://datos.gob.mx/cff8a44f_b27f_485e_b2f2_210be0df7192
-#
-# http://datos.gob.mx/d16b0c0e_1ce5_4c01_a81b_62630072fb4d
-#
-# http://datos.gob.mx/d1e3d97a_92e8_4b09_b9e1_371147398945
-#
-# http://datos.gob.mx/d3b514db_c9e0_40f1_b38c_92cdf0e1aa41
-#
-# http://datos.gob.mx/d3c3da1e_369b_4103_b5bf_58daba879d87
-#
-# http://datos.gob.mx/d4090495_7f84_422e_ac20_305b0d94a91a
-#
-# http://datos.gob.mx/d4a42972_30ab_4d65_9818_102a8b0f4935
-#
-# http://datos.gob.mx/d52561c8_00a1_4af3_9d98_71b6e9e191a3
-#
-# http://datos.gob.mx/d567ba41_6051_4f26_8d4d_2d8a68068531
-#
-# http://datos.gob.mx/d791553e_fc86_4b25_bead_a4dd5982de4f
-#
-# http://datos.gob.mx/dbe933ba_935f_4e29_81da_216dd71590ba
-#
-# http://datos.gob.mx/dda89cac_96bb_4347_a189_796811cc542a
-#
-# http://datos.gob.mx/e06a1482_4394_423b_a2ba_a5f5942fb284
-#
-# http://datos.gob.mx/e0e72c41_9fd7_4087_b78e_b401a3192873
-#
-# http://datos.gob.mx/e1b671b2_280a_4841_a569_76eb85d9473f
-#
-# http://datos.gob.mx/e46eeee1_4f8c_44ec_98a4_8eb491eec2ba
-#
+# 
 # http://datos.gob.mx/e488f280_77a9_4eb8_b753_8e3cd0fbf34e
-#
-# http://datos.gob.mx/e49a234f_0ac2_47d8_ac03_0a9788cd24f9
-#
-# http://datos.gob.mx/e62a535e_a6af_471c_9ef6_55d716ebd4fb
-#
-# http://datos.gob.mx/e9849ae8_891a_4131_9ccb_31a6991c1e4c
-#
-# http://datos.gob.mx/e98eaf63_8f23_4454_99f5_6b71f2acde01
-#
-# http://datos.gob.mx/eb84f160_07b5_4299_828a_12a3ed67b49f
-#
-# http://datos.gob.mx/ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0
-#
-# http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
-#
-# http://datos.gob.mx/ee401492_9c90_4700_96aa_21c48538b1e0
-#
-# http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
-#
+# 
 # http://datos.gob.mx/f21edbc4_8a18_43b6_a877_29b8a711b2b8
-#
-# http://datos.gob.mx/f279e690_fe1f_45c8_8201_fc46f32114e1
-#
-# http://datos.gob.mx/f30c1027_78c0_401d_a38c_9a1622b9eba8
-#
-# http://datos.gob.mx/f4aae162_faa9_40d9_89cf_0a95d109bb9e
-#
-# http://datos.gob.mx/f5e86a44_aabe_4209_8635_ea5cca897e3d
-#
-# http://datos.gob.mx/f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9
-#
+# 
 # http://datos.gob.mx/f7a4f75e_0eac_4c0e_bb39_24351ce93c51
-#
-# http://datos.gob.mx/f7bf33a7_d6f0_4aed_b925_330dde702afb
-#
-# http://datos.gob.mx/f7d86ba7_f612_4cef_916c_f6d80d230b64
-#
-# http://datos.gob.mx/f8c7746c_a1cb_4f99_a8af_0c8a338e0230
-#
-# http://datos.gob.mx/fa57b4a9_7c59_4c0f_a0a1_b4d44538c611
-#
-# http://datos.gob.mx/fc851746_03d3_4420_8d59_f9f7d6e325e4
-#
-# http://datos.gob.mx/fd1cb96d_35a9_495a_a6c1_ea441f9a77db
-#
-# http://datos.gob.mx/fef4ab2d_1443_41ea_8c88_bc4d870e0caa
-#
-# http://datos.gob.mx/ff11d93b_5c11_45ac_8d7a_ce37714788be
-#
+# 
 # http://datos.gob.mx/ff47663c_36a2_4d26_9948_c47e6f473f8b
-#
-# https://www.census.gov/naics/
-#
-# https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf
-#
-# https://www.inegi.org.mx/
-#
-# https://www.inegi.org.mx/app/ageeml/
-#
-# https://www.inegi.org.mx/app/mapa/denue/default.aspx
-#
-# https://www.inegi.org.mx/scian/
-#
-# https://www.snieg.mx/
-#
-#
-#
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+# 
 # Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
 
 <core/onto/> a owl:Ontology;
@@ -382,7 +220,37 @@
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "La Ontología Núcleo de México"@es, "The Core Ontology of Mexico"@es .
 
+<http://purl.org/dc/dcam/domainIncludes> a owl:AnnotationProperty .
+
+<http://purl.org/dc/dcam/rangeIncludes> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/contributor> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/coverage> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/creator> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/format> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/identifier> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/language> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/publisher> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/relation> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/rights> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/source> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/subject> a owl:AnnotationProperty .
+
+<http://purl.org/dc/elements/1.1/type> a owl:AnnotationProperty .
+
 foaf:page a owl:AnnotationProperty .
+
+xsd:date a rdfs:Datatype .
 
 :a278ea71_1682_4765_ad90_979b1c68ce58 a owl:ObjectProperty;
   owl:inverseOf :e6c26c87_1587_4af0_a72a_bcbb8b90973c;
@@ -456,21 +324,14 @@ foaf:page a owl:AnnotationProperty .
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "has conceptual definition"@en, "tiene definición conceptual"@es .
 
-dcterms:hasPart a owl:ObjectProperty;
-  owl:inverseOf dcterms:isPartOf .
-
-dcterms:isPartOf a owl:ObjectProperty .
-
 skos:hasTopConcept a owl:ObjectProperty;
   rdfs:subPropertyOf :b0c54ceb_ca3f_441e_8f4d_002d8fa7ab25 .
 
 skos:inScheme a owl:ObjectProperty .
 
-:a418160a_c783_42e9_97d6_baffb88467a0 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:a418160a_c783_42e9_97d6_baffb88467a0 a owl:Class;
   owl:equivalentClass _:genid1;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :f7d86ba7_f612_4cef_916c_f6d80d230b64;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :f7d86ba7_f612_4cef_916c_f6d80d230b64;
   rdfs:comment "A 'Class' labeled 'Male' subclass of 'Thing'. Each of its instances is defined as a 'Male' and has the 'male' sex"@en,
     "Una 'Clase' etiquetada 'Macho' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Macho' y tiene el sexo 'macho'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -481,11 +342,9 @@ _:genid1 a owl:Restriction;
   owl:hasValue :cae12296_c19d_4002_872f_4cce6818ad96;
   owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 .
 
-:a59b12bb_7630_4d82_95bb_34de9b8e922e a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:a59b12bb_7630_4d82_95bb_34de9b8e922e a owl:Class;
   owl:equivalentClass _:genid2;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :ff11d93b_5c11_45ac_8d7a_ce37714788be;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :ff11d93b_5c11_45ac_8d7a_ce37714788be;
   rdfs:comment "A 'Class' labeled 'Female' subclass of 'Thing'. Each of its instances is defined as a 'Female' and has the 'female' sex"@en,
     "Una 'Clase' etiquetada 'Hembra' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Hembra' y tiene el sexo 'hembra'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -496,10 +355,8 @@ _:genid2 a owl:Restriction;
   owl:hasValue :e488f280_77a9_4eb8_b753_8e3cd0fbf34e;
   owl:onProperty :ddf2406c_67d2_4619_8e7a_cc9bd5460f69 .
 
-:aa1d7bc1_be09_4540_87b9_cf680ecb2158 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:aa1d7bc1_be09_4540_87b9_cf680ecb2158 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :d567ba41_6051_4f26_8d4d_2d8a68068531;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :d567ba41_6051_4f26_8d4d_2d8a68068531;
   rdfs:comment "A 'Class' labeled 'Nation' subclass of 'Thing'. Each of its instances is defined as a 'Nation'"@en,
     "Una 'Clase' etiquetada 'Nación' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Nación'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -514,20 +371,16 @@ _:genid2 a owl:Restriction;
   rdfs:label "Organización Privada (Clase)"@es, "Private Organization (Class)"@en;
   skos:prefLabel "Organización Privada"@es, "Private Organization"@en .
 
-:b0984e57_8b64_484b_81c2_b143dd70181a a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:b0984e57_8b64_484b_81c2_b143dd70181a a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :cff8a44f_b27f_485e_b2f2_210be0df7192;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :cff8a44f_b27f_485e_b2f2_210be0df7192;
   rdfs:comment "A 'Class' labeled 'Project' subclass of 'Thing'. Each of its instances is defined as a 'Project'"@en,
     "Una 'Clase' etiquetada 'Proyecto' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Proyecto'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Project (Class)"@en, "Proyecto (Clase)"@es;
   skos:prefLabel "Project"@en, "Proyecto"@es .
 
-:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:b8c37bf3_d2f1_47b3_bcd4_42adb01ad239 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :d3b514db_c9e0_40f1_b38c_92cdf0e1aa41;
   rdfs:comment "A 'Class' labeled 'Person' subclass of 'Thing'. Each of its instances is defined as a 'Person'"@en,
     "Una 'Clase' etiquetada 'Persona' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Persona'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -542,10 +395,8 @@ _:genid2 a owl:Restriction;
   rdfs:label "Organización Pública (Clase)"@es, "Public Organization (Class)"@en;
   skos:prefLabel "Organización Pública"@es, "Public Organization"@en .
 
-:ba571c3e_119f_4148_a4fc_c5ad83359590 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:ba571c3e_119f_4148_a4fc_c5ad83359590 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :b9e92c2a_6e79_4015_9256_e33deaeec8ad;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :b9e92c2a_6e79_4015_9256_e33deaeec8ad;
   rdfs:comment "A 'Class' labeled 'Culture' subclass of 'Thing'. Each of its instances is defined as a 'Culture'"@en,
     "Una 'Clase' etiquetada 'Cultura' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cultura'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -573,40 +424,32 @@ _:genid3 a owl:Restriction;
   rdfs:label "Municipality (Class)"@en, "Municipio (Clase)"@es;
   skos:prefLabel "Municipality"@en, "Municipio"@es .
 
-:c064c390_4edb_4f89_a671_301fb774f9ef a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:c064c390_4edb_4f89_a671_301fb774f9ef a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a8fe9c49_4473_448c_b666_c6f99c609cdd;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a8fe9c49_4473_448c_b666_c6f99c609cdd;
   rdfs:comment "A 'Class' labeled 'Nation-State' subclass of 'Thing'. Each of its instances is defined as a 'Nation-State'"@en,
     "Una 'Clase' etiquetada 'Estado-Nación' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Estado-Nación'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Estado-Nación (Clase)"@es, "Nation-State (Class)"@en;
   skos:prefLabel "Estado-Nación"@es, "Nation-State"@en .
 
-:c10984dc_f290_4880_a60b_d6f8b6b22105 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:c10984dc_f290_4880_a60b_d6f8b6b22105 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :cba263e2_24ca_4849_ac58_6ac534083033;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :cba263e2_24ca_4849_ac58_6ac534083033;
   rdfs:comment "A 'Class' labeled 'Sex' subclass of 'Thing'. Each of its instances is defined as a 'Sex'"@en,
     "Una 'Clase' etiquetada 'Sexo' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Sexo'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Sex (Class)"@en, "Sexo (Clase)"@es;
   skos:prefLabel "Sex"@en, "Sexo"@es .
 
-:c2871766_bffb_4a9b_9a67_4a84f149c11c a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:c2871766_bffb_4a9b_9a67_4a84f149c11c a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9;
   rdfs:comment "A 'Class' labeled 'Gender' subclass of 'Thing'. Each of its instances is defined as a 'Gender'"@en,
     "Una 'Clase' etiquetada 'Género' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Género'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Gender (Class)"@en, "Género (Clase)"@es;
   skos:prefLabel "Gender"@en, "Género"@es .
 
-:c6032a59_87b0_4b19_b2b2_d881814e1de4 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:c6032a59_87b0_4b19_b2b2_d881814e1de4 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a9b56b3f_fe56_45d2_922c_c21c6e9c276d;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a9b56b3f_fe56_45d2_922c_c21c6e9c276d;
   rdfs:comment "A 'Class' labeled 'People' subclass of 'Thing'. Each of its instances is defined as a 'People'"@en,
     "Una 'Clase' etiquetada 'Pueblo' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Pueblo'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -629,11 +472,9 @@ _:genid3 a owl:Restriction;
   rdfs:label "Gobierno (Clase)"@es, "Government (Class)"@en;
   skos:prefLabel "Gobierno"@es, "Government"@en .
 
-:d3c3da1e_369b_4103_b5bf_58daba879d87 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:d3c3da1e_369b_4103_b5bf_58daba879d87 a owl:Class;
   owl:equivalentClass _:genid4;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :e06a1482_4394_423b_a2ba_a5f5942fb284;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :e06a1482_4394_423b_a2ba_a5f5942fb284;
   rdfs:comment "A 'Class' labeled 'Woman' subclass of 'Thing'. Each of its instances is defined as a 'Woman' and has the 'woman' gender"@en,
     "Una 'Clase' etiquetada 'Mujer' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Mujer' y tiene el género 'mujer'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -644,41 +485,33 @@ _:genid4 a owl:Restriction;
   owl:hasValue :f7a4f75e_0eac_4c0e_bb39_24351ce93c51;
   owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 .
 
-:d52561c8_00a1_4af3_9d98_71b6e9e191a3 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:d52561c8_00a1_4af3_9d98_71b6e9e191a3 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :b7c0ca8d_4519_43bc_82c0_5a331cb799e5;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :b7c0ca8d_4519_43bc_82c0_5a331cb799e5;
   rdfs:comment "A 'Class' labeled 'Federation' subclass of 'Thing'. Each of its instances is defined as a 'Federation'"@en,
     "Una 'Clase' etiquetada 'Federación' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Federación'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Federación (Clase)"@es, "Federation (Class)"@en;
   skos:prefLabel "Federación"@es, "Federation"@en .
 
-:dbe933ba_935f_4e29_81da_216dd71590ba a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:dbe933ba_935f_4e29_81da_216dd71590ba a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0;
   rdfs:comment "A 'Class' labeled 'State' subclass of 'Thing'. Each of its instances is defined as a 'State'"@en,
     "Una 'Clase' etiquetada 'Estado' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Estado'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Estado (Clase)"@es, "State (Class)"@en;
   skos:prefLabel "Estado"@es, "State"@en .
 
-:dda89cac_96bb_4347_a189_796811cc542a a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:dda89cac_96bb_4347_a189_796811cc542a a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0;
   rdfs:comment "A 'Class' labeled 'Quality' subclass of 'Thing'. Each of its instances is defined as a 'Quality'"@en,
     "Una 'Clase' etiquetada 'Cualidad' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cualidad'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Cualidad (Clase)"@es, "Quality (Class)"@en;
   skos:prefLabel "Cualidad"@es, "Quality"@en .
 
-:e1b671b2_280a_4841_a569_76eb85d9473f a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:e1b671b2_280a_4841_a569_76eb85d9473f a owl:Class;
   owl:equivalentClass _:genid5;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :f7bf33a7_d6f0_4aed_b925_330dde702afb;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :f7bf33a7_d6f0_4aed_b925_330dde702afb;
   rdfs:comment "A 'Class' labeled 'Man' subclass of 'Thing'. Each of its instances is defined as a 'Man' and has the 'man' gender"@en,
     "Una 'Clase' etiquetada 'Hombre' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Hombre' y tiene el género 'hombre'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -689,30 +522,24 @@ _:genid5 a owl:Restriction;
   owl:hasValue :a0947516_0388_4c3a_81a1_a3888c6d5e24;
   owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 .
 
-:ee1d0fb5_b76b_4b3a_860e_1046ef73472d a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:ee1d0fb5_b76b_4b3a_860e_1046ef73472d a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0, skos:ConceptScheme;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :d4a42972_30ab_4d65_9818_102a8b0f4935;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :d4a42972_30ab_4d65_9818_102a8b0f4935;
   rdfs:comment "A 'Class' labeled 'Concept Scheme' subclass of 'Thing'. Each of its instancesis a 'Concept Scheme'"@en,
     "Una 'Clase' etiquetada 'Esquema de Conceptos' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Esquema de Conceptos'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Concept Scheme (Class)"@en, "Esquema de Conceptos (Clase)"@es;
   skos:prefLabel "Concept Scheme"@en, "Esquema de Conceptos"@es .
 
-:ee401492_9c90_4700_96aa_21c48538b1e0 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:ee401492_9c90_4700_96aa_21c48538b1e0 a owl:Class;
   rdfs:subClassOf owl:Thing;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a;
   rdfs:comment "A 'Class' labeled 'Thing'. Each of its instances is defined as a 'Thing'"@en,
     "Una 'Clase' etiquetada 'Cosa'. Cada una de sus instancias se define cómo una 'Cosa'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Cosa (Clase)"@es, "Thing (Class)"@en;
   skos:prefLabel "Cosa"@es, "Thing"@en .
 
-:eea43024_2453_4f4b_80cf_cad96fccfcd4 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:eea43024_2453_4f4b_80cf_cad96fccfcd4 a owl:Class;
   rdfs:subClassOf owl:Class;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :ab118fe2_9773_44cd_8178_8a503ea1dea8;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :ab118fe2_9773_44cd_8178_8a503ea1dea8;
   rdfs:comment "A 'Class' labeled 'Class'. Each of its instances is defined as a 'Class'"@en,
     "Una 'Clase' etiquetada 'Clase'. Cada una de sus instancias se define como una 'Clase'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -727,11 +554,9 @@ _:genid5 a owl:Restriction;
   rdfs:label "Constitución (Clase)"@es, "Constitution (Class)"@en;
   skos:prefLabel "Constitución"@es, "Constitution"@en .
 
-:f279e690_fe1f_45c8_8201_fc46f32114e1 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:f279e690_fe1f_45c8_8201_fc46f32114e1 a owl:Class;
   owl:equivalentClass _:genid6;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :d4090495_7f84_422e_ac20_305b0d94a91a;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :d4090495_7f84_422e_ac20_305b0d94a91a;
   rdfs:comment "A 'Class' labeled 'Mexican Thing' subclass of 'Thing'. Each of its instances is defined as a 'Mexican Thing' and has the 'mexican' quality"@en,
     "Una 'Clase' etiquetada 'Cosa Mexicana' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cosa Mexicana' y tiene la cualidad 'mexicana'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -742,20 +567,16 @@ _:genid6 a owl:Restriction;
   owl:hasValue :ff47663c_36a2_4d26_9948_c47e6f473f8b;
   owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca .
 
-:f30c1027_78c0_401d_a38c_9a1622b9eba8 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:f30c1027_78c0_401d_a38c_9a1622b9eba8 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0, skos:Concept;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :fd1cb96d_35a9_495a_a6c1_ea441f9a77db;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :fd1cb96d_35a9_495a_a6c1_ea441f9a77db;
   rdfs:comment "A 'Class' labeled 'Concept' subclass of 'Thing'. Each of its instances is defined as a 'Concept'"@en,
     "Una 'Clase' etiquetada 'Concepto' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Concepto'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Concept (Class)"@en, "Concepto (Clase)"@es;
   skos:prefLabel "Concept"@en, "Concepto"@es .
 
-:f5e86a44_aabe_4209_8635_ea5cca897e3d a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:f5e86a44_aabe_4209_8635_ea5cca897e3d a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :c6c110fa_8f7f_4297_b3ab_523ce3966dd9;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :c6c110fa_8f7f_4297_b3ab_523ce3966dd9;
   rdfs:comment "A 'Class' labeled 'Organization' subclass of 'Thing'. Each of its instances is defined as an 'Organization'"@en,
     "Una 'Clase' etiquetada 'Organización' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Organización'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -775,20 +596,16 @@ _:genid7 a owl:Restriction;
   owl:hasValue :f21edbc4_8a18_43b6_a877_29b8a711b2b8;
   owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca .
 
-:f8c7746c_a1cb_4f99_a8af_0c8a338e0230 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:f8c7746c_a1cb_4f99_a8af_0c8a338e0230 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :b46e3fe1_96d1_41f6_957f_f7823d50a8c0;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :b46e3fe1_96d1_41f6_957f_f7823d50a8c0;
   rdfs:comment "A 'Class' labeled 'Republic' subclass of 'Thing'. Each of its instances is defined as a 'Republic'"@en,
     "Una 'Clase' etiquetada 'República' subclase de 'Cosa'. Cada una de sus instancias se define como una 'República'"@es;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Republic (Class)"@en, "República (Clase)"@es;
   skos:prefLabel "Republic"@en, "República"@es .
 
-:fc851746_03d3_4420_8d59_f9f7d6e325e4 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:fc851746_03d3_4420_8d59_f9f7d6e325e4 a owl:Class;
   rdfs:subClassOf :b8c37bf3_d2f1_47b3_bcd4_42adb01ad239, :f279e690_fe1f_45c8_8201_fc46f32114e1;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :ba881fe7_6251_44c1_af4f_aa4d9826e864;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :ba881fe7_6251_44c1_af4f_aa4d9826e864;
   rdfs:comment "A 'Class' labeled 'Mexican Person' subclass of 'Mexican Thing' and 'Person'. Each of its instances is defined as a 'Mexican Person'"@en,
     "Una 'Clase' etiquetada 'Persona Mexicana' subclase de 'Cosa Mexicana' y 'Persona'. Cada una de sus instancias se define como una 'Persona Mexicana'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -803,10 +620,8 @@ _:genid7 a owl:Restriction;
   rdfs:label "Entidad Federal (Clase)"@es, "Federal Entity (Class)"@en;
   skos:prefLabel "Entidad Federal"@es, "Federal Entity"@en .
 
-:fef4ab2d_1443_41ea_8c88_bc4d870e0caa a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
+:fef4ab2d_1443_41ea_8c88_bc4d870e0caa a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :e9849ae8_891a_4131_9ccb_31a6991c1e4c;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :e9849ae8_891a_4131_9ccb_31a6991c1e4c;
   rdfs:comment "A 'Class' labeled 'Territory' subclass of 'Thing'. Each of its instances is defined as a 'Territory'"@en,
     "Una 'Clase' etiquetada 'Territorio' subclase de 'Cosa'. Cada una de sus instancias se define como un 'Territorio'"@es;
   rdfs:isDefinedBy <core/onto/>;
@@ -821,277 +636,16 @@ skos:Concept a owl:Class .
 
 skos:ConceptScheme a owl:Class .
 
-:a0947516_0388_4c3a_81a1_a3888c6d5e24 a owl:NamedIndividual, :c2871766_bffb_4a9b_9a67_4a84f149c11c;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9;
-  rdfs:comment "A 'Gender' labeled 'man'. Formally defines the 'Gender' of an instance based on the conceptual definition of 'man'"@en,
-    "Un 'Género' etiquetado 'hombre'. Define formalmente el 'Género' de una instancia a partir de la definición conceptual de \"hombre\"."@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "hombre"@es, "man"@en .
+:a0947516_0388_4c3a_81a1_a3888c6d5e24 a owl:NamedIndividual .
 
-:a24c56f1_8e46_40d6_8008_92c6c7fc1d00 a owl:NamedIndividual .
+:a34b36e4_5235_494f_a487_8003203e2897 a owl:NamedIndividual .
 
-:a287a1f0_6414_4847_ba06_7ccf34bd0756 a owl:NamedIndividual .
+:cae12296_c19d_4002_872f_4cce6818ad96 a owl:NamedIndividual .
 
-:a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9 a owl:NamedIndividual .
+:e488f280_77a9_4eb8_b753_8e3cd0fbf34e a owl:NamedIndividual .
 
-:a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 a owl:NamedIndividual .
+:f21edbc4_8a18_43b6_a877_29b8a711b2b8 a owl:NamedIndividual .
 
-:a34b36e4_5235_494f_a487_8003203e2897 a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
-  rdfs:comment "A 'Quality' labeled 'public'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'public'"@en,
-    "Una 'Cualidad' etiquetada 'pública' o 'público'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de 'pública' o 'público'."@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "public"@en, "pública"@es, "público"@es .
+:f7a4f75e_0eac_4c0e_bb39_24351ce93c51 a owl:NamedIndividual .
 
-:a54afb44_8ce8_446b_bde2_339f7f01bcc8 a owl:NamedIndividual .
-
-:a736e2f7_f85f_4b8f_adbf_d8b273333b76 a owl:NamedIndividual, :aa1d7bc1_be09_4540_87b9_cf680ecb2158;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :c4945d83_7935_4f0f_aac3_76310064f96e;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :c4945d83_7935_4f0f_aac3_76310064f96e;
-  rdfs:comment "A 'Nation' labeled 'The Mexican Nation'. It is defined as 'The Mexican Nation' and has the 'mexican' quality"@en,
-    "Una 'Nación' etiquetada 'La Nación Mexicana'. Se define como 'La Nación Mexicana' y tiene la cualidad 'mexicana'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "La Nación Mexicana"@es, "The Mexican Nation"@en .
-
-:a8fe9c49_4473_448c_b666_c6f99c609cdd a owl:NamedIndividual .
-
-:a96355d4_e44d_4abf_b730_e2d69a342a12 a owl:NamedIndividual .
-
-:a9b56b3f_fe56_45d2_922c_c21c6e9c276d a owl:NamedIndividual .
-
-:aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a a owl:NamedIndividual .
-
-:ab118fe2_9773_44cd_8178_8a503ea1dea8 a owl:NamedIndividual .
-
-:adfda952_c0f7_4c7b_b973_cb1037fe93a5 a owl:NamedIndividual, :c064c390_4edb_4f89_a671_301fb774f9ef;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :d16b0c0e_1ce5_4c01_a81b_62630072fb4d, :d52561c8_00a1_4af3_9d98_71b6e9e191a3,
-    :f8c7746c_a1cb_4f99_a8af_0c8a338e0230;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba;
-  rdfs:comment "A 'Nation-State' labeled 'The United Mexican States'. It is defined as 'The United Mexican States' and has the 'mexican' quality"@en,
-    "Un 'Estado-Nación' etiquetado 'Los Estados Unidos Mexicanos'. Se define como 'Los Estados Unidos Mexicanos' y tiene la cualidad 'mexicano'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "Los Estados Unidos Mexicanos"@es, "The United Mexican States"@en .
-
-_:genid10 a owl:Axiom;
-  owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
-  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
-  owl:annotatedTarget :f8c7746c_a1cb_4f99_a8af_0c8a338e0230;
-  owl:versionInfo "relación: clase de gobierno"@es, "relation: class of government"@en .
-
-_:genid8 a owl:Axiom;
-  owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
-  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
-  owl:annotatedTarget :d16b0c0e_1ce5_4c01_a81b_62630072fb4d;
-  owl:versionInfo "relación: constitución"@es, "relation: constitution"@en .
-
-_:genid9 a owl:Axiom;
-  owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
-  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
-  owl:annotatedTarget :d52561c8_00a1_4af3_9d98_71b6e9e191a3;
-  owl:versionInfo "relation: class of State"@en .
-
-:b46e3fe1_96d1_41f6_957f_f7823d50a8c0 a owl:NamedIndividual .
-
-:b5948746_9a94_4f3d_a8bc_ef9a0463a20e a owl:NamedIndividual, :c6032a59_87b0_4b19_b2b2_d881814e1de4;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :e62a535e_a6af_471c_9ef6_55d716ebd4fb;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :e62a535e_a6af_471c_9ef6_55d716ebd4fb;
-  rdfs:comment "A 'People' labeled 'The Mexican People'. It is defined as 'The Mexican People' and has the 'mexican' quality"@en,
-    "Un 'Pueblo' etiquetado 'El Pueblo Mexicano'. Se define como 'El Pueblo Mexicano' y tiene la cualidad 'mexicano'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Pueblo Mexicano"@es, "The Mexican People"@en .
-
-:b780c9a0_57c4_4985_8c6f_83c9140803f5 a owl:NamedIndividual .
-
-:b7c0ca8d_4519_43bc_82c0_5a331cb799e5 a owl:NamedIndividual .
-
-:b9e92c2a_6e79_4015_9256_e33deaeec8ad a owl:NamedIndividual .
-
-:ba881fe7_6251_44c1_af4f_aa4d9826e864 a owl:NamedIndividual .
-
-:bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 a owl:NamedIndividual .
-
-:c1f338f6_006d_4ef2_a9ba_d0b9fb66502d a owl:NamedIndividual, :b0984e57_8b64_484b_81c2_b143dd70181a;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756;
-  foaf:page <https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf>;
-  rdfs:comment "A 'Project' labeled 'The Statistical Business Register of Mexico'"@en,
-    "Un 'Proyecto' etiquetado 'El Registro Estadístico de Negocios de México'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Registro Estadístico de Negocios de México"@es, "The Statistical Business Register of Mexico"@en .
-
-:c3003dc5_e891_4d38_a5b7_f6041566ce4e a owl:NamedIndividual, :cfd6b6b3_92a7_4a12_9080_92ff26f6c85c;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a96355d4_e44d_4abf_b730_e2d69a342a12;
-  rdfs:comment "A 'Government' labeled 'The Mexican Government'. It is defined as 'The Mexican Government' and has the 'mexican' quality"@en,
-    "Un 'Gobierno' etiquetado 'El Gobierno Mexicano'. Se define como 'El Gobierno Mexicano' y tiene la cualidad 'mexicano'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Gobierno Mexicano"@es, "The Mexican Government"@en .
-
-:c4945d83_7935_4f0f_aac3_76310064f96e a owl:NamedIndividual .
-
-:c5574968_dcd6_4ed7_a404_abfb378c7ab3 a owl:NamedIndividual .
-
-:c6c110fa_8f7f_4297_b3ab_523ce3966dd9 a owl:NamedIndividual .
-
-:c9734edd_846f_44e1_9e03_cb90f17e852d a owl:NamedIndividual, :ba571c3e_119f_4148_a4fc_c5ad83359590;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a736e2f7_f85f_4b8f_adbf_d8b273333b76;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9;
-  rdfs:comment "A 'Culture' labeled 'The Mexican Culture'. It is defined as 'The Mexican Culture' and has the 'mexican' quality"@en,
-    "Una 'Cultura' etiquetada 'La Cultura Mexicana'. Se define como 'La Cultura Mexicana' y tiene la cualidad 'mexicana'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "La Cultura Mexicana"@es, "The Mexican Culture"@en .
-
-:ca5379ce_307a_4cee_8af8_541a26eb475d a owl:NamedIndividual .
-
-:cae12296_c19d_4002_872f_4cce6818ad96 a owl:NamedIndividual, :c10984dc_f290_4880_a60b_d6f8b6b22105;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :fa57b4a9_7c59_4c0f_a0a1_b4d44538c611;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :fa57b4a9_7c59_4c0f_a0a1_b4d44538c611;
-  rdfs:comment "A 'Sex' labeled 'male'. Formally defines the 'Sex' of an instance based on the conceptual definition of 'male'"@en,
-    "Un 'Sexo' etiquetado 'macho'. Define formalmente el 'Sexo' de una instancia a partir de la definición conceptual de \"macho\"."@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "macho"@es, "male"@en .
-
-:cba263e2_24ca_4849_ac58_6ac534083033 a owl:NamedIndividual .
-
-:cff8a44f_b27f_485e_b2f2_210be0df7192 a owl:NamedIndividual .
-
-:d16b0c0e_1ce5_4c01_a81b_62630072fb4d a owl:NamedIndividual, :f1e41185_de3d_414f_bb94_ffa46189de8c;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :d1e3d97a_92e8_4b09_b9e1_371147398945;
-  rdfs:comment "A 'Constitution' labeled 'The Political Constitution of the United Mexican States'. Has the 'political' quality"@en,
-    "Una 'Constitución' etiquetada 'La Constitución Política de los Estados Unidos Mexicanos'. Tiene la cualidad 'política'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "La Constitución Política de los Estados Unidos Mexicanos"@es, "The Political Constitution of the United Mexican States"@en .
-
-:d1e3d97a_92e8_4b09_b9e1_371147398945 a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
-  rdfs:comment "A 'Quality' labeled 'political'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'political'"@en,
-    "Una 'Cualidad' etiquetada 'política' o 'político'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de \"política\" o \"político\""@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "political"@en, "política"@es, "político"@es .
-
-:d3b514db_c9e0_40f1_b38c_92cdf0e1aa41 a owl:NamedIndividual .
-
-:d4090495_7f84_422e_ac20_305b0d94a91a a owl:NamedIndividual .
-
-:d4a42972_30ab_4d65_9818_102a8b0f4935 a owl:NamedIndividual .
-
-:d567ba41_6051_4f26_8d4d_2d8a68068531 a owl:NamedIndividual .
-
-:d791553e_fc86_4b25_bead_a4dd5982de4f a owl:NamedIndividual, :f8c7746c_a1cb_4f99_a8af_0c8a338e0230;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :e98eaf63_8f23_4454_99f5_6b71f2acde01;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :b5948746_9a94_4f3d_a8bc_ef9a0463a20e;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :e98eaf63_8f23_4454_99f5_6b71f2acde01;
-  rdfs:comment "A 'Republic' labeled 'The Mexican Republic'. It is defined as 'The Mexican Republic' and has the 'mexican' quality"@en,
-    "Una 'República' etiquetada 'La República Mexicana'. Se define como 'La República Mexicana' y tiene la cualidad 'mexicana'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "La República Mexicana"@es, "The Mexican Republic"@en .
-
-:e06a1482_4394_423b_a2ba_a5f5942fb284 a owl:NamedIndividual .
-
-:e0e72c41_9fd7_4087_b78e_b401a3192873 a owl:NamedIndividual, :fef4ab2d_1443_41ea_8c88_bc4d870e0caa;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a24c56f1_8e46_40d6_8008_92c6c7fc1d00;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a24c56f1_8e46_40d6_8008_92c6c7fc1d00;
-  rdfs:comment "A 'Territory' labeled 'The Mexican Territory'. It is defined as 'The Mexican Territory' and has the 'mexican' quality"@en,
-    "Un 'Territorio' etiquetado 'El Territorio Mexicano'. Se define como 'El Territorio Mexicano' y tiene la cualidad 'mexicano'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Territorio Mexicano"@es, "The Mexican Territory"@en .
-
-:e46eeee1_4f8c_44ec_98a4_8eb491eec2ba a owl:NamedIndividual .
-
-:e488f280_77a9_4eb8_b753_8e3cd0fbf34e a owl:NamedIndividual, :c10984dc_f290_4880_a60b_d6f8b6b22105;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :ca5379ce_307a_4cee_8af8_541a26eb475d;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :ca5379ce_307a_4cee_8af8_541a26eb475d;
-  rdfs:comment "A 'Sex' labeled 'female'. Formally defines the 'Sex' of an instance based on the conceptual definition of 'female'"@en,
-    "Un 'Sexo' etiquetado 'hembra'. Define formalmente el 'Sexo' de una instancia a partir de la definición conceptual de \"hembra\"."@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "female"@en, "hembra"@es .
-
-:e49a234f_0ac2_47d8_ac03_0a9788cd24f9 a owl:NamedIndividual, :b0984e57_8b64_484b_81c2_b143dd70181a;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756;
-  foaf:page <https://www.census.gov/naics/>, <https://www.inegi.org.mx/scian/>;
-  rdfs:comment "A 'Project' labeled 'The North American Industry Classification System'"@en,
-    "Un 'Proyecto' etiquetado 'El Sistema de Clasificación Industrial de América del Norte'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Sistema de Clasificación Industrial de América del Norte"@es, "The North American Industry Classification System"@en .
-
-:e62a535e_a6af_471c_9ef6_55d716ebd4fb a owl:NamedIndividual .
-
-:e9849ae8_891a_4131_9ccb_31a6991c1e4c a owl:NamedIndividual .
-
-:e98eaf63_8f23_4454_99f5_6b71f2acde01 a owl:NamedIndividual .
-
-:eb84f160_07b5_4299_828a_12a3ed67b49f a owl:NamedIndividual, :dbe933ba_935f_4e29_81da_216dd71590ba;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :c5574968_dcd6_4ed7_a404_abfb378c7ab3;
-  :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :c5574968_dcd6_4ed7_a404_abfb378c7ab3;
-  rdfs:comment "A 'State' labeled 'The Mexican State'. It is defined as 'The Mexican State' and has the 'mexican' quality"@en,
-    "Un 'Estado' etiquetado 'El Estado Mexicano'. Se define como 'El Estado Mexicano' y tiene la cualidad 'mexicano'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Estado Mexicano"@es, "The Mexican State"@en .
-
-:ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0 a owl:NamedIndividual .
-
-:f21edbc4_8a18_43b6_a877_29b8a711b2b8 a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
-  rdfs:comment "A 'Quality' labeled 'private'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'private'"@en,
-    "Una 'Cualidad' etiquetada 'privado' o 'privada'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de 'privado' o 'privada'."@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "privada"@es, "privado"@es, "private"@en .
-
-:f4aae162_faa9_40d9_89cf_0a95d109bb9e a owl:NamedIndividual, :b0984e57_8b64_484b_81c2_b143dd70181a;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756;
-  foaf:page <https://www.inegi.org.mx/app/mapa/denue/default.aspx>;
-  rdfs:comment "A 'Project' labeled 'The National Statistical Directory of Economic Units'"@en,
-    "Un 'Proyecto' etiquetado 'El Directorio Estadístico Nacional de Unidades Económicas'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Directorio Estadístico Nacional de Unidades Económicas"@es, "The National Statistical Directory of Economic Units"@en .
-
-:f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9 a owl:NamedIndividual .
-
-:f7a4f75e_0eac_4c0e_bb39_24351ce93c51 a owl:NamedIndividual, :c2871766_bffb_4a9b_9a67_4a84f149c11c;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :b780c9a0_57c4_4985_8c6f_83c9140803f5;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :b780c9a0_57c4_4985_8c6f_83c9140803f5;
-  rdfs:comment "A 'Gender' labeled 'woman'. Formally defines the 'Gender' of an instance based on the conceptual definition of 'woman'"@en,
-    "Un 'Género' etiquetado 'mujer'. Define formalmente el 'Género' de una instancia a partir de la definición conceptual de \"mujer\""@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "mujer"@es, "woman"@en .
-
-:f7bf33a7_d6f0_4aed_b925_330dde702afb a owl:NamedIndividual .
-
-:f7d86ba7_f612_4cef_916c_f6d80d230b64 a owl:NamedIndividual .
-
-:fa57b4a9_7c59_4c0f_a0a1_b4d44538c611 a owl:NamedIndividual .
-
-:fd1cb96d_35a9_495a_a6c1_ea441f9a77db a owl:NamedIndividual .
-
-:ff11d93b_5c11_45ac_8d7a_ce37714788be a owl:NamedIndividual .
-
-:ff47663c_36a2_4d26_9948_c47e6f473f8b a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
-  :a55a93ef_28dc_41b2_b537_eb916507bfdd :a54afb44_8ce8_446b_bde2_339f7f01bcc8;
-  :f0b0c790_e005_4539_80b5_263dc433ebc0 :a54afb44_8ce8_446b_bde2_339f7f01bcc8;
-  rdfs:comment "A 'Quality' labeled 'mexican'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'mexican'"@en,
-    "Una 'Cualidad' etiquetada 'mexicana' o 'mexicano'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de \"mexicana\" o \"mexicano\""@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "mexican"@en, "mexicana"@es, "mexicano"@es .
-
-<https://www.census.gov/naics/> a owl:NamedIndividual .
-
-<https://www.cepal.org/sites/default/files/presentations/presentacion-registro-estadistico-negocios-mexico-renem-directorio-estadistico-nacional-unidades-economicas-denue-inegi.pdf>
-  a owl:NamedIndividual .
-
-<https://www.inegi.org.mx/> a owl:NamedIndividual .
-
-<https://www.inegi.org.mx/app/ageeml/> a owl:NamedIndividual .
-
-<https://www.inegi.org.mx/app/mapa/denue/default.aspx> a owl:NamedIndividual .
-
-<https://www.inegi.org.mx/scian/> a owl:NamedIndividual .
-
-<https://www.snieg.mx/> a owl:NamedIndividual .
+:ff47663c_36a2_4d26_9948_c47e6f473f8b a owl:NamedIndividual .
