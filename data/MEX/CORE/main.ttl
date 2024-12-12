@@ -9,6 +9,5 @@
 
 <core/> a owl:Ontology;
   owl:versionIRI <core/0.0.0/>;
-  owl:imports <0.0.0/>, <core/onto/0.0.0/>, <core/voc/0.0.0>;
   rdfs:isDefinedBy <core/>;
   rdfs:label "El Grafo de Conocimiento Núcleo de México"@es, "The Core Knowledge Graph of Mexico"@en .
