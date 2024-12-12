@@ -31,7 +31,8 @@
 
 <cat/cloc/> a owl:Ontology;
   owl:versionIRI <cat/cloc/0.0.0>;
-  rdfs:isDefinedBy <cat/cloc/> .
+  rdfs:isDefinedBy <cat/cloc/>;
+  rdfs:label "El Grafo de Conocimiento del Conjunto de Códigos de Localidades"@es, "The Set of Localities Codes Knowledge Graph"@en .
 
 <http://www.w3.org/ns/dcat#Dataset> a owl:Class .
 
