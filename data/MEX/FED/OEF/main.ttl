@@ -206,7 +206,7 @@
 
 <fed/oef/> a owl:Ontology;
   owl:versionIRI <fed/oef/0.0.0/>;
-  owl:imports <cat/cef/0.0.0>, <fed/gef/0.0.0/>;
+  owl:imports <cat/cef/0.0.0>, <fed/gef/0.0.0/>, <fed/tef/0.0.0/>;
   rdfs:isDefinedBy <onto/ef/>;
   rdfs:label "La Ontología de las Entidades Federales de México"@es, "The Federal Entities of Mexico Ontology"@en .
 
