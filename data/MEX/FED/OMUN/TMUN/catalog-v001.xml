@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/omun/0.0.0/" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/FED/OMUN/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/onto/0.0.0/" uri="file:/Users/danielbakas/Documents/Profesional/Semantyk/Interno/Proyectos/Plataforma/Data/Knowledge/data/MEX/CORE/onto.ttl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
+</catalog>

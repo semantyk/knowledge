@@ -71,9 +71,9 @@
 # 
 # http://datos.gob.mx/f0b0c790_e005_4539_80b5_263dc433ebc0
 # 
-# http://purl.org/dc/terms/format
-# 
 # http://purl.org/dc/terms/hasPart
+# 
+# http://purl.org/dc/terms/isPartOf
 # 
 # http://www.w3.org/1999/02/22-rdf-syntax-ns#subject
 # 
@@ -117,7 +117,11 @@
 # 
 # http://datos.gob.mx/b8c37bf3_d2f1_47b3_bcd4_42adb01ad239
 # 
+# http://datos.gob.mx/b93687e2_3083_4aca_bda4_2b1eec9ef932
+# 
 # http://datos.gob.mx/ba571c3e_119f_4148_a4fc_c5ad83359590
+# 
+# http://datos.gob.mx/bfc04bc1_1415_49b8_a58f_6f6831e5bd11
 # 
 # http://datos.gob.mx/bfcd1a25_1e78_4168_8e4d_f19885dbce23
 # 
@@ -155,6 +159,8 @@
 # 
 # http://datos.gob.mx/f5e86a44_aabe_4209_8635_ea5cca897e3d
 # 
+# http://datos.gob.mx/f84bdd2f_2c97_4710_93a0_1217c658e7b7
+# 
 # http://datos.gob.mx/f8c7746c_a1cb_4f99_a8af_0c8a338e0230
 # 
 # http://datos.gob.mx/fc851746_03d3_4420_8d59_f9f7d6e325e4
@@ -162,6 +168,8 @@
 # http://datos.gob.mx/fd98d032_2fdd_4491_a235_a445ec0a7bf6
 # 
 # http://datos.gob.mx/fef4ab2d_1443_41ea_8c88_bc4d870e0caa
+# 
+# http://datos.gob.mx/Organización_Privada_(Clase)
 # 
 # http://www.w3.org/2002/07/owl#Class
 # 
@@ -188,6 +196,8 @@
 # 
 # http://datos.gob.mx/a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0
 # 
+# http://datos.gob.mx/a34b36e4_5235_494f_a487_8003203e2897
+# 
 # http://datos.gob.mx/a418160a_c783_42e9_97d6_baffb88467a0
 # 
 # http://datos.gob.mx/a54afb44_8ce8_446b_bde2_339f7f01bcc8
@@ -207,6 +217,8 @@
 # http://datos.gob.mx/aa6f3ff2_e49a_4db5_a0c7_a6b1c7f7856a
 # 
 # http://datos.gob.mx/ab118fe2_9773_44cd_8178_8a503ea1dea8
+# 
+# http://datos.gob.mx/abbbca86_4fde_4d80_b1a5_f78a92be0be7
 # 
 # http://datos.gob.mx/adfda952_c0f7_4c7b_b973_cb1037fe93a5
 # 
@@ -310,6 +322,8 @@
 # 
 # http://datos.gob.mx/eea43024_2453_4f4b_80cf_cad96fccfcd4
 # 
+# http://datos.gob.mx/f21edbc4_8a18_43b6_a877_29b8a711b2b8
+# 
 # http://datos.gob.mx/f279e690_fe1f_45c8_8201_fc46f32114e1
 # 
 # http://datos.gob.mx/f30c1027_78c0_401d_a38c_9a1622b9eba8
@@ -391,13 +405,14 @@
 
 <core/onto/> a owl:Ontology;
   owl:versionIRI <core/onto/0.0.0/>;
+  owl:imports <0.0.0/>;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "La Ontología Núcleo de México"@es, "The Core Ontology of Mexico"@es .
 
-dcterms:format a owl:AnnotationProperty, owl:ObjectProperty;
-  rdfs:subPropertyOf dcterms:hasPart .
+dcterms:format a owl:AnnotationProperty .
 
-dcterms:hasPart a owl:AnnotationProperty, owl:ObjectProperty .
+dcterms:hasPart a owl:AnnotationProperty, owl:ObjectProperty;
+  owl:inverseOf dcterms:isPartOf .
 
 rdf:predicate a owl:AnnotationProperty .
 
@@ -479,6 +494,8 @@ dcat:inCatalog a owl:AnnotationProperty .
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "has conceptual definition"@en, "tiene definición conceptual"@es .
 
+dcterms:isPartOf a owl:ObjectProperty .
+
 rdf:subject a owl:ObjectProperty .
 
 skos:hasTopConcept a owl:ObjectProperty;
@@ -554,6 +571,14 @@ _:genid2 a owl:Restriction;
   rdfs:label "Person (Class)"@en, "Persona (Clase)"@es;
   skos:prefLabel "Person"@en, "Persona"@es .
 
+:b93687e2_3083_4aca_bda4_2b1eec9ef932 a owl:Class;
+  rdfs:subClassOf :bfc04bc1_1415_49b8_a58f_6f6831e5bd11, :f5e86a44_aabe_4209_8635_ea5cca897e3d;
+  rdfs:comment "A 'Class' labeled 'Public Organization' subclass of 'Public Thing' and 'Organization'. Each of its instances is defined as a 'Public Organization'"@en,
+    "Una 'Clase' etiquetada 'Public Organization' subclase de 'Cosa Pública' y 'Organización'. Cada una de sus instancias se define como una 'Organización Pública'"@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "Organización Pública (Clase)"@es, "Public Organization (Class)"@en;
+  skos:prefLabel "Organización Pública"@es, "Public Organization"@en .
+
 :ba571c3e_119f_4148_a4fc_c5ad83359590 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
   :a55a93ef_28dc_41b2_b537_eb916507bfdd :b9e92c2a_6e79_4015_9256_e33deaeec8ad;
@@ -563,6 +588,19 @@ _:genid2 a owl:Restriction;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Cultura (Clase)"@es, "Culture (Class)"@en;
   skos:prefLabel "Cultura"@es, "Culture"@en .
+
+:bfc04bc1_1415_49b8_a58f_6f6831e5bd11 a owl:Class;
+  owl:equivalentClass _:genid3;
+  rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
+  rdfs:comment "A 'Class' labeled 'Public Thing' subclass of 'Thing'. Each of its instances is defined as a 'Public Thing' and has the 'public' quality"@en,
+    "Una 'Clase' etiquetada 'Cosa Pública' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cosa Pública' y tiene la cualidad 'pública'"@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "Cosa Pública (Clase)"@es, "Public Thing (Class)"@en;
+  skos:prefLabel "Cosa Pública"@es, "Public Thing"@en .
+
+_:genid3 a owl:Restriction;
+  owl:hasValue :a34b36e4_5235_494f_a487_8003203e2897;
+  owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca .
 
 :bfcd1a25_1e78_4168_8e4d_f19885dbce23 a owl:Class;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
@@ -621,7 +659,7 @@ _:genid2 a owl:Restriction;
   skos:prefLabel "Code"@en, "Código"@es .
 
 :d3c3da1e_369b_4103_b5bf_58daba879d87 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
-  owl:equivalentClass _:genid3;
+  owl:equivalentClass _:genid4;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
   :a55a93ef_28dc_41b2_b537_eb916507bfdd :e06a1482_4394_423b_a2ba_a5f5942fb284;
   :f0b0c790_e005_4539_80b5_263dc433ebc0 :e06a1482_4394_423b_a2ba_a5f5942fb284;
@@ -631,7 +669,7 @@ _:genid2 a owl:Restriction;
   rdfs:label "Mujer (Clase)"@es, "Woman (Class)"@en;
   skos:prefLabel "Mujer"@es, "Woman"@en .
 
-_:genid3 a owl:Restriction;
+_:genid4 a owl:Restriction;
   owl:hasValue :f7a4f75e_0eac_4c0e_bb39_24351ce93c51;
   owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 .
 
@@ -666,7 +704,7 @@ _:genid3 a owl:Restriction;
   skos:prefLabel "Cualidad"@es, "Quality"@en .
 
 :e1b671b2_280a_4841_a569_76eb85d9473f a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
-  owl:equivalentClass _:genid4;
+  owl:equivalentClass _:genid5;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
   :a55a93ef_28dc_41b2_b537_eb916507bfdd :f7bf33a7_d6f0_4aed_b925_330dde702afb;
   :f0b0c790_e005_4539_80b5_263dc433ebc0 :f7bf33a7_d6f0_4aed_b925_330dde702afb;
@@ -676,7 +714,7 @@ _:genid3 a owl:Restriction;
   rdfs:label "Hombre (Clase)"@es, "Man (Class)"@en;
   skos:prefLabel "Hombre"@es, "Man"@en .
 
-_:genid4 a owl:Restriction;
+_:genid5 a owl:Restriction;
   owl:hasValue :a0947516_0388_4c3a_81a1_a3888c6d5e24;
   owl:onProperty :a278ea71_1682_4765_ad90_979b1c68ce58 .
 
@@ -719,7 +757,7 @@ _:genid4 a owl:Restriction;
   skos:prefLabel "Constitución"@es, "Constitution"@en .
 
 :f279e690_fe1f_45c8_8201_fc46f32114e1 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
-  owl:equivalentClass _:genid5;
+  owl:equivalentClass _:genid6;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
   :a55a93ef_28dc_41b2_b537_eb916507bfdd :d4090495_7f84_422e_ac20_305b0d94a91a;
   :f0b0c790_e005_4539_80b5_263dc433ebc0 :d4090495_7f84_422e_ac20_305b0d94a91a;
@@ -729,7 +767,7 @@ _:genid4 a owl:Restriction;
   rdfs:label "Cosa Mexicana (Clase)"@es, "Mexican Thing (Class)"@en;
   skos:prefLabel "Cosa Mexicana"@es, "Mexican Thing"@en .
 
-_:genid5 a owl:Restriction;
+_:genid6 a owl:Restriction;
   owl:hasValue :ff47663c_36a2_4d26_9948_c47e6f473f8b;
   owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca .
 
@@ -752,6 +790,19 @@ _:genid5 a owl:Restriction;
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Organización (Clase)"@es, "Organization (Class)"@en;
   skos:prefLabel "Organización"@es, "Organization"@en .
+
+:f84bdd2f_2c97_4710_93a0_1217c658e7b7 a owl:Class;
+  owl:equivalentClass _:genid7;
+  rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
+  rdfs:comment "A 'Class' labeled 'Private Thing' subclass of 'Thing'. Each of its instances is defined as a 'Private Thing' and has the 'private' quality"@en,
+    "Una 'Clase' etiquetada 'Cosa Privada' subclase de 'Cosa'. Cada una de sus instancias se define como una 'Cosa Privada' y tiene la cualidad 'privada'"@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "Cosa Privada (Clase)"@es, "Private Thing (Class)"@en;
+  skos:prefLabel "Cosa Privada"@es, "Private Thing"@en .
+
+_:genid7 a owl:Restriction;
+  owl:hasValue :f21edbc4_8a18_43b6_a877_29b8a711b2b8;
+  owl:onProperty :b64ea212_cb7d_473d_9f38_5d1a8911b8ca .
 
 :f8c7746c_a1cb_4f99_a8af_0c8a338e0230 a owl:Class, owl:NamedIndividual, :eea43024_2453_4f4b_80cf_cad96fccfcd4;
   rdfs:subClassOf :ee401492_9c90_4700_96aa_21c48538b1e0;
@@ -791,6 +842,14 @@ _:genid5 a owl:Restriction;
   rdfs:label "Territorio (Clase)"@es, "Territory (Class)"@en;
   skos:prefLabel "Territorio"@es, "Territory"@en .
 
+<Organización_Privada_(Clase)> rdfs:subClassOf :f5e86a44_aabe_4209_8635_ea5cca897e3d,
+    :f84bdd2f_2c97_4710_93a0_1217c658e7b7;
+  rdfs:comment "A 'Class' labeled 'Private Organization' subclass of 'Private Thing' and 'Organization'. Each of its instances is defined as a 'Private Organization'"@en,
+    "Una 'Clase' etiquetada 'Organización Privada' subclase de 'Cosa Privada' y 'Organización'. Cada una de sus instancias se define como una 'Organización Privada'"@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "Organización Privada (Clase)"@es, "Private Organization (Class)"@en;
+  skos:prefLabel "Organización Privada"@es, "Private Organization"@en .
+
 owl:Class a owl:Class .
 
 skos:Concept a owl:Class .
@@ -807,17 +866,17 @@ skos:ConceptScheme a owl:Class .
 
 :a24c56f1_8e46_40d6_8008_92c6c7fc1d00 a owl:NamedIndividual .
 
-:a287a1f0_6414_4847_ba06_7ccf34bd0756 a owl:NamedIndividual, :f5e86a44_aabe_4209_8635_ea5cca897e3d;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :eb84f160_07b5_4299_828a_12a3ed67b49f;
-  foaf:homepage <https://www.inegi.org.mx/>;
-  rdfs:comment "An 'Organization' labeled 'The National System of Statistical and Geographic Information'"@en,
-    "Una 'Organización' etiquetada 'El Instituto Nacional de Estadística y Geografía'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Instituto Nacional de Estadística y Geografía"@es, "The National Institute of Statistics and Geography"@en .
+:a287a1f0_6414_4847_ba06_7ccf34bd0756 a owl:NamedIndividual .
 
 :a28b4fdd_45d5_4aba_a63f_c59c0f0f2bd9 a owl:NamedIndividual .
 
 :a33f1a66_b28d_4ffe_a3ee_85b5fdc6a4a0 a owl:NamedIndividual .
+
+:a34b36e4_5235_494f_a487_8003203e2897 a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
+  rdfs:comment "A 'Quality' labeled 'public'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'public'"@en,
+    "Una 'Cualidad' etiquetada 'pública' o 'público'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de 'pública' o 'público'."@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "public"@en, "pública"@es, "público"@es .
 
 :a54afb44_8ce8_446b_bde2_339f7f01bcc8 a owl:NamedIndividual .
 
@@ -840,6 +899,8 @@ skos:ConceptScheme a owl:Class .
 
 :ab118fe2_9773_44cd_8178_8a503ea1dea8 a owl:NamedIndividual .
 
+:abbbca86_4fde_4d80_b1a5_f78a92be0be7 a owl:NamedIndividual .
+
 :adfda952_c0f7_4c7b_b973_cb1037fe93a5 a owl:NamedIndividual, :c064c390_4edb_4f89_a671_301fb774f9ef;
   :a55a93ef_28dc_41b2_b537_eb916507bfdd :e46eeee1_4f8c_44ec_98a4_8eb491eec2ba;
   :b64ea212_cb7d_473d_9f38_5d1a8911b8ca :ff47663c_36a2_4d26_9948_c47e6f473f8b;
@@ -851,23 +912,23 @@ skos:ConceptScheme a owl:Class .
   rdfs:isDefinedBy <core/onto/>;
   rdfs:label "Los Estados Unidos Mexicanos"@es, "The United Mexican States"@en .
 
-_:genid6 a owl:Axiom;
+_:genid10 a owl:Axiom;
+  owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
+  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
+  owl:annotatedTarget :f8c7746c_a1cb_4f99_a8af_0c8a338e0230;
+  owl:versionInfo "relación: clase de gobierno"@es, "relation: class of government"@en .
+
+_:genid8 a owl:Axiom;
   owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
   owl:annotatedTarget :d16b0c0e_1ce5_4c01_a81b_62630072fb4d;
   owl:versionInfo "relación: constitución"@es, "relation: constitution"@en .
 
-_:genid7 a owl:Axiom;
+_:genid9 a owl:Axiom;
   owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
   owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
   owl:annotatedTarget :d52561c8_00a1_4af3_9d98_71b6e9e191a3;
   owl:versionInfo "relation: class of State"@en .
-
-_:genid8 a owl:Axiom;
-  owl:annotatedSource :adfda952_c0f7_4c7b_b973_cb1037fe93a5;
-  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
-  owl:annotatedTarget :f8c7746c_a1cb_4f99_a8af_0c8a338e0230;
-  owl:versionInfo "relación: clase de gobierno"@es, "relation: class of government"@en .
 
 :b141f627_98cd_40ba_9354_cd34711b1540 a owl:NamedIndividual .
 
@@ -891,19 +952,7 @@ _:genid8 a owl:Axiom;
 
 :ba881fe7_6251_44c1_af4f_aa4d9826e864 a owl:NamedIndividual .
 
-:bcd29bfa_369e_4ec2_a1cc_2240e1993a70 a owl:NamedIndividual, :f5e86a44_aabe_4209_8635_ea5cca897e3d;
-  :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756, :eb84f160_07b5_4299_828a_12a3ed67b49f;
-  foaf:homepage <https://www.snieg.mx/>;
-  rdfs:comment "An 'Organization' labeled 'The National System of Statistical and Geographic Information'"@en,
-    "Una 'Organización' etiquetada 'El Sistema Nacional de Información Estadística y Geográfica'"@es;
-  rdfs:isDefinedBy <core/onto/>;
-  rdfs:label "El Sistema Nacional de Información Estadística y Geográfica"@es, "The National System of Statistical and Geographic Information"@en .
-
-_:genid9 a owl:Axiom;
-  owl:annotatedSource :bcd29bfa_369e_4ec2_a1cc_2240e1993a70;
-  owl:annotatedProperty :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886;
-  owl:annotatedTarget :eb84f160_07b5_4299_828a_12a3ed67b49f;
-  owl:versionInfo "relación: parte de"@es, "relation: part of"@en .
+:bcd29bfa_369e_4ec2_a1cc_2240e1993a70 a owl:NamedIndividual .
 
 :bf4e6b3a_c931_4464_b4a5_e278d8cee8a9 a owl:NamedIndividual .
 
@@ -1022,6 +1071,12 @@ _:genid9 a owl:Axiom;
   rdfs:label "El Estado Mexicano"@es, "The Mexican State"@en .
 
 :ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0 a owl:NamedIndividual .
+
+:f21edbc4_8a18_43b6_a877_29b8a711b2b8 a owl:NamedIndividual, :dda89cac_96bb_4347_a189_796811cc542a;
+  rdfs:comment "A 'Quality' labeled 'private'. Formally defines the 'Quality' of an instance based on the conceptual definition of 'private'"@en,
+    "Una 'Cualidad' etiquetada 'privado' o 'privada'. Define formalmente la 'Cualidad' de una instancia a partir de la definición conceptual de 'privado' o 'privada'."@es;
+  rdfs:isDefinedBy <core/onto/>;
+  rdfs:label "privada"@es, "privado"@es, "private"@en .
 
 :f4aae162_faa9_40d9_89cf_0a95d109bb9e a owl:NamedIndividual, :b0984e57_8b64_484b_81c2_b143dd70181a;
   :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a287a1f0_6414_4847_ba06_7ccf34bd0756;

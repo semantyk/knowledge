@@ -39,9 +39,15 @@
 # #################################################################
 # 
 # 
+# http://datos.gob.mx/c009b94d_da5f_4f35_a1d3_d6515df21ca5
+# 
 # http://datos.gob.mx/e5423592_6699_41fc_ab86_e4df786b05b8
 # 
+# http://datos.gob.mx/f8a4cd20_110e_4a90_9c8c_83af097a291d
+# 
 # http://datos.gob.mx/f8f0d595_a8fa_454d_ba17_5e1030607e2c
+# 
+# http://datos.gob.mx/f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8
 # 
 # http://datos.gob.mx/cat#
 # 
@@ -51,7 +57,7 @@
 
 <cat/> a owl:Ontology;
   owl:versionIRI <cat/0.0.0/>;
-  owl:imports <0.0.0/>, <cat/cucag/0.0.0>;
+  owl:imports <cat/cucag/0.0.0>;
   rdfs:isDefinedBy <cat/> .
 
 dcat:catalog a owl:ObjectProperty .
@@ -60,14 +66,20 @@ dcat:dataset a owl:ObjectProperty .
 
 dcat:Catalog a owl:Class .
 
+:c009b94d_da5f_4f35_a1d3_d6515df21ca5 a owl:NamedIndividual .
+
 :e5423592_6699_41fc_ab86_e4df786b05b8 a owl:NamedIndividual .
+
+:f8a4cd20_110e_4a90_9c8c_83af097a291d a owl:NamedIndividual .
 
 :f8f0d595_a8fa_454d_ba17_5e1030607e2c a owl:NamedIndividual .
 
+:f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8 a owl:NamedIndividual .
+
 <cat#> a owl:NamedIndividual, dcat:Catalog;
-  dcat:catalog <cat/cucag#>;
-  dcat:dataset :e5423592_6699_41fc_ab86_e4df786b05b8, :f8f0d595_a8fa_454d_ba17_5e1030607e2c,
-    :f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8;
+  dcat:catalog :c009b94d_da5f_4f35_a1d3_d6515df21ca5, :f8a4cd20_110e_4a90_9c8c_83af097a291d,
+    <cat/cucag#>;
+  dcat:dataset :f9a3fee9_9022_4fd8_92a1_d17eb7cb98e8;
   rdfs:comment "A 'Catalog' labeled 'The Catalog of Mexico'"@en, "Un 'Catálogo' etiquetado 'El Catálogo de México'"@es;
   rdfs:isDefinedBy <cat/>;
   rdfs:label "El Catálogo de México"@es, "The Catalog of Mexico"@en .
