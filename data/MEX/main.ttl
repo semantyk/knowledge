@@ -15,12 +15,7 @@
                         owl:versionIRI <http://datos.gob.mx/0.0.0/> ;
                         owl:imports <http://datos.gob.mx/cat/0.0.0/> ,
                                     <http://datos.gob.mx/core/0.0.0/> ,
-                                    <http://datos.gob.mx/fed/0.0.0/> ,
-                                    <http://datos.gob.mx/org/0.0.0/> ,
-                                    doap: ,
-                                    <http://www.w3.org/2004/02/skos/core> ,
-                                    org: ,
-                                    foaf: ;
+                                    <http://datos.gob.mx/fed/0.0.0/> ;
                         rdfs:isDefinedBy <http://datos.gob.mx/> ;
                         rdfs:label "El Grafo de Conocimiento de México"@es ,
                                    "The Knowledge Graph of Mexico"@es .
