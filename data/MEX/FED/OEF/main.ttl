@@ -78,8 +78,6 @@
 # 
 # http://datos.gob.mx/a62abb1c_2b16_4197_9f2c_0c29f1b9ddff
 # 
-# http://datos.gob.mx/a8c2515e_23e6_4cef_8fda_c50c06730b24
-# 
 # http://datos.gob.mx/a8c43df0_90c8_4a3c_b3af_415dece7e7c2
 # 
 # http://datos.gob.mx/a96355d4_e44d_4abf_b730_e2d69a342a12
@@ -170,8 +168,6 @@
 # 
 # http://datos.gob.mx/e40a5e47_3fa8_40cc_adda_c9e6f43569ff
 # 
-# http://datos.gob.mx/e4753b47_f22b_4c31_8759_1c45a1a9a805
-# 
 # http://datos.gob.mx/e5423592_6699_41fc_ab86_e4df786b05b8
 # 
 # http://datos.gob.mx/e601a68d_ea1b_4ac9_b222_b146f0839481
@@ -210,7 +206,7 @@
 
 <fed/oef/> a owl:Ontology;
   owl:versionIRI <fed/oef/0.0.0/>;
-  owl:imports <cat/cef/0.0.0>;
+  owl:imports <cat/cef/0.0.0>, <fed/gef/0.0.0/>;
   rdfs:isDefinedBy <onto/ef/>;
   rdfs:label "La Ontología de las Entidades Federales de México"@es, "The Federal Entities of Mexico Ontology"@en .
 
@@ -257,8 +253,6 @@ dcat:Dataset a owl:Class .
   rdfs:isDefinedBy <fed/oef/>;
   rdfs:label "La Entidad Federal de Tabasco"@es, "The Tabasco Federal Entity"@en;
   skos:prefLabel "Tabasco"@en, "Tabasco"@es .
-
-:a8c2515e_23e6_4cef_8fda_c50c06730b24 a owl:NamedIndividual .
 
 :a8c43df0_90c8_4a3c_b3af_415dece7e7c2 a owl:NamedIndividual, :fd98d032_2fdd_4491_a235_a445ec0a7bf6;
   :dca9db1b_2f0f_49b7_bb54_223ec90c07cf :b723f1b4_d73d_4348_8a4e_31e0bbcce5d9;
@@ -464,8 +458,6 @@ dcat:Dataset a owl:Class .
 :e2f991aa_d311_4896_9cd2_6a13efce3de6 a owl:NamedIndividual .
 
 :e40a5e47_3fa8_40cc_adda_c9e6f43569ff a owl:NamedIndividual .
-
-:e4753b47_f22b_4c31_8759_1c45a1a9a805 a owl:NamedIndividual .
 
 :e5423592_6699_41fc_ab86_e4df786b05b8 a owl:NamedIndividual, dcat:Dataset;
   :e3a20fec_2cb0_44a7_8183_9d5b4d5a0886 :a96355d4_e44d_4abf_b730_e2d69a342a12;
