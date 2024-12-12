@@ -122,6 +122,8 @@
 # 
 # http://datos.gob.mx/ed0cfe1a_2cd5_4bb9_af25_df6f93f064c0
 # 
+# http://datos.gob.mx/ee1d0fb5_b76b_4b3a_860e_1046ef73472d
+# 
 # http://datos.gob.mx/f6bc881f_d7dc_45ce_8b1d_0b1f563ab2a9
 # 
 # http://datos.gob.mx/f7bf33a7_d6f0_4aed_b925_330dde702afb
@@ -140,7 +142,6 @@
 
 <core/voc/> a owl:Ontology;
   owl:versionIRI <core/voc/0.0.0>;
-  owl:imports <core/0.0.0/>;
   rdfs:isDefinedBy <voc/>;
   rdfs:label "El Vocabulario Controlado de México"@es, "The Controlled Vocabulary of Mexico"@es .
 
@@ -152,7 +153,7 @@ skos:inScheme a owl:ObjectProperty .
 
 skos:topConceptOf a owl:ObjectProperty .
 
-:ee1d0fb5_b76b_4b3a_860e_1046ef73472d a owl:Class .
+:ee1d0fb5_b76b_4b3a_860e_1046ef73472d a owl:Class, owl:NamedIndividual .
 
 :f30c1027_78c0_401d_a38c_9a1622b9eba8 a owl:Class .
 
@@ -321,8 +322,8 @@ skos:ConceptScheme a owl:Class .
   skos:prefLabel "Cosa Mexicana"@es, "Mexican Thing"@en .
 
 :d4a42972_30ab_4d65_9818_102a8b0f4935 a owl:NamedIndividual, :f30c1027_78c0_401d_a38c_9a1622b9eba8;
-  skos:inScheme <voc#>;
   :c55f7a9f_8e55_45e2_87c0_f22a089c42d8 :ee1d0fb5_b76b_4b3a_860e_1046ef73472d;
+  skos:inScheme <voc#>;
   rdfs:comment "A 'Concept' labeled 'Concept Scheme'"@en, "Un 'Concepto' etiquetado 'Esquema de Conceptos'"@es;
   rdfs:isDefinedBy <voc/>;
   rdfs:label "Concept Scheme (Concept)"@en, "Esquema de Conceptos (Concepto)"@es;
