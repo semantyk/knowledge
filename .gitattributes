@@ -1,0 +1,2 @@
+*.ttl filter=lfs diff=lfs merge=lfs -text
+data/**/*.ttl filter=lfs diff=lfs merge=lfs -text
