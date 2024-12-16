@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/mun/gob/0.0.0/" uri="GOB/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/mun/ter/0.0.0/" uri="TER/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/mun/pob/0.0.0/" uri="POB/main.ttl"/>
     <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/mun/gob/0.0.0/" uri="GOB/main.ttl"/>
