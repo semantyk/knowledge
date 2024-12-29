@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/ef/law/lo/0.0.0/" uri="LO/main.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/ef/law/cp/0.0.0/" uri="CP/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/ef/law/lo/0.0.0" uri="lo/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/fed/ef/law/cp/0.0.0" uri="cp/main.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

@@ -10,8 +10,6 @@ import string
 MEX = Namespace("http://datos.gob.mx/")
 
 # RDFProcessor Class
-
-
 class RDFProcessor:
     def __init__(self, file_path):
         self.graph = Graph()
