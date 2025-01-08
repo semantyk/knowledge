@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/voc/0.0.0" uri="voc/main.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/onto/0.0.0" uri="onto/main.ttl"/>
-    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/data/0.0.0" uri="data/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/voc/" uri="voc/main.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://datos.gob.mx/core/onto/" uri="onto/main.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>
