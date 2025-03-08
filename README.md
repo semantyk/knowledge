@@ -7,7 +7,7 @@
 \ @file: This is the main README file for the knowledge project.
 \
 \ @created: Nov 27, 2024
-\ @modified: Nov 27, 2024
+\ @modified: Mar 8, 2025
 \
 \ @author: Semantyk Team
 \ @maintainer: Daniel Bakas <https://id.danielbakas.com>
