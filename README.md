@@ -1,3 +1,21 @@
+[//]: # (
+\ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+\ # `README.md`
+\ @organization: Semantyk
+\ @project: Knowledge
+\
+\ @file: This is the main README file for the knowledge project.
+\
+\ @created: Nov 27, 2024
+\ @modified: Nov 27, 2024
+\
+\ @author: Semantyk Team
+\ @maintainer: Daniel Bakas <https://id.danielbakas.com>
+\
+\ @copyright: Copyright © Semantyk 2024. All rights reserved.
+\ ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+)
+
 <h1 align='center'>Knowledge | Semantyk</h1>
 <h3 align='center'><i>Ideas Wonder</i></h3>
 <p align='center'>
